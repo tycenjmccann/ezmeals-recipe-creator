@@ -1,0 +1,454 @@
+import json
+import boto3
+import logging
+import re
+import time
+from decimal import Decimal
+from functools import lru_cache
+from botocore.config import Config
+from botocore.exceptions import ClientError
+
+# Set up logging
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Custom JSON encoder to handle DynamoDB Decimal types
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            # Convert Decimal to int if it's a whole number, otherwise to float
+            if obj % 1 == 0:
+                return int(obj)
+            else:
+                return float(obj)
+        return super(DecimalEncoder, self).default(obj)
+
+def safe_json_dumps(obj, **kwargs):
+    """Safely serialize objects that may contain Decimal values."""
+    return json.dumps(obj, cls=DecimalEncoder, **kwargs)
+
+# Configuration
+CONFIG = {
+    'MODEL_ID': "us.anthropic.claude-opus-4-6-v1",
+    'ROLE_ARN': "arn:aws:iam::970547358447:role/IsengardAccount-DynamoDBAccess",
+    'TABLE_NAME': "MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev",
+    'REGIONS': {
+        'DYNAMODB': "us-west-1",
+        'BEDROCK': "us-west-2"
+    }
+}
+
+# AWS Configurations
+config_us_west_1 = Config(
+    region_name=CONFIG['REGIONS']['DYNAMODB'],
+    connect_timeout=120,
+    read_timeout=180,
+    retries={'max_attempts': 10, 'mode': 'standard'}
+)
+
+config_us_west_2 = Config(
+    region_name=CONFIG['REGIONS']['BEDROCK'],
+    connect_timeout=120,
+    read_timeout=180,
+    retries={'max_attempts': 10, 'mode': 'standard'}
+)
+
+# Initialize AWS clients
+bedrock_client = boto3.client("bedrock-runtime", config=config_us_west_2)
+sts_client = boto3.client("sts", config=config_us_west_2)
+
+# ENHANCED Claude prompt template - with complete side dish information
+CLAUDE_PROMPT_TEMPLATE = """
+You are a culinary expert tasked with recommending side dishes that would pair well with a main dish.
+
+Main Dish Context:
+Title: {title}
+Cuisine Type: {cuisine_type}
+Description: {description}
+
+Main Dish Ingredients:
+{ingredients}
+
+Main Dish Instructions:
+{instructions}
+
+ALL Available Side Dishes (complete information):
+{available_sides}
+
+Your task:
+- Analyze the main dish and recommend 3-6 side dishes that would complement it well
+- Consider ALL side dishes, not just those from the same cuisine - some of the best pairings cross cuisine boundaries
+- Consider flavor profiles, cooking methods, preparation times, and ingredient compatibility
+- Look for balance: if the main is rich/heavy, consider lighter sides; if spicy, consider cooling sides
+- Consider practical cooking: can sides be prepared alongside the main dish? 
+- Prioritize sides that enhance the overall meal experience
+
+Evaluation criteria:
+- Flavor compatibility and balance
+- Texture contrast (crispy vs soft, fresh vs cooked)
+- Nutritional balance and color variety
+- Cooking method synergy (oven sides with oven mains, quick sides with complex mains)
+- Cultural appropriateness while allowing creative cross-cuisine pairings
+
+Return ONLY a JSON array of side dish IDs that would create the best meal:
+[
+    "side-dish-id-1",
+    "side-dish-id-2",
+    "side-dish-id-3"
+]
+
+Rules:
+- Return only side dish IDs from the provided list
+- Maximum 6 side dishes
+- Return empty array [] if no suitable pairings found
+- No explanations, just the JSON array
+"""
+
+def extract_previous_processing_notes(event):
+    """Extract processing notes from previous steps."""
+    previous_notes = []
+    step_output = event.get('stepOutput', {})
+    
+    if isinstance(step_output, dict) and 'processingNotes' in step_output:
+        previous_notes = step_output['processingNotes']
+    
+    return previous_notes
+
+def add_processing_note(previous_notes, step_name, note):
+    """Add a new processing note to the accumulated list."""
+    new_notes = previous_notes.copy()
+    new_notes.append(f"{step_name}: {note}")
+    return new_notes
+
+def validate_input(event):
+    """Validate input event structure and required fields"""
+    if not isinstance(event, dict):
+        raise ValueError("Event must be a dictionary")
+    
+    recipe_text = event.get('recipe')
+    step_output = event.get('stepOutput', {}).get('body')
+    
+    if not recipe_text or not step_output:
+        raise ValueError("Missing required fields: 'recipe' or 'stepOutput.body'")
+    
+    return recipe_text, step_output
+
+def assume_cross_account_role():
+    """Assumes a role in another AWS account and returns temporary credentials."""
+    try:
+        response = sts_client.assume_role(
+            RoleArn=CONFIG['ROLE_ARN'],
+            RoleSessionName="SideRecommendationAccessSession"
+        )
+        return response['Credentials']
+    except ClientError as e:
+        logger.error(f"Error assuming role: {e}")
+        raise
+
+def extract_recipe_context(step_output_data):
+    """Extract minimal context for side dish pairing."""
+    return {
+        'title': step_output_data.get('title', {}).get('S', 'Unknown Recipe'),
+        'cuisine_type': step_output_data.get('cuisineType', {}).get('S', 'Unknown'),
+        'description': step_output_data.get('description', {}).get('S', '')
+    }
+
+def extract_recipe_content(step_output_data):
+    """Extract ingredients and instructions for side dish analysis."""
+    # Extract ingredients
+    ingredients = step_output_data.get('ingredients', {}).get('L', [])
+    ingredients_list = [item.get('S', '') for item in ingredients if item.get('S', '').strip()]
+    
+    # Extract instructions
+    instructions = step_output_data.get('instructions', {}).get('L', [])
+    instructions_list = [item.get('S', '') for item in instructions if item.get('S', '').strip()]
+    
+    return ingredients_list, instructions_list
+
+def get_all_side_dishes(credentials):
+    """Get ALL side dishes - let Claude do the filtering with complete information."""
+    all_sides = get_side_dishes_cached(
+        credentials['AccessKeyId'],
+        credentials['SecretAccessKey'],
+        credentials['SessionToken']
+    )
+    
+    if not all_sides:
+        return []
+    
+    logger.info(f"Retrieved all {len(all_sides)} side dishes for Claude evaluation")
+    return all_sides
+
+@lru_cache(maxsize=1)
+def get_side_dishes_cached(access_key, secret_key, session_token):
+    """Cached version of side dishes fetch with pagination and filtering"""
+    dynamodb = boto3.resource(
+        "dynamodb",
+        config=config_us_west_1,
+        aws_access_key_id=access_key,
+        aws_secret_access_key=secret_key,
+        aws_session_token=session_token
+    )
+    table = dynamodb.Table(CONFIG['TABLE_NAME'])
+    
+    items = []
+    last_evaluated_key = None
+    
+    try:
+        while True:
+            scan_kwargs = {
+                'FilterExpression': 'dishType = :dishType',
+                'ExpressionAttributeValues': {
+                    ':dishType': 'side'
+                }
+            }
+            if last_evaluated_key:
+                scan_kwargs['ExclusiveStartKey'] = last_evaluated_key
+                
+            response = table.scan(**scan_kwargs)
+            items.extend(response.get('Items', []))
+            
+            last_evaluated_key = response.get('LastEvaluatedKey')
+            if not last_evaluated_key:
+                break
+                
+        logger.info(f"Retrieved {len(items)} side dishes")
+        return items
+    
+    except ClientError as e:
+        logger.error(f"Error retrieving side dishes from DynamoDB: {e}")
+        raise
+
+def create_claude_prompt(recipe_context, ingredients_list, instructions_list, side_dishes):
+    """Generate prompt for Claude with complete side dish information."""
+    # Send complete side dish information to Claude
+    sides_for_prompt = [{
+        'id': side.get('id'),
+        'title': side.get('title'),
+        'description': side.get('description'),
+        'cuisineType': side.get('cuisineType'),
+        'ingredients': side.get('ingredients', []),  # ALL ingredients
+        'prepTime': side.get('prepTime'),
+        'cookTime': side.get('cookTime'),
+        'instructions': side.get('instructions', [])  # ALL instructions
+    } for side in side_dishes]
+    
+    return CLAUDE_PROMPT_TEMPLATE.format(
+        title=recipe_context['title'],
+        cuisine_type=recipe_context['cuisine_type'],
+        description=recipe_context['description'],
+        ingredients=safe_json_dumps(ingredients_list, indent=2),
+        instructions=safe_json_dumps(instructions_list[:3], indent=2),  # First 3 instructions for context
+        available_sides=safe_json_dumps(sides_for_prompt, indent=2)
+    )
+
+def call_bedrock_api(conversation, max_retries=3):
+    """Call Bedrock API with retry logic"""
+    for attempt in range(max_retries):
+        try:
+            return bedrock_client.converse(
+                modelId=CONFIG['MODEL_ID'],
+                messages=conversation,
+                inferenceConfig={"maxTokens": 4096, "temperature": 0.7},
+                additionalModelRequestFields={"top_k": 250}
+            )
+        except ClientError as e:
+            if attempt == max_retries - 1:
+                raise
+            logger.warning(f"API call failed, retrying (attempt {attempt + 1}/{max_retries})")
+            time.sleep(2 ** attempt)  # Exponential backoff
+
+def extract_side_dish_ids(response_text):
+    """Extract side dish IDs array from Claude's response."""
+    logger.info(f"Raw Claude response length: {len(response_text)} characters")
+    
+    # Look for JSON array structure
+    json_match = re.search(r'\[.*?\]', response_text, re.DOTALL)
+    if not json_match:
+        logger.error(f"No JSON array found in Claude response: {response_text}")
+        raise ValueError("No side dish IDs array found in Claude's response")
+    
+    json_str = json_match.group(0)
+    logger.info(f"Extracted JSON array: {json_str}")
+    
+    try:
+        side_dish_ids = json.loads(json_str)
+        if not isinstance(side_dish_ids, list):
+            raise ValueError("Claude response must be a list of side dish IDs")
+        
+        logger.info(f"Successfully parsed {len(side_dish_ids)} side dish IDs")
+        return side_dish_ids
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON parsing failed. Extracted string: {json_str}")
+        raise ValueError(f"Invalid JSON in Claude's response: {e}")
+
+def validate_side_dish_ids(side_dish_ids, available_sides):
+    """Validate that side dish IDs exist in our database."""
+    if not isinstance(side_dish_ids, list):
+        raise ValueError("Side dish IDs must be a list")
+    
+    valid_side_ids = {s.get('id') for s in available_sides}
+    valid_ids = [sid for sid in side_dish_ids if sid in valid_side_ids]
+    
+    logger.info(f"Validation: {len(valid_ids)} valid out of {len(side_dish_ids)} suggested side dish IDs")
+    return valid_ids
+
+def get_side_dish_names(side_dish_ids, available_sides):
+    """Get the names of side dishes from their IDs."""
+    id_to_name = {s.get('id'): s.get('title', 'Unknown') for s in available_sides}
+    side_names = [id_to_name.get(sid, 'Unknown') for sid in side_dish_ids]
+    return side_names
+
+def merge_side_dish_ids(original_json, side_dish_ids, request_id):
+    """Safely merge side dish IDs back into the original JSON."""
+    
+    logger.info(f"[{request_id}] Starting recommendedSides merge validation")
+    
+    # Validate original JSON structure
+    if not isinstance(original_json, dict):
+        raise ValueError(f"Original JSON must be a dictionary, got: {type(original_json)}")
+    
+    if 'recommendedSides' not in original_json:
+        raise ValueError("Original JSON missing 'recommendedSides' field for merge")
+    
+    if not isinstance(original_json['recommendedSides'], dict) or 'L' not in original_json['recommendedSides']:
+        raise ValueError("Original recommendedSides field has wrong structure")
+    
+    logger.info(f"[{request_id}] Original JSON structure validation passed")
+    
+    # Convert side dish IDs to DynamoDB format
+    sides_dynamodb = {'L': [{'S': sid} for sid in side_dish_ids]}
+    
+    # Store original for comparison
+    original_sides = original_json['recommendedSides']['L']
+    logger.info(f"[{request_id}] Replacing {len(original_sides)} sides with {len(side_dish_ids)} new recommended sides")
+    
+    # Perform the merge
+    original_json['recommendedSides'] = sides_dynamodb
+    
+    # Validate the merge worked correctly
+    if len(original_json['recommendedSides']['L']) != len(side_dish_ids):
+        raise ValueError("Merge validation failed - side dish count mismatch")
+    
+    logger.info(f"[{request_id}] Successfully merged {len(side_dish_ids)} recommended sides")
+    logger.info(f"[{request_id}] RecommendedSides merge validation: All checks passed")
+    
+    return original_json
+
+def lambda_handler(event, context):
+    """Main Lambda handler with optimized context window usage and processing notes with side names."""
+    request_id = context.aws_request_id
+    logger.info(f"[{request_id}] Starting side dish recommendation processing")
+    
+    # Extract previous processing notes
+    processing_notes = extract_previous_processing_notes(event)
+    logger.info(f"[{request_id}] Received {len(processing_notes)} previous processing notes")
+    
+    try:
+        # Validate input
+        recipe_text, step_output = validate_input(event)
+        logger.info(f"[{request_id}] Input validation successful")
+        
+        # Parse step output to check if this is a main dish
+        try:
+            step_output_data = json.loads(step_output)
+            logger.info(f"[{request_id}] Successfully parsed step output data")
+        except (json.JSONDecodeError, ValueError) as e:
+            logger.error(f"[{request_id}] JSON parsing failed: {e}")
+            processing_notes = add_processing_note(processing_notes, "Step 4", f"JSON parsing error: {str(e)}")
+            return {
+                'statusCode': 400,
+                'body': safe_json_dumps({'error': 'Invalid input or JSON parsing error.'}),
+                'processingNotes': processing_notes
+            }
+        
+        # Check if this is a main dish
+        dish_type = step_output_data.get('dishType', {}).get('S', '')
+        logger.info(f"[{request_id}] Processing dish type: {dish_type}")
+        
+        if dish_type != 'main':
+            logger.info(f"[{request_id}] Side dish detected, passing through unchanged")
+            processing_notes = add_processing_note(processing_notes, "Step 4", "Side dish detected - skipped side recommendations")
+            return {
+                'statusCode': 200,
+                'body': safe_json_dumps(step_output_data),
+                'processingNotes': processing_notes
+            }
+        
+        logger.info(f"[{request_id}] Main dish detected, proceeding with side recommendations")
+        processing_notes = add_processing_note(processing_notes, "Step 4", "Main dish detected - processing side recommendations")
+        
+        # Extract recipe context and content
+        logger.info(f"[{request_id}] Extracting recipe context and content")
+        recipe_context = extract_recipe_context(step_output_data)
+        ingredients_list, instructions_list = extract_recipe_content(step_output_data)
+        logger.info(f"[{request_id}] Processing recipe: {recipe_context['title']} with {len(ingredients_list)} ingredients")
+        
+        # Assume cross-account role
+        logger.info(f"[{request_id}] Assuming cross-account role")
+        credentials = assume_cross_account_role()
+        
+        # Get all side dishes (no filtering)
+        logger.info(f"[{request_id}] Retrieving all side dishes")
+        side_dishes = get_all_side_dishes(credentials)
+        
+        if not side_dishes:
+            logger.warning(f"[{request_id}] No side dishes found in database")
+            processing_notes = add_processing_note(processing_notes, "Step 4", "No side dishes found in database")
+            return {
+                'statusCode': 200,
+                'body': safe_json_dumps(step_output_data),
+                'processingNotes': processing_notes
+            }
+        
+        logger.info(f"[{request_id}] Found {len(side_dishes)} total side dishes for evaluation")
+        
+        # Create enhanced prompt with complete side information
+        logger.info(f"[{request_id}] Creating enhanced Claude prompt with complete side dish information")
+        prompt = create_claude_prompt(recipe_context, ingredients_list, instructions_list, side_dishes)
+        logger.info(f"[{request_id}] Prompt size: {len(prompt)} characters")
+        
+        # Get side dish IDs from Claude
+        logger.info(f"[{request_id}] Invoking Claude for side dish recommendations")
+        conversation = [{"role": "user", "content": [{"text": prompt}]}]
+        claude_response = call_bedrock_api(conversation)
+        response_text = claude_response["output"]["message"]["content"][0]["text"]
+        
+        # Extract and validate side dish IDs
+        logger.info(f"[{request_id}] Extracting side dish IDs from response")
+        side_dish_ids = extract_side_dish_ids(response_text)
+        
+        logger.info(f"[{request_id}] Validating side dish IDs")
+        valid_side_ids = validate_side_dish_ids(side_dish_ids, side_dishes)
+        
+        # Get side dish names for processing notes
+        side_names = get_side_dish_names(valid_side_ids, side_dishes)
+        
+        # Add processing notes based on results with side names
+        if valid_side_ids:
+            processing_notes = add_processing_note(processing_notes, "Step 4", f"Recommended {len(valid_side_ids)} side dishes: {', '.join(side_names)}")
+        else:
+            processing_notes = add_processing_note(processing_notes, "Step 4", "No suitable side dish recommendations found")
+        
+        # Merge back into original JSON
+        logger.info(f"[{request_id}] Merging side dish IDs into original JSON")
+        updated_json = merge_side_dish_ids(step_output_data, valid_side_ids, request_id)
+        
+        logger.info(f"[{request_id}] Successfully processed side dish recommendations")
+        return {
+            'statusCode': 200,
+            'body': safe_json_dumps(updated_json),
+            'processingNotes': processing_notes
+        }
+        
+    except Exception as e:
+        logger.error(f"[{request_id}] Unexpected error: {e}")
+        processing_notes = add_processing_note(processing_notes, "Step 4", f"Unexpected error: {str(e)}")
+        return {
+            'statusCode': 500,
+            'body': safe_json_dumps({
+                'error': 'Unexpected error',
+                'details': str(e)
+            }),
+            'processingNotes': processing_notes
+        }

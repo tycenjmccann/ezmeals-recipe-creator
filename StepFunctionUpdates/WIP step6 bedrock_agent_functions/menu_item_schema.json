@@ -1,0 +1,132 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Menu Item Data Access API",
+    "version": "1.0.0",
+    "description": "API for accessing MenuItemData table including side dishes and main dishes"
+  },
+  "paths": {
+    "/get_side_dishes": {
+      "get": {
+        "summary": "Get all side dishes from the menu database",
+        "description": "Retrieves all side dishes available in the MenuItemData table. Use this to get the complete list of side dishes for recipe recommendations.",
+        "operationId": "get_side_dishes",
+        "responses": {
+          "200": {
+            "description": "List of side dishes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {"type": "string"},
+                      "title": {"type": "string"},
+                      "description": {"type": "string"},
+                      "cuisineType": {"type": "string"},
+                      "ingredients": {"type": "array", "items": {"type": "string"}},
+                      "prepTime": {"type": "string"},
+                      "cookTime": {"type": "string"},
+                      "instructions": {"type": "array", "items": {"type": "string"}}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_menu_item_by_id": {
+      "get": {
+        "summary": "Get a specific menu item by ID",
+        "description": "Retrieves detailed information about a specific menu item using its unique ID.",
+        "operationId": "get_menu_item_by_id",
+        "parameters": [
+          {
+            "name": "item_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The unique ID of the menu item to retrieve"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Menu item details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {"type": "string"},
+                    "title": {"type": "string"},
+                    "description": {"type": "string"},
+                    "dishType": {"type": "string"},
+                    "cuisineType": {"type": "string"},
+                    "ingredients": {"type": "array", "items": {"type": "string"}},
+                    "instructions": {"type": "array", "items": {"type": "string"}},
+                    "prepTime": {"type": "string"},
+                    "cookTime": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search_menu_items": {
+      "get": {
+        "summary": "Search menu items by dish type and cuisine type",
+        "description": "Search for menu items filtering by dish type (main, side, etc.) and/or cuisine type (Italian, Asian, etc.).",
+        "operationId": "search_menu_items",
+        "parameters": [
+          {
+            "name": "dish_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Type of dish to filter by (e.g., 'main', 'side', 'appetizer')"
+          },
+          {
+            "name": "cuisine_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Cuisine type to filter by (e.g., 'Italian', 'Asian', 'American')"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of matching menu items",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {"type": "string"},
+                      "title": {"type": "string"},
+                      "description": {"type": "string"},
+                      "dishType": {"type": "string"},
+                      "cuisineType": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

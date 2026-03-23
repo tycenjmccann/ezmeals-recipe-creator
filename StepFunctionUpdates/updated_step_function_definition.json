@@ -1,0 +1,48 @@
+{
+  "Comment": "A state machine that creates a json file based on a text input and formats it for EZ Meals",
+  "StartAt": "Create json from Text",
+  "States": {
+    "Create json from Text": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-text-input-to-json:$LATEST",
+      "ResultPath": "$.stepOutput",
+      "Next": "Standardize Ingredients"
+    },
+    "Standardize Ingredients": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-standardize-ingredients-update-json:$LATEST",
+      "InputPath": "$",
+      "ResultPath": "$.stepOutput",
+      "Next": "Create ingredient_objects"
+    },
+    "Create ingredient_objects": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-create-ingredientsObject-json-update:$LATEST",
+      "InputPath": "$",
+      "ResultPath": "$.stepOutput",
+      "Next": "Recommend Side Dishes"
+    },
+    "Recommend Side Dishes": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-recommend-sides-placeholder:$LATEST",
+      "InputPath": "$",
+      "ResultPath": "$.stepOutput",
+      "Next": "Identify Affiliate Products"
+    },
+    "Identify Affiliate Products": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-add-affiliate-products-json-update:$LATEST",
+      "InputPath": "$",
+      "ResultPath": "$.stepOutput",
+      "Next": "Recipe QA Review"
+    },
+    "Recipe QA Review": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-west-2:023392223961:function:ez-recipe-QA:$LATEST",
+      "InputPath": "$",
+      "ResultPath": "$.stepOutput",
+      "End": true
+    }
+  },
+  "TimeoutSeconds": 900
+}

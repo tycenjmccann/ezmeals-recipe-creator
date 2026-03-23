@@ -1,0 +1,120 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Affiliate Product Access API",
+    "version": "1.0.0",
+    "description": "API for accessing AffiliateProduct table for kitchen tools and equipment recommendations"
+  },
+  "paths": {
+    "/get_all_affiliate_products": {
+      "get": {
+        "summary": "Get all affiliate products",
+        "description": "Retrieves all affiliate products available for recommendations. Focuses on kitchen tools, equipment, and non-consumable items.",
+        "operationId": "get_all_affiliate_products",
+        "responses": {
+          "200": {
+            "description": "List of affiliate products",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {"type": "string"},
+                      "productName": {"type": "string"},
+                      "description": {"type": "string"},
+                      "category": {"type": "string"},
+                      "price": {"type": "string"},
+                      "inAppText": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/get_product_by_id": {
+      "get": {
+        "summary": "Get a specific affiliate product by ID",
+        "description": "Retrieves detailed information about a specific affiliate product using its unique ID.",
+        "operationId": "get_product_by_id",
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "The unique ID of the product to retrieve"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {"type": "string"},
+                    "productName": {"type": "string"},
+                    "description": {"type": "string"},
+                    "category": {"type": "string"},
+                    "price": {"type": "string"},
+                    "inAppText": {"type": "string"},
+                    "linkLocation": {"type": "array", "items": {"type": "string"}},
+                    "usedInMenuItem": {"type": "array", "items": {"type": "string"}}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search_products_by_category": {
+      "get": {
+        "summary": "Search affiliate products by category",
+        "description": "Search for affiliate products filtering by category (e.g., 'cookware', 'appliances', 'tools').",
+        "operationId": "search_products_by_category",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Product category to filter by"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of products in the specified category",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {"type": "string"},
+                      "productName": {"type": "string"},
+                      "description": {"type": "string"},
+                      "category": {"type": "string"},
+                      "price": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
