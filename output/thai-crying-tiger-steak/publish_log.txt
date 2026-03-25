@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-24 17:13:45):
+✅ Local JSON saved: /Users/tycenj/Desktop/EZmeals_Backlog/RecipeCreator/output/thai-crying-tiger-steak/thai-crying-tiger-steak.json
+✅ Local hero saved: /Users/tycenj/Desktop/EZmeals_Backlog/RecipeCreator/output/thai-crying-tiger-steak/thai-crying-tiger-steak_hero.png
+✅ Local thumbnail saved: /Users/tycenj/Desktop/EZmeals_Backlog/RecipeCreator/output/thai-crying-tiger-steak/thai-crying-tiger-steak_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Thai_Crying_Tiger_Steak.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Thai_Crying_Tiger_Steak_thumbnail.jpg
+✅ DynamoDB: recipe 'thai-crying-tiger-steak' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev
