@@ -91,7 +91,8 @@ recommendedSides ("L"): Empty list [] (placeholder)
 includedSides ("L"): Empty list [] (placeholder)
 comboIndex ("M"): Empty map {{}} (placeholder)
 products ("L"): Empty list [] (placeholder)
-glutenFree ("BOOL"): MUST be set to true
+searchTerms ("L"): Generate 2-5 search terms as a list of {{"S": "term"}} objects. Include: alternate names (e.g. "köttbullar" for Swedish Meatballs), cooking methods ("stir-fry", "braised", "grilled"), cultural references ("peruvian", "tex-mex"), key descriptors ("spicy", "creamy", "one-pot"). Do NOT include the recipe title itself or its cuisine type — those are already searchable. Think: what would a user type to find this recipe if they forgot the name?
+glutenFree ("BOOL"): Set to true if the recipe CAN be prepared gluten-free with reasonable substitutions. Most recipes qualify — just swap soy sauce for tamari, regular flour for GF flour, etc. If glutenFree is true, you MUST include a note explaining the GF substitutions (e.g., "For gluten-free: use tamari instead of soy sauce and gluten-free oyster sauce"). Only set to false if the recipe fundamentally cannot work without gluten (e.g., fresh pasta, bread-based dishes where gluten structure is essential).
 vegetarian ("BOOL"): Determine based on ingredients.
 slowCook ("BOOL"): true if the recipe uses a slow cooker, else false.
 instaPot ("BOOL"): true if the recipe uses an Instant Pot, else false.
@@ -213,7 +214,9 @@ Provide a CONCISE quality assessment:
 
 **CULINARY IMPROVEMENTS**: Any suggestions to improve the recipe?
 
-**GF/DIETARY**: Is glutenFree=true with appropriate substitution notes?
+**GF/DIETARY**: Is glutenFree set correctly? Rule: if the recipe CAN be made GF with reasonable substitutions (tamari for soy sauce, GF flour, etc.), glutenFree should be TRUE with a note explaining the substitutions. Only false if gluten is structurally essential (bread, fresh pasta).
+
+**SEARCH TERMS**: Are searchTerms present and useful? Should be 2-5 terms: alternate names, cooking methods, cultural refs, key descriptors. Should NOT duplicate the title or cuisine type.
 
 Keep it brief and practical. Lean towards publishing unless there are red flags.
 If PASS, output the final assembled recipe JSON with recommendedSides and products populated from the enricher's recommendations."""
