@@ -1,45 +1,50 @@
 """
 EZmeals Recipe Creator — Graph Pipeline v2 (Production)
-Mirrors Step Functions pipeline exactly with 7 nodes.
-Each node has the FULL prompt detail from the SF Lambdas.
+10-node sequential graph mirroring Step Functions pipeline.
+
+Usage:
+    python recipe_graph_v2.py <recipe_url>
+    python recipe_graph_v2.py https://www.recipetineats.com/chicken-pad-thai/
+
+Nodes:
+    scraper → chef_review → json_converter → ingredient_standardizer →
+    ingredient_objects → enricher → search_terms → qa_review → image_gen → publish
 """
 import sys, os, json, time, traceback, asyncio, uuid, re
 
-sys.path.insert(0, '/tmp/pip-install')
-sys.path.insert(0, '/home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator')
-os.environ['AWS_DEFAULT_REGION'] = 'us-west-2'
-os.environ['STRANDS_WORKFLOW_DIR'] = '/home/ssm-user/.openclaw/workspace/.strands/workflows'
+# Allow running from any directory
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, SCRIPT_DIR)
 
 from strands import Agent
 from strands.multiagent.graph import GraphBuilder
 from strands_agents_recipe_creator import (
     scrape_recipe_url, validate_recipe_json,
     get_available_sides, get_available_products,
-    get_standardized_ingredients,
+    get_standardized_ingredients, generate_recipe_images,
+    publish_recipe,
     CUISINE_TYPES, VALID_CATEGORIES,
 )
 
-LOG_FILE = '/tmp/recipe_pipeline.log'
-open(LOG_FILE, 'w').close()
+LOG_FILE = os.path.join(SCRIPT_DIR, 'pipeline.log')
 
 def log(msg):
     with open(LOG_FILE, 'a') as f:
         f.write(f"[{time.strftime('%H:%M:%S')}] {msg}\n")
         f.flush()
+    print(f"[{time.strftime('%H:%M:%S')}] {msg}")
 
 # ============================================================================
-# PROMPTS — Ported EXACTLY from Step Functions Lambdas
+# PROMPTS — Ported from Step Functions Lambdas
 # ============================================================================
 
 RECIPE_ID = str(uuid.uuid4()).lower()
 
-# Node 1: Scraper
 SCRAPER_PROMPT = """You scrape recipe URLs. Call scrape_recipe_url with the URL.
 Return the COMPLETE recipe text VERBATIM — every single ingredient with exact quantities,
 every instruction step word-for-word, prep time, cook time, servings, and the image path.
 Do NOT summarize, paraphrase, or omit ANY detail. Return it exactly as extracted."""
 
-# Node 2: Chef Review — the ADDITION over Step Functions
 CHEF_REVIEW_PROMPT = """You are a professional chef reviewing a scraped recipe before it enters our processing pipeline.
 
 Your job is to IMPROVE the recipe while preserving its character. Check:
@@ -58,7 +63,6 @@ Output the IMPROVED recipe with:
 
 Be concise. No essays. Just the improved recipe text."""
 
-# Node 3: JSON Converter — EXACT copy of SF Step 1 prompt
 JSON_CONVERTER_PROMPT = f"""Convert detailed recipe information into a JSON file adhering to the specified schema and formatting compatible with DynamoDB's requirements. Ensure the output uses the specified fields:
 
 1. Convert Recipe Details to DynamoDB-Compatible JSON Schema:
@@ -91,7 +95,7 @@ recommendedSides ("L"): Empty list [] (placeholder)
 includedSides ("L"): Empty list [] (placeholder)
 comboIndex ("M"): Empty map {{}} (placeholder)
 products ("L"): Empty list [] (placeholder)
-searchTerms ("L"): Generate 2-5 search terms as a list of {{"S": "term"}} objects. Include: alternate names (e.g. "köttbullar" for Swedish Meatballs), cooking methods ("stir-fry", "braised", "grilled"), cultural references ("peruvian", "tex-mex"), key descriptors ("spicy", "creamy", "one-pot"). Do NOT include the recipe title itself or its cuisine type — those are already searchable. Think: what would a user type to find this recipe if they forgot the name?
+searchTerms ("L"): Empty list [] (placeholder — will be populated in a later step)
 glutenFree ("BOOL"): Set to true if the recipe CAN be prepared gluten-free with reasonable substitutions. Most recipes qualify — just swap soy sauce for tamari, regular flour for GF flour, etc. If glutenFree is true, you MUST include a note explaining the GF substitutions (e.g., "For gluten-free: use tamari instead of soy sauce and gluten-free oyster sauce"). Only set to false if the recipe fundamentally cannot work without gluten (e.g., fresh pasta, bread-based dishes where gluten structure is essential).
 vegetarian ("BOOL"): Determine based on ingredients.
 slowCook ("BOOL"): true if the recipe uses a slow cooker, else false.
@@ -101,7 +105,6 @@ flagged ("BOOL"): Always set to false.
 CRITICAL: Return ONLY the JSON. No markdown code blocks, no explanations, no text before or after. Just the raw JSON object.
 After generating the JSON, call validate_recipe_json with the JSON string to auto-fix any issues. Return the corrected version."""
 
-# Node 4: Ingredient Standardization — EXACT copy of SF Step 2 prompt  
 INGREDIENT_STANDARDIZER_PROMPT = """You standardize ingredient names and units in recipes.
 
 Steps:
@@ -121,7 +124,6 @@ CRITICAL RULES:
 Return the updated ingredients list as a JSON array of {"S": "ingredient string"} objects.
 Also return a CHANGES_MADE section showing each change: "original" → "standardized"."""
 
-# Node 5: Ingredient Objects — EXACT copy of SF Step 3 prompt
 INGREDIENT_OBJECTS_PROMPT = """Parse the ingredients into structured objects for a recipe database.
 
 Instructions:
@@ -155,7 +157,6 @@ Parsing Examples:
 - "1 1/2 tablespoons fish sauce" → ingredient_name: "Fish Sauce", quantity: "1 1/2", unit: "tablespoon", note: ""
 - "150g chicken breast, thinly sliced" → ingredient_name: "Chicken Breast", quantity: "150", unit: "g", note: "thinly sliced" """
 
-# Node 6: Enricher (Sides + Products) — Combined SF Steps 4 & 5
 ENRICHER_PROMPT = """You enrich recipes with side dish and product recommendations.
 
 Step 1 — SIDE DISHES:
@@ -180,7 +181,27 @@ Return both arrays clearly labeled:
 RECOMMENDED_SIDES: [...]
 RECOMMENDED_PRODUCTS: [...]"""
 
-# Node 7: QA Review — EXACT copy of SF Step 6 prompt
+SEARCH_TERMS_PROMPT = """You generate search terms for a recipe to help users find it even when they don't know the exact name.
+
+Given the recipe data from previous pipeline steps, generate up to 4 SHORT search terms that:
+- Help users find this recipe using words NOT already in the title, description, or ingredients
+- Are NOT cuisine types (already a searchable attribute)
+- Are NOT dietary flags like "gluten-free" or "vegetarian" (already searchable attributes)
+- Are NOT generic words like "dinner", "easy", "quick", "family", "meal", "recipe", "delicious"
+- Would apply to ≤15% of our catalog (very specific only)
+
+FOCUS ON:
+- Specific dish categories (pasta, soup, salad, stir-fry)
+- Alternative dish names (pancakes → hotcakes, flapjacks)
+- Specific cooking methods NOT already flagged (griddle, wok, dutch oven, plancha)
+- Cultural/regional names (köttbullar for Swedish Meatballs, medianoche)
+- Unique descriptors (crispy, creamy, smoky, tangy)
+
+Return the search terms as a DynamoDB-formatted list:
+{"L": [{"S": "term1"}, {"S": "term2"}, ...]}
+
+If no useful terms exist beyond what's already searchable, return {"L": []}."""
+
 QA_REVIEW_PROMPT = """You are a culinary expert and Product Manager for the ezMeals meal planning iOS app.
 Review the provided recipe and determine if it is ready to publish to our users.
 
@@ -189,6 +210,7 @@ You will receive inputs from multiple pipeline nodes:
 - **json_converter**: The structured DynamoDB JSON (the artifact to validate)
 - **ingredient_objects**: The parsed ingredient objects
 - **enricher**: Side dish and product recommendations
+- **search_terms**: Generated search terms
 
 Compare the ORIGINAL recipe from scraper against the FINAL JSON from json_converter.
 
@@ -212,112 +234,166 @@ Provide a CONCISE quality assessment:
 
 **PRODUCTS**: Would the recommended products be useful for this recipe? No food items?
 
+**SEARCH TERMS**: Are the search terms useful and specific? Not duplicating title/cuisine/dietary flags?
+
 **CULINARY IMPROVEMENTS**: Any suggestions to improve the recipe?
 
 **GF/DIETARY**: Is glutenFree set correctly? Rule: if the recipe CAN be made GF with reasonable substitutions (tamari for soy sauce, GF flour, etc.), glutenFree should be TRUE with a note explaining the substitutions. Only false if gluten is structurally essential (bread, fresh pasta).
 
-**SEARCH TERMS**: Are searchTerms present and useful? Should be 2-5 terms: alternate names, cooking methods, cultural refs, key descriptors. Should NOT duplicate the title or cuisine type.
-
 Keep it brief and practical. Lean towards publishing unless there are red flags.
-If PASS, output the final assembled recipe JSON with recommendedSides and products populated from the enricher's recommendations."""
+If PASS, output the final assembled recipe JSON with recommendedSides, products, and searchTerms populated from the enricher's and search_terms node's recommendations."""
+
+IMAGE_GEN_PROMPT = """You generate recipe images using the generate_recipe_images tool.
+
+From the QA-approved recipe JSON, extract:
+1. The dish name (title field)
+2. A brief visual description for the image generator (from the description field)
+3. The image path from imageURL (e.g., "menu-item-images/Chicken_Pad_Thai.jpg")
+
+Then call generate_recipe_images with:
+- dish_name: the recipe title
+- dish_description: a SHORT visual description focusing on what the dish LOOKS like (colors, textures, plating)
+- input_image_path: "" (empty — generate from scratch)
+- output_prefix: the recipe name portion from imageURL (e.g., "Chicken_Pad_Thai")
+
+Return the paths to the generated hero and thumbnail images."""
+
+PUBLISH_PROMPT = """You publish completed recipes to the EZ Meals database.
+
+From the previous pipeline steps, you have:
+1. The final QA-approved recipe JSON (from qa_review)
+2. The generated image paths (from image_gen)
+
+Call publish_recipe with:
+- recipe_json_str: the COMPLETE final recipe JSON string
+- hero_image_path: path to the hero image from image_gen
+- thumbnail_image_path: path to the thumbnail from image_gen
+- recipe_id: the recipe's id field from the JSON
+
+Return the publish result."""
+
 
 # ============================================================================
-# BUILD GRAPH
+# BUILD AND RUN GRAPH
 # ============================================================================
 
-log("=== STARTING PIPELINE ===")
+def build_pipeline():
+    """Build the 10-node recipe pipeline graph."""
+    log("Creating agents...")
 
-try:
     scraper = Agent(
         model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         tools=[scrape_recipe_url],
         system_prompt=SCRAPER_PROMPT,
         name="scraper",
     )
-
     chef = Agent(
         model="us.anthropic.claude-opus-4-6-v1",
         system_prompt=CHEF_REVIEW_PROMPT,
         name="chef_review",
     )
-
     converter = Agent(
         model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         tools=[validate_recipe_json],
         system_prompt=JSON_CONVERTER_PROMPT,
         name="json_converter",
     )
-
     standardizer = Agent(
         model="us.anthropic.claude-haiku-4-5-20251001-v1:0",
         tools=[get_standardized_ingredients],
         system_prompt=INGREDIENT_STANDARDIZER_PROMPT,
         name="ingredient_standardizer",
     )
-
     obj_creator = Agent(
         model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         system_prompt=INGREDIENT_OBJECTS_PROMPT,
         name="ingredient_objects",
     )
-
     enricher = Agent(
         model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         tools=[get_available_sides, get_available_products],
         system_prompt=ENRICHER_PROMPT,
         name="enricher",
     )
-
+    search_terms = Agent(
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
+        system_prompt=SEARCH_TERMS_PROMPT,
+        name="search_terms",
+    )
     qa = Agent(
         model="us.anthropic.claude-opus-4-6-v1",
         system_prompt=QA_REVIEW_PROMPT,
         name="qa_review",
     )
+    image_gen = Agent(
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
+        tools=[generate_recipe_images],
+        system_prompt=IMAGE_GEN_PROMPT,
+        name="image_gen",
+    )
+    publisher = Agent(
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
+        tools=[publish_recipe],
+        system_prompt=PUBLISH_PROMPT,
+        name="publish",
+    )
 
-    log("Agents created")
-
+    log("Building graph...")
     builder = GraphBuilder()
-    builder.add_node(scraper, "scraper")
-    builder.add_node(chef, "chef_review")
-    builder.add_node(converter, "json_converter")
-    builder.add_node(standardizer, "ingredient_standardizer")
-    builder.add_node(obj_creator, "ingredient_objects")
-    builder.add_node(enricher, "enricher")
-    builder.add_node(qa, "qa_review")
 
-    # Sequential pipeline: scraper → chef → converter → standardizer → objects → enricher → qa
+    # Add all 10 nodes
+    for name, agent in [
+        ("scraper", scraper), ("chef_review", chef), ("json_converter", converter),
+        ("ingredient_standardizer", standardizer), ("ingredient_objects", obj_creator),
+        ("enricher", enricher), ("search_terms", search_terms), ("qa_review", qa),
+        ("image_gen", image_gen), ("publish", publisher),
+    ]:
+        builder.add_node(agent, name)
+
+    # Sequential pipeline
     builder.add_edge("scraper", "chef_review")
     builder.add_edge("chef_review", "json_converter")
     builder.add_edge("json_converter", "ingredient_standardizer")
     builder.add_edge("ingredient_standardizer", "ingredient_objects")
     builder.add_edge("ingredient_objects", "enricher")
-    builder.add_edge("enricher", "qa_review")
-    
-    # QA needs full context — add edges from key nodes so QA sees everything
-    builder.add_edge("scraper", "qa_review")          # original recipe text
-    builder.add_edge("json_converter", "qa_review")   # structured DynamoDB JSON
-    builder.add_edge("ingredient_objects", "qa_review") # structured ingredient objects
+    builder.add_edge("enricher", "search_terms")
+    builder.add_edge("search_terms", "qa_review")
+    builder.add_edge("qa_review", "image_gen")
+    builder.add_edge("image_gen", "publish")
+
+    # QA gets multi-edge input for full pipeline visibility
+    builder.add_edge("scraper", "qa_review")
+    builder.add_edge("json_converter", "qa_review")
+    builder.add_edge("ingredient_objects", "qa_review")
 
     builder.set_entry_point("scraper")
-    builder.set_execution_timeout(900)   # 15 min max total
-    builder.set_node_timeout(300)        # 5 min per node
+    builder.set_execution_timeout(900)
+    builder.set_node_timeout(300)
 
-    graph = builder.build()
-    log("Graph built — 7 nodes, sequential pipeline")
+    return builder.build()
 
-    url = sys.argv[1] if len(sys.argv) > 1 else "https://www.recipetineats.com/chicken-pad-thai/"
-    log(f"Processing: {url}")
+
+async def run_pipeline(url: str):
+    """Run the full recipe pipeline on a URL."""
+    open(LOG_FILE, 'w').close()
+    log("=== STARTING PIPELINE ===")
+    log(f"Recipe ID: {RECIPE_ID}")
+    log(f"URL: {url}")
+
+    graph = build_pipeline()
+    log("Graph built — 10 nodes")
 
     start = time.time()
-    result = asyncio.run(graph.invoke_async(f"Process this recipe URL: {url}"))
+    result = await graph.invoke_async(f"Process this recipe URL: {url}")
     elapsed = time.time() - start
 
-    log(f"✅ Pipeline complete in {elapsed:.0f}s ({elapsed/60:.1f}m)")
+    log(f"\n✅ Pipeline complete in {elapsed:.0f}s ({elapsed/60:.1f}m)")
     log(f"Status: {result.status}")
 
-    # Extract each node's output
-    for node_id in ['scraper', 'chef_review', 'json_converter', 'ingredient_standardizer', 
-                     'ingredient_objects', 'enricher', 'qa_review']:
+    # Save each node's output
+    for node_id in ['scraper', 'chef_review', 'json_converter', 'ingredient_standardizer',
+                     'ingredient_objects', 'enricher', 'search_terms', 'qa_review',
+                     'image_gen', 'publish']:
         node_result = result.results.get(node_id)
         if node_result and node_result.result:
             msg = node_result.result.message
@@ -331,16 +407,14 @@ try:
                 log(f"NODE: {node_id}")
                 log(f"{'='*60}")
                 log(text[:2000])
-                
-                # Save full output
-                with open(f'/tmp/node_{node_id}.txt', 'w') as f:
+
+                output_path = os.path.join(SCRIPT_DIR, f'output_node_{node_id}.txt')
+                with open(output_path, 'w') as f:
                     f.write(text)
 
-    with open('/tmp/pipeline_result.txt', 'w') as f:
-        f.write(str(result))
+    return result
 
-except Exception as e:
-    log(f"❌ ERROR: {e}")
-    log(traceback.format_exc())
 
-log("=== DONE ===")
+if __name__ == "__main__":
+    url = sys.argv[1] if len(sys.argv) > 1 else "https://www.recipetineats.com/chicken-pad-thai/"
+    asyncio.run(run_pipeline(url))
