@@ -248,13 +248,17 @@ IMAGE_GEN_PROMPT = """You generate recipe images using the generate_recipe_image
 From the QA-approved recipe JSON, extract:
 1. The dish name (title field)
 2. A brief visual description for the image generator (from the description field)
-3. The image path from imageURL (e.g., "menu-item-images/Chicken_Pad_Thai.jpg")
+3. The output prefix from the recipe name (e.g., "Black_Pepper_Chicken")
 
-Then call generate_recipe_images with:
+The scraper node downloads the original recipe photo to /tmp/. The filename follows the pattern:
+  /tmp/recipe-{slug}.jpg
+where {slug} is the URL slug (e.g., /tmp/recipe-black-pepper-chicken.jpg).
+
+Call generate_recipe_images with:
 - dish_name: the recipe title
 - dish_description: a SHORT visual description focusing on what the dish LOOKS like (colors, textures, plating)
-- input_image_path: "" (empty — generate from scratch)
-- output_prefix: the recipe name portion from imageURL (e.g., "Chicken_Pad_Thai")
+- input_image_path: the /tmp/recipe-*.jpg path from the scraper
+- output_prefix: "/tmp/{Recipe_Name}" using underscores (e.g., "/tmp/Black_Pepper_Chicken")
 
 Return the paths to the generated hero and thumbnail images."""
 
@@ -262,12 +266,14 @@ PUBLISH_PROMPT = """You publish completed recipes to the EZ Meals database.
 
 From the previous pipeline steps, you have:
 1. The final QA-approved recipe JSON (from qa_review)
-2. The generated image paths (from image_gen)
+2. The generated image paths (from image_gen) — typically:
+   - Hero: /tmp/{Recipe_Name}-landscape.jpg (or .png)
+   - Thumbnail: /tmp/{Recipe_Name}-thumbnail.jpg (or .png)
 
 Call publish_recipe with:
-- recipe_json_str: the COMPLETE final recipe JSON string
-- hero_image_path: path to the hero image from image_gen
-- thumbnail_image_path: path to the thumbnail from image_gen
+- recipe_json_str: the COMPLETE final recipe JSON string from QA
+- hero_image_path: the landscape image path from image_gen
+- thumbnail_image_path: the thumbnail image path from image_gen
 - recipe_id: the recipe's id field from the JSON
 
 Return the publish result."""

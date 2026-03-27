@@ -1,0 +1,194 @@
+{
+    "L": [
+        {
+            "M": {
+                "ingredient_name": {"S": "Boneless Skinless Chicken Breasts"},
+                "category": {"S": "Proteins"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "pounds"},
+                "note": {"S": "cut into bite-size pieces"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Low-Sodium Soy Sauce"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "2"},
+                "unit": {"S": "tablespoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Oyster Sauce"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "2"},
+                "unit": {"S": "teaspoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Fresh Cracked Black Pepper"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "teaspoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Salt"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "teaspoon"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Cornstarch"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1/2"},
+                "unit": {"S": "cup"},
+                "note": {"S": "for coating"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Oyster Sauce"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "tablespoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Low-Sodium Soy Sauce"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "3"},
+                "unit": {"S": "tablespoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Low-Sodium Chicken Stock"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "cups"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Garlic Cloves"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "3-4"},
+                "unit": {"S": ""},
+                "note": {"S": "minced"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Fresh Ginger"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "tablespoons"},
+                "note": {"S": "freshly grated"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Fresh Cracked Black Pepper"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "teaspoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Granulated Sugar"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "3"},
+                "unit": {"S": "tablespoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Cornstarch"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1 1/2"},
+                "unit": {"S": "teaspoons"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Vegetable Oil"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1/3"},
+                "unit": {"S": "cup"},
+                "note": {"S": "plus more if needed"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "White Onion"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "1"},
+                "unit": {"S": ""},
+                "note": {"S": "medium, chopped into bite-size pieces"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Celery"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "2"},
+                "unit": {"S": "ribs"},
+                "note": {"S": "chopped"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Red Bell Pepper"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "1"},
+                "unit": {"S": ""},
+                "note": {"S": "large, chopped into bite-size pieces"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "White Rice"},
+                "category": {"S": "Grains & Bakery"},
+                "quantity": {"S": "5-6"},
+                "unit": {"S": "cups"},
+                "note": {"S": "hot cooked"},
+                "affiliate_link": {"S": ""}
+            }
+        }
+    ]
+}
