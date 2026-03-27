@@ -15,7 +15,7 @@ from typing import Dict, Any, List
 # AWS CONFIG (matches Step Functions exactly)
 # ============================================================================
 AWS_CONFIG = {
-    'ROLE_ARN': "arn:aws:iam::970547358447:role/IsengardAccount-DynamoDBAccess",
+    'ROLE_ARN': "arn:aws:iam::970547358447:role/CrossAccountDynamoDBWriter",
     'MENU_TABLE': "MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev",
     'PRODUCT_TABLE': "AffiliateProduct-ryvykzwfevawxbpf5nmynhgtea-dev",
     'INGREDIENT_TABLE': "Ingredient-ryvykzwfevawxbpf5nmynhgtea-dev",
@@ -25,6 +25,26 @@ AWS_CONFIG = {
 CUISINE_TYPES = ["Global Cuisines", "American", "Asian", "Indian", "Italian", "Latin", "Soups & Stews"]
 DISH_TYPES = ["main", "side"]
 VALID_CATEGORIES = {"Produce", "Proteins", "Dairy", "Grains & Bakery", "Pantry Staples", "Seasonings", "Frozen Foods"}
+
+
+def _plain_to_dynamo(recipe: dict) -> dict:
+    """Convert plain JSON recipe to DynamoDB-typed format."""
+    def to_dynamo(val):
+        if isinstance(val, str):
+            return {"S": val}
+        elif isinstance(val, bool):
+            return {"BOOL": val}
+        elif isinstance(val, (int, float)):
+            return {"N": str(val)}
+        elif isinstance(val, list):
+            return {"L": [to_dynamo(v) for v in val]}
+        elif isinstance(val, dict):
+            return {"M": {k: to_dynamo(v) for k, v in val.items()}}
+        elif val is None:
+            return {"NULL": True}
+        return {"S": str(val)}
+    
+    return {k: to_dynamo(v) for k, v in recipe.items()}
 
 # ============================================================================
 # CUSTOM TOOLS
@@ -45,10 +65,14 @@ def _get_dynamodb_table(table_name):
             aws_secret_access_key=creds['SecretAccessKey'],
             aws_session_token=creds['SessionToken']
         )
-    except Exception:
-        # Fallback: direct access with ezmeals profile
-        session = boto3.Session(profile_name='ezmeals')
-        dynamodb = session.resource("dynamodb", region_name=AWS_CONFIG['DYNAMODB_REGION'])
+    except Exception as e:
+        # Fallback: direct access with ezmeals profile (if available)
+        try:
+            session = boto3.Session(profile_name='ezmeals')
+            dynamodb = session.resource("dynamodb", region_name=AWS_CONFIG['DYNAMODB_REGION'])
+        except Exception:
+            # Last resort: direct access with default credentials
+            dynamodb = boto3.resource("dynamodb", region_name=AWS_CONFIG['DYNAMODB_REGION'])
     return dynamodb.Table(table_name)
 
 
@@ -63,9 +87,22 @@ def validate_recipe_json(recipe_json_str: str) -> str:
         recipe_json_str: The recipe JSON string to validate
     """
     try:
-        recipe = json.loads(recipe_json_str) if isinstance(recipe_json_str, str) else recipe_json_str
+        # Strip markdown code blocks if present
+        clean = recipe_json_str.strip() if isinstance(recipe_json_str, str) else recipe_json_str
+        if isinstance(clean, str):
+            import re
+            # Extract JSON from ```json ... ``` blocks
+            match = re.search(r'```(?:json)?\s*\n?(.*?)\n?```', clean, re.DOTALL)
+            if match:
+                clean = match.group(1).strip()
+        
+        recipe = json.loads(clean) if isinstance(clean, str) else clean
     except json.JSONDecodeError as e:
         return f"ERROR: Invalid JSON - {e}"
+
+    # Auto-detect and convert plain JSON to DynamoDB format if needed
+    if 'title' in recipe and isinstance(recipe.get('title'), str):
+        recipe = _plain_to_dynamo(recipe)
 
     fixes = []
 
@@ -1053,8 +1090,16 @@ def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_p
     S3_PREFIX = 'public/menu-item-images/'
 
     try:
-        session = boto3.Session(profile_name='ezmeals')
-        s3 = session.client('s3', region_name=AWS_CONFIG['DYNAMODB_REGION'])
+        # Use cross-account role for S3 access
+        sts = boto3.client('sts')
+        s3_creds = sts.assume_role(
+            RoleArn=AWS_CONFIG['ROLE_ARN'],
+            RoleSessionName='RecipePublishS3'
+        )['Credentials']
+        s3 = boto3.client('s3', region_name=AWS_CONFIG['DYNAMODB_REGION'],
+            aws_access_key_id=s3_creds['AccessKeyId'],
+            aws_secret_access_key=s3_creds['SecretAccessKey'],
+            aws_session_token=s3_creds['SessionToken'])
 
         image_url = recipe.get('imageURL', {}).get('S', '')
         thumb_url = recipe.get('imageThumbURL', {}).get('S', '')
