@@ -46,6 +46,70 @@ def _plain_to_dynamo(recipe: dict) -> dict:
     
     return {k: to_dynamo(v) for k, v in recipe.items()}
 
+
+def _plain_to_s3_dynamo_json(recipe: dict) -> dict:
+    """Convert validated plain-JSON recipe to DynamoDB-typed JSON for S3 upload.
+    
+    The S3 → Lambda import pipeline expects DynamoDB-typed format:
+      {"S": "string"}, {"N": "number"}, {"BOOL": true}, 
+      {"L": [{"S": "item"}]}, {"M": {"key": {"S": "val"}}}
+    
+    Gold standard: Lomo_Saltado.json in menu-items-json bucket.
+    
+    CRITICAL: ingredient_objects must be {"L": [{"M": {field: {"S": val}}}]}
+    NOT a stringified JSON string. The Lambda parses typed objects.
+    """
+    STRING_FIELDS = {'baseMainId', 'cuisineType', 'description', 'dishType',
+                     'id', 'imageThumbURL', 'imageURL', 'link', 'servings', 'title'}
+    NUMBER_FIELDS = {'cookTime', 'prepTime', 'rating'}
+    BOOL_FIELDS = {'flagged', 'glutenFree', 'instaPot', 'isBalanced', 'isGourmet',
+                   'isQuick', 'primary', 'slowCook', 'vegetarian'}
+    STRING_LIST_FIELDS = {'ingredients', 'instructions', 'notes', 'products',
+                          'recommendedSides', 'includedSides', 'searchTerms',
+                          'dressing', 'sauce', 'seasonings', 'optionalToppings'}
+    # Skip these — Lambda/Amplify manages them
+    SKIP_FIELDS = {'createdAt', 'updatedAt', '_version', '_lastChangedAt'}
+
+    result = {}
+
+    for k, v in recipe.items():
+        if k in SKIP_FIELDS:
+            continue
+
+        if k in STRING_FIELDS:
+            result[k] = {"S": str(v) if v is not None else ""}
+        elif k in NUMBER_FIELDS:
+            result[k] = {"N": str(v)}
+        elif k in BOOL_FIELDS:
+            result[k] = {"BOOL": bool(v)}
+        elif k == 'comboIndex':
+            # Always empty map for non-combos
+            result[k] = {"M": {}}
+        elif k == 'ingredient_objects':
+            # Parse stringified JSON → L of M
+            items = v
+            if isinstance(v, str):
+                try:
+                    items = json.loads(v)
+                except (json.JSONDecodeError, TypeError):
+                    items = []
+            if not isinstance(items, list):
+                items = []
+            dynamo_items = []
+            for item in items:
+                if isinstance(item, dict):
+                    m = {ik: {"S": str(iv) if iv is not None else ""}
+                         for ik, iv in item.items()}
+                    dynamo_items.append({"M": m})
+            result[k] = {"L": dynamo_items}
+        elif k in STRING_LIST_FIELDS:
+            if isinstance(v, list):
+                result[k] = {"L": [{"S": str(item)} for item in v]}
+            else:
+                result[k] = {"L": []}
+
+    return result
+
 # ============================================================================
 # CUSTOM TOOLS
 # ============================================================================
@@ -257,6 +321,28 @@ def get_available_products() -> str:
     except Exception as e:
         return f"ERROR fetching products: {e}"
 
+
+@tool
+def save_recommendations(side_ids: list, product_ids: list) -> str:
+    """
+    Save enricher recommendations to a file for post-processing.
+    Args:
+        side_ids: List of recommendedSides UUIDs
+        product_ids: List of products UUIDs
+    """
+    import os, json
+    output_dir = os.path.dirname(os.path.abspath(__file__))
+    enrich_file = os.path.join(output_dir, 'enricher_recommendations.json')
+    
+    data = {
+        "recommendedSides": side_ids,
+        "products": product_ids
+    }
+    
+    with open(enrich_file, 'w') as f:
+        json.dump(data, f, indent=2)
+    
+    return f"✅ Saved {len(side_ids)} sides and {len(product_ids)} products to {enrich_file}"
 
 @tool
 def get_standardized_ingredients(ingredients_list: str) -> str:
@@ -997,7 +1083,24 @@ Only adjust composition, framing, background, and lighting.
                 f.write(part.inline_data.data)
             break
 
-    import os
+    import os, shutil, re as _re
+
+    # Also save to the recipe output dir with deterministic names (hero.ext, thumbnail.ext)
+    # This makes them findable regardless of what the agent names them
+    slug = _re.sub(r'[^a-z0-9]+', '-', dish_name.lower()).strip('-')
+    recipe_output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'output', slug)
+    os.makedirs(recipe_output_dir, exist_ok=True)
+
+    if hero_path and os.path.exists(hero_path):
+        hero_ext = os.path.splitext(hero_path)[1]
+        canonical_hero = os.path.join(recipe_output_dir, f'hero{hero_ext}')
+        shutil.copy2(hero_path, canonical_hero)
+
+    if thumb_path and os.path.exists(thumb_path):
+        thumb_ext = os.path.splitext(thumb_path)[1]
+        canonical_thumb = os.path.join(recipe_output_dir, f'thumbnail{thumb_ext}')
+        shutil.copy2(thumb_path, canonical_thumb)
+
     results = f"✅ Images generated for {dish_name}:\n"
     if hero_path:
         results += f"  Landscape (16:9): {hero_path} ({os.path.getsize(hero_path) // 1024}KB)\n"
@@ -1005,6 +1108,7 @@ Only adjust composition, framing, background, and lighting.
         results += f"  Thumbnail (1:1):  {thumb_path} ({os.path.getsize(thumb_path) // 1024}KB)\n"
     else:
         results += f"  Thumbnail: ERROR - not generated\n"
+    results += f"  Output dir: {recipe_output_dir}\n"
 
     return results
 
@@ -1050,33 +1154,120 @@ After generation, report the file paths and sizes so the orchestrator can update
 @tool
 def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_path: str, recipe_id: str) -> str:
     """
-    Publish a completed recipe: upload images to S3, write JSON to DynamoDB, save local copy.
+    Publish a completed recipe:
+    1. Convert to correct plain-JSON schema (matching existing recipes exactly)
+    2. Validate against gold standard schema
+    3. Upload images to S3 (image bucket)
+    4. Drop JSON file into S3 (menu-items-json bucket) — triggers DB import
+    NO direct DynamoDB writes.
 
     Args:
-        recipe_json_str: The final recipe JSON string (DynamoDB format)
+        recipe_json_str: The final recipe JSON string
         hero_image_path: Local path to the hero image (16:9)
         thumbnail_image_path: Local path to the thumbnail image (1:1)
-        recipe_id: The recipe ID slug (e.g., "thai-crying-tiger-steak")
+        recipe_id: The recipe ID slug (e.g., "thai-basil-chicken")
     """
-    import os, datetime
+    import os, datetime, sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from schema_validator import convert_pipeline_to_schema, validate_recipe_schema, side_by_side_comparison
 
     try:
-        recipe = json.loads(recipe_json_str) if isinstance(recipe_json_str, str) else recipe_json_str
+        recipe_raw = json.loads(recipe_json_str) if isinstance(recipe_json_str, str) else recipe_json_str
     except json.JSONDecodeError as e:
         return f"ERROR: Invalid recipe JSON — {e}"
 
     results = []
+
+    # 1. Convert pipeline output to correct schema format
+    # Extract recipe ID — handle both DynamoDB typed {"S": "value"} and plain string formats
+    raw_id = recipe_raw.get('id', recipe_id)
+    if isinstance(raw_id, dict):
+        raw_id = raw_id.get('S', recipe_id)
+    recipe = convert_pipeline_to_schema(recipe_raw, recipe_id=raw_id)
+    
+    # Inject enricher IDs if products/recommendedSides are empty
+    if not recipe.get('products') or not recipe.get('recommendedSides'):
+        enricher_file = os.path.join(os.path.dirname(__file__), 'enricher_recommendations.json')
+        if os.path.exists(enricher_file):
+            import json as _json_enrich
+            with open(enricher_file) as ef:
+                enrich_data = _json_enrich.load(ef)
+            
+            if not recipe.get('recommendedSides') and enrich_data.get('recommendedSides'):
+                recipe['recommendedSides'] = enrich_data['recommendedSides']
+            
+            if not recipe.get('products') and enrich_data.get('products'):
+                recipe['products'] = enrich_data['products']
+    
+    results.append("✅ Converted to plain JSON schema format")
+
+    # 2. Validate against gold standard
+    is_valid, errors, warnings = validate_recipe_schema(recipe)
+    if not is_valid:
+        error_report = "\n".join(f"  ❌ {e}" for e in errors)
+        return f"❌ SCHEMA VALIDATION FAILED — cannot publish:\n{error_report}"
+    results.append(f"✅ Schema validation passed ({len(warnings)} warnings)")
+
+    # 3. Save local copy
     output_dir = os.path.join(os.path.dirname(__file__), 'output', recipe_id)
     os.makedirs(output_dir, exist_ok=True)
 
-    # 1. Save local copy
     local_json_path = os.path.join(output_dir, f'{recipe_id}.json')
     with open(local_json_path, 'w') as f:
         json.dump(recipe, f, indent=2)
     results.append(f"✅ Local JSON saved: {local_json_path}")
 
-    # Copy images locally
-    import shutil
+    # Copy images locally — with fallback search if provided paths don't exist
+    import shutil, glob as _glob, re as _re2
+
+    def _find_image(provided_path, label, recipe_title, recipe_slug):
+        """Find an image with fallback search: provided path → output dir → /tmp/ glob."""
+        if provided_path and os.path.exists(provided_path):
+            return provided_path
+
+        # Fallback 1: Check output dir for canonical names (hero.png, hero.jpg, thumbnail.png, etc.)
+        for candidate_dir in [output_dir]:
+            for ext in ['.png', '.jpg', '.jpeg']:
+                candidate = os.path.join(candidate_dir, f'{label}{ext}')
+                if os.path.exists(candidate):
+                    return candidate
+
+        # Fallback 2: Check output dir by slug name pattern
+        slug_dirs_to_check = set()
+        title_slug = _re2.sub(r'[^a-z0-9]+', '-', recipe_title.lower()).strip('-') if recipe_title else ''
+        if title_slug:
+            slug_dir = os.path.join(os.path.dirname(__file__), 'output', title_slug)
+            if os.path.isdir(slug_dir):
+                slug_dirs_to_check.add(slug_dir)
+        for ext in ['.png', '.jpg', '.jpeg']:
+            for d in slug_dirs_to_check:
+                candidate = os.path.join(d, f'{label}{ext}')
+                if os.path.exists(candidate):
+                    return candidate
+
+        # Fallback 3: /tmp/ glob using title prefix
+        suffix = 'landscape' if label == 'hero' else 'thumbnail'
+        name_under = recipe_title.replace(' ', '_') if recipe_title else ''
+        patterns = []
+        if name_under:
+            patterns.append(f'/tmp/{name_under}-{suffix}.*')
+            # Also try first 2 words
+            words = name_under.split('_')[:2]
+            patterns.append(f'/tmp/{"_".join(words)}*-{suffix}.*')
+        if recipe_slug:
+            patterns.append(f'/tmp/{recipe_slug}-{suffix}.*')
+        for pat in patterns:
+            matches = sorted(_glob.glob(pat), key=os.path.getmtime, reverse=True)
+            if matches:
+                return matches[0]
+
+        return None
+
+    recipe_title = recipe.get('title', '')
+    recipe_slug = _re2.sub(r'[^a-z0-9]+', '-', recipe_title.lower()).strip('-') if recipe_title else recipe_id
+    hero_image_path = _find_image(hero_image_path, 'hero', recipe_title, recipe_slug)
+    thumbnail_image_path = _find_image(thumbnail_image_path, 'thumbnail', recipe_title, recipe_slug)
+
     for src, label in [(hero_image_path, 'hero'), (thumbnail_image_path, 'thumbnail')]:
         if src and os.path.exists(src):
             ext = os.path.splitext(src)[1]
@@ -1084,13 +1275,14 @@ def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_p
             if os.path.abspath(src) != os.path.abspath(dst):
                 shutil.copy2(src, dst)
             results.append(f"✅ Local {label} saved: {dst}")
+        else:
+            results.append(f"⚠️ {label} image not found — recipe will publish without {label}")
 
-    # 2. Upload images to S3
-    S3_BUCKET = 'amplify-ezmealsnew-menu-item-imageseb66c-dev'
+    # 4. Upload images to S3 (image bucket)
+    IMAGE_BUCKET = 'amplify-ezmealsnew-menu-item-imageseb66c-dev'
     S3_PREFIX = 'public/menu-item-images/'
 
     try:
-        # Use cross-account role for S3 access
         sts = boto3.client('sts')
         s3_creds = sts.assume_role(
             RoleArn=AWS_CONFIG['ROLE_ARN'],
@@ -1101,41 +1293,44 @@ def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_p
             aws_secret_access_key=s3_creds['SecretAccessKey'],
             aws_session_token=s3_creds['SessionToken'])
 
-        image_url = recipe.get('imageURL', {}).get('S', '')
-        thumb_url = recipe.get('imageThumbURL', {}).get('S', '')
+        image_url = recipe.get('imageURL', '')
+        thumb_url = recipe.get('imageThumbURL', '')
 
         for local_path, s3_key_suffix in [(hero_image_path, image_url), (thumbnail_image_path, thumb_url)]:
             if local_path and os.path.exists(local_path) and s3_key_suffix:
                 s3_key = S3_PREFIX.rstrip('/') + '/' + s3_key_suffix.replace('menu-item-images/', '')
                 content_type = 'image/png' if local_path.endswith('.png') else 'image/jpeg'
-                s3.upload_file(local_path, S3_BUCKET, s3_key, ExtraArgs={'ContentType': content_type})
-                results.append(f"✅ S3 uploaded: s3://{S3_BUCKET}/{s3_key}")
+                s3.upload_file(local_path, IMAGE_BUCKET, s3_key, ExtraArgs={'ContentType': content_type})
+                results.append(f"✅ S3 image: s3://{IMAGE_BUCKET}/{s3_key}")
     except Exception as e:
-        results.append(f"❌ S3 upload failed: {e}")
+        results.append(f"❌ S3 image upload failed: {e}")
 
-    # 3. Write to DynamoDB
+    # 5. Drop JSON into menu-items-json S3 bucket (triggers DB import)
+    #    MUST be DynamoDB-typed format: {"S": "val"}, {"N": "5"}, {"BOOL": true}, etc.
+    #    Gold standard: Lomo_Saltado.json in menu-items-json bucket.
+    JSON_BUCKET = 'menu-items-json'
     try:
-        table = _get_dynamodb_table(AWS_CONFIG['MENU_TABLE'])
+        # Build filename from recipe title: Title_With_Underscores.json
+        title = recipe.get('title', recipe_id)
+        json_filename = title.replace(' ', '_') + '.json'
 
-        # Convert from DynamoDB JSON format {"S": "val"} to plain format for boto3 Table resource
-        from boto3.dynamodb.types import TypeDeserializer
-        deserializer = TypeDeserializer()
-        plain_item = {}
-        for key, val in recipe.items():
-            try:
-                plain_item[key] = deserializer.deserialize(val)
-            except (TypeError, KeyError):
-                plain_item[key] = val
+        # Convert plain JSON → DynamoDB-typed format for S3 Lambda import
+        dynamo_recipe = _plain_to_s3_dynamo_json(recipe)
 
-        table.put_item(Item=plain_item)
-        results.append(f"✅ DynamoDB: recipe '{recipe_id}' written to {AWS_CONFIG['MENU_TABLE']}")
+        s3.put_object(
+            Bucket=JSON_BUCKET,
+            Key=json_filename,
+            Body=json.dumps(dynamo_recipe, indent=2).encode('utf-8'),
+            ContentType='application/json'
+        )
+        results.append(f"✅ S3 JSON: s3://{JSON_BUCKET}/{json_filename} (DynamoDB-typed format, triggers DB import)")
     except Exception as e:
-        results.append(f"❌ DynamoDB write failed: {e}")
+        results.append(f"❌ S3 JSON upload failed: {e}")
 
-    # 4. Summary
+    # 6. Summary (NO direct DynamoDB write)
     timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     summary = f"\n📦 PUBLISH RESULTS ({timestamp}):\n" + "\n".join(results)
-    
+
     # Save publish log
     log_path = os.path.join(output_dir, 'publish_log.txt')
     with open(log_path, 'w') as f:
