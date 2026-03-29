@@ -1,0 +1,13 @@
+
+🍳 EZ Meals Batch Runner v2
+   Total recipes: 20
+   Already done: 20
+   Running now: 0
+   Skipped: ['Pho (already in DB as Quick and Easy Pho)', 'Orange Chicken (already in DB as Orange Peel Chicken)', 'Teriyaki Chicken Kebabs (already in DB as Chicken Kabobs Teriyaki-Style)']
+   Failed: []
+
+============================================================
+  BATCH COMPLETE
+============================================================
+  ✅ Published: 20
+  ❌ Failed: 0

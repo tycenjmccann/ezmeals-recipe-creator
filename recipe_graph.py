@@ -28,9 +28,9 @@ def scrape_recipe(url: str) -> str:
         url: Recipe URL to scrape
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         tools=[scrape_recipe_url],
-        system_prompt="You receive a URL. Call scrape_recipe_url and return the full extracted recipe text and image path. Do not modify the recipe text."
+        system_prompt="You receive a URL. Call scrape_recipe_url and return the COMPLETE extracted recipe text verbatim — every ingredient with exact quantities, every instruction step word-for-word, and the image path. Do NOT summarize or paraphrase. Return the full text exactly as extracted."
     )
     result = agent(f"Scrape this recipe URL: {url}")
     return str(result)
@@ -43,13 +43,12 @@ def chef_review(recipe_text: str) -> str:
     """
     agent = Agent(
         model="us.anthropic.claude-opus-4-6-v1",
-        tools=[http_request],
         system_prompt="""You are a professional chef reviewing a scraped recipe. Your job:
 1. ANALYZE: Are ratios sensible? Times realistic? Steps complete? Safety covered?
-2. RESEARCH: Use http_request to search for 2-3 similar recipes. Compare techniques and ratios.
-3. OPTIMIZE: Fix missing steps, adjust off ratios, add safety notes. Don't change the dish's character.
+2. OPTIMIZE: Fix missing steps, adjust off ratios, add safety notes. Don't change the dish's character.
+3. ENSURE: All ingredients have quantities. All instructions reference specific amounts. Beginner-friendly language.
 
-Output: CULINARY ASSESSMENT, KEY FINDINGS, WEB COMPARISON, OPTIMIZED RECIPE (full text with improvements), CHANGES MADE."""
+Output: CULINARY ASSESSMENT, OPTIMIZED RECIPE (full text with ALL quantities preserved and improvements noted), CHANGES MADE."""
     )
     result = agent(f"Review and optimize this recipe:\n\n{recipe_text}")
     return str(result)
@@ -62,7 +61,7 @@ def convert_to_json(recipe_text: str, recipe_id: str) -> str:
         recipe_id: Unique ID for the recipe
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
         tools=[validate_recipe_json],
         system_prompt=open('/Users/tycenj/Desktop/EZmeals_Backlog/RecipeCreator/prompts/step1_prompt.txt').read() if False else """
 Convert detailed recipe information into a JSON file adhering to the specified schema and formatting compatible with DynamoDB's requirements.
@@ -96,7 +95,7 @@ def standardize_ingredients(recipe_json: str) -> str:
         recipe_json: The recipe JSON string
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
+        model="us.anthropic.claude-haiku-4-5-20251001-v1:0",
         tools=[get_standardized_ingredients],
         system_prompt="""Standardize ONLY ingredient names and units.
 
@@ -120,7 +119,7 @@ def create_ingredient_objects(recipe_json: str) -> str:
         recipe_json: The recipe JSON string
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
+        model="us.anthropic.claude-haiku-4-5-20251001-v1:0",
         system_prompt="""Parse ingredients into structured objects. For each ingredient create:
 {"M": {"ingredient_name": {"S": "Name"}, "category": {"S": "Category"}, "quantity": {"S": "Amount"}, "unit": {"S": "Unit"}, "note": {"S": "Prep notes"}, "affiliate_link": {"S": ""}}}
 
@@ -141,8 +140,8 @@ def recommend_sides(recipe_title: str, recipe_description: str, recipe_ingredien
         recipe_cuisine: Cuisine type
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
-        tools=[get_available_sides, http_request],
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
+        tools=[get_available_sides],
         system_prompt="""You recommend side dishes. FIRST call get_available_sides to get our catalog.
 Then analyze the recipe and recommend 3-6 sides that complement it well.
 Also search the web for popular pairings and note any sides we should create.
@@ -160,8 +159,8 @@ def recommend_products(recipe_title: str, recipe_description: str, recipe_instru
         recipe_instructions: Cooking instructions
     """
     agent = Agent(
-        model="us.anthropic.claude-opus-4-6-v1",
-        tools=[get_available_products, http_request],
+        model="us.anthropic.claude-sonnet-4-20250514-v1:0",
+        tools=[get_available_products],
         system_prompt="""You recommend NON-FOOD affiliate products. FIRST call get_available_products to get our catalog.
 Then analyze the recipe for tools/equipment needed. Also search the web for common tools.
 Return: RECOMMENDED_PRODUCTS: [list of IDs] and RECOMMENDED NEW PRODUCTS TO ADD: [list with reasons]."""
@@ -179,7 +178,7 @@ def qa_review(original_recipe: str, final_json: str, processing_summary: str) ->
     """
     agent = Agent(
         model="us.anthropic.claude-opus-4-6-v1",
-        tools=[http_request],
+        tools=[],
         system_prompt="""You are QA for the ezMeals app. Validate the final recipe JSON against this checklist:
 
 1. INSTRUCTIONS: Every step has quantities, imperative verbs, beginner-friendly

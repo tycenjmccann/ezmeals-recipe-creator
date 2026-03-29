@@ -1,0 +1,95 @@
+Recipe: Baked Ziti
+URL: https://www.twopeasandtheirpod.com/baked-ziti/
+Time: 554.1s
+
+---
+
+# ✅ Pipeline Complete: Baked Ziti
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from twopeasandtheirpod.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **13 improvements** — critical aromatics addition, pasta technique, foil/broil methods |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; prepTime=25, cookTime=50, isGourmet=true |
+| 4 | **Standardize** | ✅ | 16 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 16 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 6 non-food affiliate products matched |
+| 8 | **Assembly** | ✅ | All fixes: basil consolidated, onion unit fixed, section headers removed |
+| 9 | **QA Review** | ✅ | **Clean PUBLISH verdict** — no critical fixes needed |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (13 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Missing Aromatics** | **Added 1 medium yellow onion + 4 cloves garlic** — both Bon Appétit and RecipeTin Eats include these. The original had zero aromatics in the meat sauce, which is a glaring omission for an Italian-American dish. |
+| **Pasta Technique** | **"Cook 2 minutes short of al dente"** — the pasta bakes for 30+ min at 375°F and will continue absorbing sauce and cooking. Both comparison recipes explicitly call for undercooking. Also added **reserve pasta water** (1/2 cup added to sauce) to prevent dryness. |
+| **Baking Technique** | **Cover with foil for first 15 min** (RecipeTin technique — prevents cheese from burning before center heats through). **Optional broil finish 2-3 min** (Bon Appétit technique — creates blistered, deeply golden cheese crust). |
+| **Timing Corrections** | Prep time 10→25 min (realistic for boiling pasta + browning sausage + making ricotta mix + assembling). Cook time 45→50 min (sausage/aromatics 12 min + sauce simmer 5 min + bake 30-35 min). |
+| **Flavor/Safety** | Leave 1 Tbsp fat in pan for sautéing aromatics (original said "discard excess" — keeping some preserves flavor). Added sausage internal temp 160°F. Extended rest 5→5-10 min for cleaner portioning. |
+| **Completeness** | Added **make-ahead/freezer instructions** (baked ziti is a classic freezer meal — this was entirely missing). Added ricotta draining tip. Added sausage choice guidance. Added storage/reheating instructions. |
+
+## 🔴 Assembly & QA Fixes Applied
+1. **Basil consolidated** — 2 entries (2 Tbsp chopped + garnish leaves) merged into 1: `"3 tablespoons Fresh Basil Leaves, chopped (2 tablespoons for ricotta mixture, plus more for garnish)"`
+2. **Fresh Basil** → `"Fresh Basil Leaves"` per DB standardization
+3. **Yellow Onion object** → unit `"medium"` moved to `""` with `"Medium, finely diced"` in note
+4. **Salt/Pepper** — combined string preserved for readability; objects correctly separated into Kosher Salt + Black Pepper
+5. **Section headers removed** from ingredient list
+
+## 🏷️ Special Flags
+
+| Flag | Value | Why |
+|------|-------|-----|
+| `glutenFree` | ✅ `true` | GF-adaptable with noted substitutions (GF pasta, verified marinara/seasoning); thorough GF note |
+| `vegetarian` | `false` | Contains Italian sausage |
+| `isGourmet` | ✅ `true` | Total time 75 min (>60 threshold) |
+| `slowCook` | `false` | Oven-baked stovetop-to-oven recipe |
+| `instaPot` | `false` | No IP adaptation |
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Baked_Ziti.jpg` |
+| **S3 Thumb** | `menu-item-images/Baked_Ziti_thumbnail.jpg` |
+| **DynamoDB** | `baked-ziti` in MenuItemData table |
+| **Local** | `output/baked-ziti/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Caprese Salad | 🔴 Critical — #1 Italian salad pairing for baked ziti, lasagna, chicken parm. Fresh mozzarella + tomato + basil + balsamic. We have zero dedicated Italian salads. |
+| **Side** | Balsamic Bruschetta | 🟡 High — Italian-specific bread appetizer that garlic bread doesn't cover. Adds acidity and freshness. |
+| **Side** | Garlic Green Beans (Fagiolini) | 🟡 High — simple Italian-style sautéed green beans with garlic and olive oil. #1 most-recommended vegetable side for baked ziti. |
+| **Side** | Italian Sautéed Spinach (Spinaci all'aglio) | 🟡 Moderate — garlic-sautéed spinach with lemon. Classic trattoria side. We have zero cooked leafy-green sides. |
+| **Side** | Minestrone / Italian Wedding Soup | 🟡 Moderate — light Italian soup rounds out a family-style dinner |
+| **Side** | Roasted Italian Vegetables | 🟡 Moderate — zucchini, bell pepper, eggplant with herbs and balsamic |
+| **Product** | Large Mixing Bowl Set (Stainless Steel) | 🔴 Critical — needed for ricotta mixture (Step 6) and holding pasta (Step 2). Used across countless recipes. |
+| **Product** | Large Stockpot / Pasta Pot (6-8 qt) | 🔴 Critical — Step 2 requires boiling 16 oz of pasta. Catalog has Dutch ovens and saucepans but no dedicated pasta/stock pot. |
+| **Product** | Heavy-Duty Aluminum Foil | 🟡 High — Step 8 requires covering dish with foil. Consumable staple used in many baked recipes. |
+| **Product** | Silicone Spatula / Serving Spoon Set | 🟡 High — needed for folding (Step 7) and serving. Universal kitchen tool. |
+| **Product** | Box Grater / Cheese Grater | 🟡 High — freshly grated Parmesan and mozzarella melt better than pre-shredded |
+| **Product** | Oven Mitts / Heat-Resistant Gloves | 🟡 Moderate — multiple oven interactions including broiling. Safety essential. |
+
+> **💡 Key Insights:**
+>
+> 1. **This is our FIRST Italian-American main dish** — Baked Ziti fills a massive gap. It's a crowd-pleasing family staple that serves 10, making it ideal for meal prep and entertaining. It pairs beautifully with our existing Garlic Bread and Caesar Salad sides.
+>
+> 2. **First non-Asian/Indian main in recent publishes** — expands our cuisine diversity significantly. The Italian category was previously underserved with sides but no mains.
+>
+> 3. **First make-ahead/freezer-friendly pasta dish** — the detailed make-ahead and freezer notes make this a standout for busy families. The "assemble and refrigerate up to 24 hours" and "freeze up to 3 months" guidance is highly practical.
+>
+> 4. **Caprese Salad is now the #1 priority Italian side gap** — Baked Ziti, plus any future Italian mains (Chicken Parm, Lasagna, etc.), all need this classic pairing. It's the Italian equivalent of what Mango Chutney is to our Indian recipes.
+>
+> 5. **Mixing Bowl Set and Stockpot** are reaching critical mass as product gaps — they're needed across pasta dishes, baking recipes, soups, and more. They should be prioritized alongside the previously flagged Fine-Mesh Sieve and Immersion Blender.

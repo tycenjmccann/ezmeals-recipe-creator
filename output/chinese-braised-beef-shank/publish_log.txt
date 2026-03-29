@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 01:45:50):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chinese-braised-beef-shank/chinese-braised-beef-shank.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chinese-braised-beef-shank/chinese-braised-beef-shank_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chinese-braised-beef-shank/chinese-braised-beef-shank_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chinese_Braised_Beef_Shank.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chinese_Braised_Beef_Shank_thumbnail.jpg
+✅ DynamoDB: recipe 'chinese-braised-beef-shank' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

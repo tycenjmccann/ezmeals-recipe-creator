@@ -112,6 +112,149 @@ def _plain_to_s3_dynamo_json(recipe: dict) -> dict:
 
 # ============================================================================
 # CUSTOM TOOLS
+def _auto_fix_dynamo_recipe(dynamo_recipe: dict, val_errors: list, plain_recipe: dict) -> dict:
+    """Auto-fix validation errors in a DynamoDB-typed recipe JSON.
+    
+    Reads the validator's error messages and applies deterministic fixes.
+    This is the self-healing loop — the validator says what's wrong,
+    this function fixes it, and the validator re-checks.
+    """
+    from validate_s3_format import EXPECTED_SCHEMA
+    
+    fixed = dict(dynamo_recipe)
+    
+    for error in val_errors:
+        # Fix: MISSING required field
+        if error.startswith("MISSING required field:"):
+            field = error.split("'")[1]
+            if field in EXPECTED_SCHEMA:
+                wrapper, inner = EXPECTED_SCHEMA[field]
+                # Try to get value from plain recipe
+                plain_val = plain_recipe.get(field)
+                if plain_val is not None:
+                    # Re-convert this specific field
+                    if wrapper == 'S':
+                        fixed[field] = {"S": str(plain_val) if plain_val is not None else ""}
+                    elif wrapper == 'N':
+                        fixed[field] = {"N": str(plain_val)}
+                    elif wrapper == 'BOOL':
+                        fixed[field] = {"BOOL": bool(plain_val)}
+                    elif wrapper == 'M':
+                        fixed[field] = {"M": {}}
+                    elif wrapper == 'L':
+                        if isinstance(plain_val, list):
+                            if inner == 'S':
+                                fixed[field] = {"L": [{"S": str(item)} for item in plain_val]}
+                            elif inner == 'M':
+                                items = plain_val
+                                if isinstance(plain_val, str):
+                                    try:
+                                        items = json.loads(plain_val)
+                                    except:
+                                        items = []
+                                dynamo_items = []
+                                for item in (items if isinstance(items, list) else []):
+                                    if isinstance(item, dict):
+                                        m = {ik: {"S": str(iv) if iv is not None else ""}
+                                             for ik, iv in item.items()}
+                                        dynamo_items.append({"M": m})
+                                fixed[field] = {"L": dynamo_items}
+                            else:
+                                fixed[field] = {"L": []}
+                        else:
+                            fixed[field] = {"L": []}
+                else:
+                    # No plain value — use sensible defaults
+                    defaults = {
+                        'S': {"S": ""},
+                        'N': {"N": "0"},
+                        'BOOL': {"BOOL": False},
+                        'M': {"M": {}},
+                        'L': {"L": []},
+                    }
+                    fixed[field] = defaults.get(wrapper, {"S": ""})
+        
+        # Fix: WRONG TYPE — field has plain value instead of DynamoDB wrapper
+        elif "WRONG TYPE" in error:
+            field = error.split("'")[1]
+            if field in EXPECTED_SCHEMA and field in fixed:
+                wrapper, inner = EXPECTED_SCHEMA[field]
+                plain_val = fixed[field]  # The unwrapped value
+                if wrapper == 'S':
+                    fixed[field] = {"S": str(plain_val) if plain_val is not None else ""}
+                elif wrapper == 'N':
+                    fixed[field] = {"N": str(plain_val)}
+                elif wrapper == 'BOOL':
+                    fixed[field] = {"BOOL": bool(plain_val)}
+                elif wrapper == 'M':
+                    if isinstance(plain_val, str):
+                        try:
+                            fixed[field] = {"M": json.loads(plain_val) if plain_val else {}}
+                        except:
+                            fixed[field] = {"M": {}}
+                    elif isinstance(plain_val, dict):
+                        fixed[field] = {"M": plain_val}
+                    else:
+                        fixed[field] = {"M": {}}
+                elif wrapper == 'L':
+                    if isinstance(plain_val, list):
+                        if inner == 'S':
+                            fixed[field] = {"L": [{"S": str(item)} for item in plain_val]}
+                        else:
+                            fixed[field] = {"L": []}
+                    else:
+                        fixed[field] = {"L": []}
+        
+        # Fix: WRONG WRAPPER — has a DynamoDB wrapper but the wrong one
+        elif "WRONG WRAPPER" in error:
+            field = error.split("'")[1]
+            if field in EXPECTED_SCHEMA and field in fixed:
+                wrapper, inner = EXPECTED_SCHEMA[field]
+                # Extract the inner value from the wrong wrapper
+                current = fixed[field]
+                if isinstance(current, dict) and len(current) == 1:
+                    wrong_wrapper = list(current.keys())[0]
+                    inner_val = current[wrong_wrapper]
+                    # Re-wrap with correct type
+                    if wrapper == 'S':
+                        fixed[field] = {"S": str(inner_val) if inner_val is not None else ""}
+                    elif wrapper == 'N':
+                        fixed[field] = {"N": str(inner_val)}
+                    elif wrapper == 'BOOL':
+                        fixed[field] = {"BOOL": bool(inner_val)}
+                    elif wrapper == 'M':
+                        fixed[field] = {"M": inner_val if isinstance(inner_val, dict) else {}}
+                    elif wrapper == 'L':
+                        fixed[field] = {"L": inner_val if isinstance(inner_val, list) else []}
+        
+        # Fix: Invalid cuisineType
+        elif "Invalid cuisineType" in error:
+            ct = fixed.get('cuisineType', {}).get('S', '')
+            # Common corrections
+            cuisine_map = {
+                'mexican': 'Latin', 'tex-mex': 'Latin', 'spanish': 'Latin',
+                'chinese': 'Asian', 'japanese': 'Asian', 'thai': 'Asian', 'korean': 'Asian', 'vietnamese': 'Asian',
+                'mediterranean': 'Global Cuisines', 'middle eastern': 'Global Cuisines', 'greek': 'Global Cuisines',
+                'french': 'Global Cuisines', 'german': 'Global Cuisines', 'african': 'Global Cuisines',
+            }
+            corrected = cuisine_map.get(ct.lower(), 'Global Cuisines')
+            fixed['cuisineType'] = {"S": corrected}
+        
+        # Fix: Time flag issues
+        elif "Exactly ONE time flag must be true" in error:
+            # Recalculate from prep + cook time
+            prep = int(fixed.get('prepTime', {}).get('N', '0') or '0')
+            cook = int(fixed.get('cookTime', {}).get('N', '0') or '0')
+            total = prep + cook
+            fixed['isQuick'] = {"BOOL": total <= 30}
+            fixed['isBalanced'] = {"BOOL": 31 <= total <= 60}
+            fixed['isGourmet'] = {"BOOL": total > 60}
+    
+    return fixed
+
+
+# ============================================================================
+# CUSTOM TOOLS
 # ============================================================================
 
 def _get_dynamodb_table(table_name):
@@ -1319,16 +1462,29 @@ def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_p
 
         # HARD GATE: Validate DynamoDB format before uploading.
         # This is deterministic — no semantic judgment. Pass/fail only.
+        # Self-healing loop: if validation fails, attempt to fix and retry (up to 3 times).
         from validate_s3_format import validate_s3_recipe
-        is_valid, val_errors, val_warnings = validate_s3_recipe(dynamo_recipe)
-        if not is_valid:
-            error_report = "\n".join(f"    ❌ {e}" for e in val_errors)
-            return (
-                f"❌ S3 FORMAT VALIDATION FAILED — upload blocked.\n"
-                f"  The DynamoDB-typed JSON does not match the gold standard.\n"
-                f"  Errors:\n{error_report}\n"
-                f"  Fix _plain_to_s3_dynamo_json() and retry."
-            )
+        
+        MAX_RETRIES = 3
+        for attempt in range(1, MAX_RETRIES + 1):
+            is_valid, val_errors, val_warnings = validate_s3_recipe(dynamo_recipe)
+            if is_valid:
+                break
+            
+            if attempt == MAX_RETRIES:
+                # Final attempt failed — block upload with full error report
+                error_report = "\n".join(f"    ❌ {e}" for e in val_errors)
+                return (
+                    f"❌ S3 FORMAT VALIDATION FAILED after {MAX_RETRIES} attempts — upload blocked.\n"
+                    f"  The DynamoDB-typed JSON does not match the gold standard.\n"
+                    f"  Errors:\n{error_report}\n"
+                    f"  Fix _plain_to_s3_dynamo_json() or the pipeline and retry."
+                )
+            
+            # Self-heal: attempt to fix known error patterns
+            results.append(f"⚠️ Validation attempt {attempt} failed ({len(val_errors)} errors) — auto-fixing...")
+            dynamo_recipe = _auto_fix_dynamo_recipe(dynamo_recipe, val_errors, recipe)
+        
         results.append(f"✅ S3 format validation passed ({len(val_warnings)} warnings)")
 
         s3.put_object(

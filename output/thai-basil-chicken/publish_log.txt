@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-27 23:27:07):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/thai-basil-chicken/thai-basil-chicken.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/thai-basil-chicken/thai-basil-chicken_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/thai-basil-chicken/thai-basil-chicken_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Thai_Basil_Chicken.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Thai_Basil_Chicken_thumbnail.jpg
+✅ DynamoDB: recipe 'thai-basil-chicken' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

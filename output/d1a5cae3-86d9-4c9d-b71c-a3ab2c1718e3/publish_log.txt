@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-28 15:42:03):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3/d1a5cae3-86d9-4c9d-b71c-a3ab2c1718e3_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/20-Minute_Veggie_Lo_Mein_Bowl.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/20-Minute_Veggie_Lo_Mein_Bowl_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/20-Minute_Veggie_Lo_Mein_Bowl.json (triggers DB import)

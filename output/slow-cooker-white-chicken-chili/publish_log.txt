@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 06:52:40):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-white-chicken-chili/slow-cooker-white-chicken-chili.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-white-chicken-chili/slow-cooker-white-chicken-chili_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-white-chicken-chili/slow-cooker-white-chicken-chili_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Slow_Cooker_White_Chicken_Chili.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Slow_Cooker_White_Chicken_Chili_thumbnail.jpg
+✅ DynamoDB: recipe 'slow-cooker-white-chicken-chili' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

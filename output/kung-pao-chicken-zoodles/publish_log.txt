@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-28 20:10:19):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/kung-pao-chicken-zoodles/kung-pao-chicken-zoodles.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/kung-pao-chicken-zoodles/kung-pao-chicken-zoodles_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/kung-pao-chicken-zoodles/kung-pao-chicken-zoodles_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Kung_Pao_Chicken_Zoodles_For_Two.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Kung_Pao_Chicken_Zoodles_For_Two_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Kung_Pao_Chicken_Zoodles_For_Two.json (triggers DB import)

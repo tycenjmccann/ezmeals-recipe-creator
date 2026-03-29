@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 05:55:26):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/short-rib-ragu/short-rib-ragu.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/short-rib-ragu/short-rib-ragu_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/short-rib-ragu/short-rib-ragu_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Short_Rib_Ragu.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Short_Rib_Ragu_thumbnail.jpg
+✅ DynamoDB: recipe 'short-rib-ragu' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

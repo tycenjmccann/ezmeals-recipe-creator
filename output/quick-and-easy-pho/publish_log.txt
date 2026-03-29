@@ -1,0 +1,4 @@
+
+📦 PUBLISH RESULTS (2026-03-27 23:37:05):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/quick-and-easy-pho/quick-and-easy-pho.json
+✅ DynamoDB: recipe 'quick-and-easy-pho' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

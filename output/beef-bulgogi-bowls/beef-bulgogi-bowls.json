@@ -1,0 +1,651 @@
+{
+  "id": {
+    "S": "beef-bulgogi-bowls"
+  },
+  "title": {
+    "S": "Beef Bulgogi Bowls"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Beef_Bulgogi_Bowls.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Beef_Bulgogi_Bowls_thumbnail.jpg"
+  },
+  "description": {
+    "S": "These bulgogi bowls combine richly marinated beef with steamed rice, kimchi, garlic, peppers, and ssamjang paste. The marinade of soy sauce, Korean pear, sesame oil, and rice wine creates deeply savory, sweet, caramelized beef that you will make again and again."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "20"
+  },
+  "cookTime": {
+    "N": "15"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4-6"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "1 1/2 pounds Rib Eye, sirloin, or top round, sliced 1/8-inch thin against the grain"
+      },
+      {
+        "S": "1/2 large Korean Pear (can substitute 1 small Asian pear or 1/2 large apple)"
+      },
+      {
+        "S": "1/2 small Onion, roughly chopped"
+      },
+      {
+        "S": "8 cloves Garlic, divided (5 peeled for marinade, 3 thinly sliced for garlic chips)"
+      },
+      {
+        "S": "1-inch piece Fresh Ginger, peeled and roughly chopped"
+      },
+      {
+        "S": "4 tablespoons Soy Sauce"
+      },
+      {
+        "S": "3 tablespoons Brown Sugar (or 2 tablespoons Brown Sugar plus 1 tablespoon Honey)"
+      },
+      {
+        "S": "1 1/2 tablespoons Mirin or rice wine"
+      },
+      {
+        "S": "1 1/2 tablespoons Toasted Sesame Oil"
+      },
+      {
+        "S": "1/4 teaspoon Black Pepper"
+      },
+      {
+        "S": "2 1/2 tablespoons Toasted Sesame Seeds, divided (1 1/2 teaspoons for marinade, 1 tablespoon for garnish)"
+      },
+      {
+        "S": "3 Scallions, chopped (divided, half for marinade, half for garnish)"
+      },
+      {
+        "S": "1/2 medium Carrot, sliced thinly into half-moons"
+      },
+      {
+        "S": "5 to 7 tablespoons neutral high-smoke-point Oil (avocado, vegetable, or grapeseed), divided"
+      },
+      {
+        "S": "5 cups cooked Medium Grain White Rice"
+      },
+      {
+        "S": "3/4 cup Kimchi, plus more for serving"
+      },
+      {
+        "S": "3 Shishito Peppers, thinly sliced"
+      },
+      {
+        "S": "2 tablespoons Ssamjang Paste"
+      },
+      {
+        "S": "6 to 12 Lettuce leaves for wrapping (optional)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Rib Eye"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Sirloin or top round may be substituted; sliced 1/8-inch thin against the grain"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Korean Pear"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "large"
+          },
+          "note": {
+            "S": "Can substitute 1 small Asian pear or 1/2 large apple"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "small"
+          },
+          "note": {
+            "S": "Roughly chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Divided; 5 peeled for marinade, 3 thinly sliced for garlic chips"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "inch piece"
+          },
+          "note": {
+            "S": "Fresh, peeled and roughly chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Brown Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or 2 tablespoons brown sugar plus 1 tablespoon honey"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Mirin"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or rice wine"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Toasted Sesame Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Toasted Sesame Seeds"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Divided; 1 1/2 teaspoons for marinade, 1 tablespoon for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Scallions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Chopped, divided; half for marinade, half for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrot"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "medium"
+          },
+          "note": {
+            "S": "Sliced thinly into half-moons"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Neutral High-Smoke-Point Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "5 to 7"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Avocado, vegetable, or grapeseed; divided"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Medium-Grain White Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Cooked"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kimchi"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Plus more for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shishito Peppers"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ssamjang Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lettuce Leaves"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "6 to 12"
+          },
+          "unit": {
+            "S": "leaves"
+          },
+          "note": {
+            "S": "For wrapping; optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Place the 1 1/2 pounds of beef in the freezer for 1 to 1 1/2 hours until firm but not frozen solid, if not pre-sliced. Slice against the grain into 1/8-inch-thick pieces using a sharp knife. Transfer the sliced beef to a large mixing bowl."
+      },
+      {
+        "S": "Add the 1/2 Korean pear, 1/2 small onion, 5 cloves garlic, 1-inch piece of ginger, 4 tablespoons soy sauce, 3 tablespoons brown sugar, 1 1/2 tablespoons mirin, 1 1/2 tablespoons sesame oil, 2 tablespoons water, 1/4 teaspoon black pepper, and 1 1/2 teaspoons sesame seeds to a blender or food processor. Blend until smooth."
+      },
+      {
+        "S": "Pour the marinade over the sliced beef. Add half of the 3 chopped scallions and all of the 1/2 sliced carrot. Toss thoroughly with your hands or tongs to coat every piece. Cover tightly with plastic wrap and refrigerate for at least 1 hour, and up to overnight for deeper flavor. Remove from the refrigerator 15 to 20 minutes before cooking to take the chill off slightly."
+      },
+      {
+        "S": "Heat a large cast iron skillet or heavy-bottomed pan over high heat until smoking hot, about 2 to 3 minutes. Working in 3 batches, add 1 1/2 to 2 tablespoons neutral oil per batch. Using tongs, lift beef pieces from the marinade, shaking off excess marinade to prevent steaming, and lay in a single layer without crowding. Sear undisturbed for 45 to 60 seconds until deeply caramelized and charred at edges, then flip and sear the other side for another 30 to 45 seconds. Transfer to a plate and tent loosely with foil."
+      },
+      {
+        "S": "Between batches, scrape any burnt marinade residue from the pan with a metal spatula, wipe if needed, and reheat the pan until smoking before adding more oil and the next batch. Repeat for all 3 batches."
+      },
+      {
+        "S": "After cooking the beef, reduce heat to medium. Add 1 teaspoon of oil and the 3 thinly sliced garlic cloves to the pan. Fry, stirring constantly, for 60 to 90 seconds until light golden. Remove immediately to a paper towel."
+      },
+      {
+        "S": "Divide the 5 cups of warm rice among 4 to 6 bowls. Arrange the bulgogi over the rice. Top each bowl with kimchi, sliced Shishito peppers, fried garlic chips, and the reserved chopped scallions. Place a small dollop of ssamjang paste on the side of each bowl. Sprinkle with toasted sesame seeds. Serve with extra kimchi and lettuce leaves on the side, if desired."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free Substitution: Replace soy sauce with gluten-free tamari. Use gluten-free mirin or dry sherry. Check that your ssamjang paste is gluten-free."
+      },
+      {
+        "S": "Dairy-Free: This recipe is naturally dairy-free as written."
+      },
+      {
+        "S": "Choosing your cut: Rib eye gives the most flavor and tenderness. Sirloin is a great budget-friendly option. If using a tougher cut like flank steak, increase marinating time to 4-8 hours and slice even thinner. Pre-sliced bulgogi meat from Korean markets is the easiest option."
+      },
+      {
+        "S": "Korean pear substitute: If unavailable, use a sweet apple (Fuji or Honeycrisp). Avoid kiwi or pineapple as substitutes as they contain powerful enzymes that can turn the meat mushy if left too long."
+      },
+      {
+        "S": "Make-ahead: Marinated beef can be refrigerated for up to 3 days or frozen in the marinade for up to 2 months. Thaw overnight in the refrigerator before cooking."
+      },
+      {
+        "S": "Ginger note: Ginger is not traditional in all bulgogi recipes but adds a warm, aromatic dimension. Reduce to 1/2 inch if you prefer a more classic profile."
+      },
+      {
+        "S": "Rice: Use short- or medium-grain Korean or Japanese rice, rinsed until water runs clear, for the most authentic pairing."
+      },
+      {
+        "S": "Safety: The sugar in the marinade will smoke considerably on high heat. Use your range hood ventilation on high and keep the area well-ventilated."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79"
+      },
+      {
+        "S": "c9c8182f-95c4-41cd-811d-5dfacc787596"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "8f6c70ef-25f5-455c-86d4-fe8294c049ce"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "ba602838-93f6-4e80-9030-3b58d28e8725"
+      },
+      {
+        "S": "77024055-0755-4cab-89d8-3bfc2bcc9869"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "76cda222-84b6-4a7c-8c89-8df62e963b4e"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

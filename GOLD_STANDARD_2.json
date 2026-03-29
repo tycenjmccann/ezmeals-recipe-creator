@@ -1,0 +1,60 @@
+{
+  "instructions": [
+    "Season the chicken tenders all over with Jamaican jerk seasoning, ensuring they're well coated.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add the seasoned chicken and cook for 3-4 minutes on each side, flipping once, until cooked through and no longer pink in the center.",
+    "Add the thinly sliced red bell pepper to the pan during the last few minutes of cooking the chicken. Saut\u00e9 until tender but still slightly crisp.",
+    "Remove from heat and serve the chicken and peppers together."
+  ],
+  "slowCook": false,
+  "imageURL": "menu-item-images/Jamaican_Jerk_Chicken_Bowls.jpg",
+  "cookTime": "15",
+  "products": [],
+  "flagged": false,
+  "notes": [
+    "For a more authentic flavor, marinate the chicken in the jerk seasoning for 1-2 hours before cooking.",
+    "Adjust the amount of jerk seasoning based on your spice preference."
+  ],
+  "id": "5C3DBEFD-E03E-4846-BBE6-9BFA66D867B8",
+  "optionalToppings": [],
+  "sauce": [],
+  "isGourmet": false,
+  "imageThumbURL": "menu-item-images/Jamaican_Jerk_Chicken_Bowls_thumbnail.jpg",
+  "instaPot": false,
+  "prepTime": "10",
+  "rating": "5",
+  "dressing": [],
+  "createdAt": "2025-05-27T22:22:50Z",
+  "includedSides": [],
+  "ingredients": [
+    "1 1/2 pound Chicken Tenders",
+    "1/4 cup Jamaican Jerk Seasoning",
+    "1 Tablespoon Olive Oil",
+    "1 Red Bell Pepper, sliced thin"
+  ],
+  "glutenFree": true,
+  "dishType": "main",
+  "isBalanced": true,
+  "vegetarian": false,
+  "searchTerms": [
+    "spicy",
+    "grilled",
+    "island cuisine"
+  ],
+  "updatedAt": "2025-07-01T20:58:41.269919Z",
+  "comboIndex": "{\"690b8000-014c-4340-a91c-d30aec60e09f\": [\"d33a7b6a-caf5-4482-b108-4e7fc19606b1\"]}",
+  "recommendedSides": [
+    "d33a7b6a-caf5-4482-b108-4e7fc19606b1"
+  ],
+  "ingredient_objects": "[{\"ingredient_name\": \"Chicken Tenders\", \"category\": \"Proteins\", \"unit\": \"pound\", \"quantity\": \"1 1/2\", \"note\": \"\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Jamaican Jerk Seasoning\", \"category\": \"Seasonings\", \"quantity\": \"1/4\", \"unit\": \"cup\", \"affiliate_link\": \"https://amzn.to/4fWb2QP\"}, {\"ingredient_name\": \"Olive Oil\", \"category\": \"Pantry Staples\", \"unit\": \"tablespoon\", \"quantity\": \"1\", \"note\": \"\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Red Bell Pepper\", \"category\": \"Produce\", \"quantity\": \"1\", \"unit\": \"\", \"affiliate_link\": \"\"}]",
+  "isQuick": false,
+  "cuisineType": "Global Cuisines",
+  "link": "",
+  "baseMainId": "",
+  "description": "Tender chicken seasoned with aromatic Jamaican jerk spices and saut\u00e9ed with bell peppers for a Caribbean-inspired dish that's bursting with flavor.",
+  "primary": false,
+  "seasonings": [
+    "1/4 cup Jamaican Jerk Seasoning"
+  ],
+  "title": "Jamaican Jerk Chicken"
+}

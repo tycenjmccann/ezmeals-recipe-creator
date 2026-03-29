@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-28 16:00:06):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/f3b67487-8aa4-4b15-b2a0-41a3674770ad/f3b67487-8aa4-4b15-b2a0-41a3674770ad.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/f3b67487-8aa4-4b15-b2a0-41a3674770ad/f3b67487-8aa4-4b15-b2a0-41a3674770ad_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/f3b67487-8aa4-4b15-b2a0-41a3674770ad/f3b67487-8aa4-4b15-b2a0-41a3674770ad_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chickpea_Curry.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chickpea_Curry_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Chickpea_Curry.json (triggers DB import)

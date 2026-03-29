@@ -1,0 +1,696 @@
+{
+  "id": {
+    "S": "quick-and-easy-pho"
+  },
+  "userId": {
+    "S": "system"
+  },
+  "recipeName": {
+    "S": "Quick and Easy Pho"
+  },
+  "description": {
+    "S": "This easy Vietnamese inspired Pho is a quick adaptation that's perfect when you're tight on time. Made with rice noodles, savory broth, and your choice of chicken, beef, pork or shrimp, topped with fresh herbs and garnishes."
+  },
+  "servings": {
+    "N": "6"
+  },
+  "prepTime": {
+    "N": "20"
+  },
+  "cookTime": {
+    "N": "40"
+  },
+  "totalTime": {
+    "N": "60"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "glutenFreeNote": {
+    "S": "Use tamari instead of soy sauce and gluten-free hoisin sauce to keep this recipe gluten-free."
+  },
+  "dairyFree": {
+    "BOOL": true
+  },
+  "imageURL": {
+    "S": "menu-item-images/Quick_and_Easy_Pho.jpg"
+  },
+  "sourceURL": {
+    "S": "https://tastesbetterfromscratch.com/pho-noodle-soup/"
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "8 oz dried rice vermicelli noodles"
+      },
+      {
+        "S": "1 lb protein of choice (chicken, pork, steak, or raw shrimp), thinly sliced"
+      },
+      {
+        "S": "1 large yellow onion, quartered"
+      },
+      {
+        "S": "2 (2-inch) pieces fresh ginger, unpeeled and halved lengthwise"
+      },
+      {
+        "S": "6 cups broth (chicken, beef, or vegetable, depending on protein choice)"
+      },
+      {
+        "S": "2 cups water"
+      },
+      {
+        "S": "1/4 tsp ground coriander"
+      },
+      {
+        "S": "1 whole clove"
+      },
+      {
+        "S": "1 1/2 Tablespoons fish sauce"
+      },
+      {
+        "S": "1/4 teaspoon hoisin sauce"
+      },
+      {
+        "S": "1/4 teaspoon soy sauce"
+      },
+      {
+        "S": "1/4 teaspoon red chili paste (sambal oelek)"
+      },
+      {
+        "S": "1 stick cinnamon"
+      },
+      {
+        "S": "Salt and freshly ground black pepper, to taste"
+      },
+      {
+        "S": "4 green onions, chopped"
+      },
+      {
+        "S": "2 fresh jalape\u00f1o peppers or red Thai chili peppers, thinly sliced and seeds removed"
+      },
+      {
+        "S": "1 bunch fresh cilantro, chopped"
+      },
+      {
+        "S": "1 bunch Thai basil leaves"
+      },
+      {
+        "S": "1 cup fresh bean sprouts"
+      },
+      {
+        "S": "2 limes, cut into wedges"
+      },
+      {
+        "S": "Sriracha hot sauce, for serving (optional)"
+      }
+    ]
+  },
+  "ingredientObjects": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "dried rice vermicelli noodles"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "oz"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "protein of choice (chicken, pork, steak, or raw shrimp)"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "lb"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "note": {
+            "S": "thinly sliced"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "yellow onion"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "large"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "quartered"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "fresh ginger"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "2-inch pieces"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "unpeeled and halved lengthwise"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "broth"
+          },
+          "quantity": {
+            "S": "6"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": "chicken, beef, or vegetable depending on protein choice"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "water"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "ground coriander"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "tsp"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "whole clove"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "note": {
+            "S": "optional"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "fish sauce"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "Tablespoons"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": "or less, to taste"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "hoisin sauce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": "use gluten-free version for GF"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "soy sauce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": "use tamari for gluten-free"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "red chili paste (sambal oelek)"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "cinnamon stick"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "stick"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "salt"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": "to taste"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "black pepper"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": "to taste"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "note": {
+            "S": "freshly ground"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "green onions"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "stalks"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "chopped"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "jalape\u00f1o peppers or red Thai chili peppers"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "thinly sliced, seeds removed"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "fresh cilantro"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "bunch"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "chopped"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Thai basil leaves"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "bunch"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "fresh bean sprouts"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "limes"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "note": {
+            "S": "cut into wedges"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Sriracha hot sauce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": "to taste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "note": {
+            "S": "optional, for serving"
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Place a large dry pot over medium heat. Add the quartered yellow onion and 2 pieces of ginger. Cook for 4 minutes, stirring occasionally, until lightly charred."
+      },
+      {
+        "S": "Add 6 cups broth, 2 cups water, 1/4 tsp ground coriander, 1 whole clove, 1 1/2 Tablespoons fish sauce, 1/4 teaspoon hoisin sauce, 1/4 teaspoon soy sauce, 1/4 teaspoon red chili paste, 1 cinnamon stick, and a pinch of salt and pepper to the pot. Bring to a slow boil, then reduce heat and simmer for 30 minutes."
+      },
+      {
+        "S": "Meanwhile, prepare 8 oz rice vermicelli noodles according to package instructions. Once soft, drain, rinse with cold water, and set aside."
+      },
+      {
+        "S": "Ready the garnishes in individual small bowls for serving: chopped cilantro, Thai basil leaves, chopped green onions, 1 cup bean sprouts, lime wedges, and sliced jalape\u00f1os or Thai chilies."
+      },
+      {
+        "S": "1-5 minutes before the broth is done simmering, add 1 lb of your desired thinly sliced protein to the broth to cook just until done (2-3 minutes for raw thinly sliced chicken or pork, 1-2 minutes for shrimp or thinly sliced steak)."
+      },
+      {
+        "S": "Using tongs or a slotted spoon, discard the ginger pieces, whole clove, cinnamon stick, and onion quarters from the pot."
+      },
+      {
+        "S": "Divide the cooked noodles among 6 bowls. Ladle the hot broth and meat over the noodles. Add desired toppings and serve immediately with Sriracha on the side."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Vietnamese Spring Rolls"
+          },
+          "description": {
+            "S": "Fresh rice paper rolls filled with shrimp, herbs, and vermicelli, served with peanut dipping sauce. A light, refreshing complement to the warm pho broth."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Asian Cucumber Salad"
+          },
+          "description": {
+            "S": "A crisp, tangy cucumber salad with rice vinegar, sesame oil, and a touch of chili flake, adding a cool crunch alongside the soup."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Steamed Pork Dumplings"
+          },
+          "description": {
+            "S": "Savory steamed dumplings that pair beautifully with the aromatic pho broth for a more substantial meal."
+          }
+        }
+      }
+    ]
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Pho Soup Bowls Set"
+          },
+          "description": {
+            "S": "Large, deep bowls designed for noodle soups, perfect for serving pho with generous portions of broth and toppings."
+          },
+          "asin": {
+            "S": "B0BXMQJ8CB"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Asian Soup Spoons and Chopstick Set"
+          },
+          "description": {
+            "S": "Traditional ceramic soup spoons paired with chopsticks for an authentic pho eating experience."
+          },
+          "asin": {
+            "S": "B08LNDSHGZ"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Fine Mesh Strainer"
+          },
+          "description": {
+            "S": "Essential for straining aromatics from the broth and rinsing rice noodles for a clean, clear pho."
+          },
+          "asin": {
+            "S": "B00L9WLHXU"
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "pho"
+      },
+      {
+        "S": "vietnamese noodle soup"
+      },
+      {
+        "S": "rice noodle soup"
+      },
+      {
+        "S": "pho ga"
+      },
+      {
+        "S": "quick pho recipe"
+      },
+      {
+        "S": "weeknight asian soup"
+      },
+      {
+        "S": "bone broth soup"
+      },
+      {
+        "S": "noodle bowl"
+      },
+      {
+        "S": "thai basil soup"
+      },
+      {
+        "S": "bean sprout soup"
+      },
+      {
+        "S": "spiced broth noodles"
+      },
+      {
+        "S": "fish sauce soup"
+      },
+      {
+        "S": "healthy noodle soup"
+      },
+      {
+        "S": "warm comfort soup"
+      },
+      {
+        "S": "customizable protein soup"
+      }
+    ]
+  }
+}

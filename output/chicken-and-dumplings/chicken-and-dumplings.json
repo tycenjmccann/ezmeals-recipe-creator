@@ -1,0 +1,810 @@
+{
+  "id": {
+    "S": "chicken-and-dumplings"
+  },
+  "title": {
+    "S": "Chicken and Dumplings"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Chicken_and_Dumplings.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Chicken_and_Dumplings_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Make the ultimate Chicken and Dumplings from scratch with this foolproof recipe that features soft, fluffy homemade dumplings in a creamy chicken soup with vegetables. This cozy one-pot meal is perfect for cold winter nights and uses simple pantry ingredients to create the kind of soul-warming comfort food that brings the whole family to the table."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "50"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6"
+  },
+  "cuisineType": {
+    "S": "American"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "-- For the Soup --"
+      },
+      {
+        "S": "2 tablespoons Olive Oil"
+      },
+      {
+        "S": "2 Celery ribs, diced (about 1 cup)"
+      },
+      {
+        "S": "2 large Carrots, peeled and diced (about 1 cup)"
+      },
+      {
+        "S": "1 medium Yellow Onion, chopped (about 1 cup)"
+      },
+      {
+        "S": "3 cloves Garlic, minced"
+      },
+      {
+        "S": "5 tablespoons Unsalted Butter"
+      },
+      {
+        "S": "1/3 cup All-Purpose Flour"
+      },
+      {
+        "S": "6 cups Low-Sodium Chicken Broth"
+      },
+      {
+        "S": "4 teaspoons Chicken Bouillon Paste"
+      },
+      {
+        "S": "1/2 teaspoon Dried Thyme"
+      },
+      {
+        "S": "1/2 teaspoon Dried Sage"
+      },
+      {
+        "S": "1/4 teaspoon Dried Rosemary, crushed"
+      },
+      {
+        "S": "1 Bay Leaf"
+      },
+      {
+        "S": "1 teaspoon Kosher Salt, adjust to taste"
+      },
+      {
+        "S": "1/2 teaspoon Freshly Ground Black Pepper"
+      },
+      {
+        "S": "1 1/2 pounds Boneless Skinless Chicken Breasts or thighs"
+      },
+      {
+        "S": "1 can (12 oz) Evaporated Milk"
+      },
+      {
+        "S": "1/2 cup Frozen Peas"
+      },
+      {
+        "S": "Fresh Parsley, chopped, for garnish"
+      },
+      {
+        "S": "-- For the Dumplings --"
+      },
+      {
+        "S": "1 2/3 cups All-Purpose Flour"
+      },
+      {
+        "S": "1 tablespoon Baking Powder"
+      },
+      {
+        "S": "1/2 teaspoon Kosher Salt"
+      },
+      {
+        "S": "3/4 cup Whole Milk"
+      },
+      {
+        "S": "1/4 cup Sour Cream"
+      },
+      {
+        "S": "2 tablespoons Butter, melted and slightly cooled"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Celery"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "ribs"
+          },
+          "note": {
+            "S": "Diced, about 1 cup"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "large"
+          },
+          "note": {
+            "S": "Peeled and diced, about 1 cup"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "medium"
+          },
+          "note": {
+            "S": "Chopped, about 1 cup"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Unsalted Butter"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "For soup roux"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "All-Purpose Flour"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1/3"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "For soup roux"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "6"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Bouillon Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Thyme"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Sage"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Rosemary"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Crushed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Bay Leaf"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Adjust to taste; for soup"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Freshly ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Breasts Or Thighs"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Boneless, skinless"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Evaporated Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "can (12 oz)"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Frozen Peas"
+          },
+          "category": {
+            "S": "Frozen Foods"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Parsley"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Chopped, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "All-Purpose Flour"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1 2/3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "For dumplings"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Baking Powder"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For dumplings"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Whole Milk"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "3/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sour Cream"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Butter"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Melted and slightly cooled; for dumplings"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Heat a large Dutch oven or heavy-bottomed pot (at least 5-quart) over medium heat. Add 2 tablespoons olive oil. Once the oil shimmers, add 2 diced celery ribs, 2 diced carrots, and 1 chopped onion. Saute for 4 to 5 minutes, stirring occasionally, until the onion is softened and translucent. Add 3 cloves of minced garlic and saute for 30 seconds until fragrant."
+      },
+      {
+        "S": "Add 5 tablespoons unsalted butter to the pot and let it melt. Sprinkle 1/3 cup all-purpose flour evenly over the vegetables and stir constantly with a whisk or wooden spoon for 1 to 2 minutes to cook out the raw flour taste. The mixture will be thick and pasty and this is normal."
+      },
+      {
+        "S": "Pour in 6 cups of chicken broth gradually, about 1 cup at a time, whisking well after each addition to prevent lumps. Stir in 4 teaspoons chicken bouillon paste, 1/2 teaspoon dried thyme, 1/2 teaspoon dried sage, 1/4 teaspoon crushed dried rosemary, 1 bay leaf, 1 teaspoon kosher salt, and 1/2 teaspoon black pepper. Scrape up any browned bits from the bottom of the pot."
+      },
+      {
+        "S": "Add 1 1/2 pounds of chicken to the pot and bring the mixture to a boil. Reduce heat to medium-low, cover with a lid, and simmer gently for 15 to 20 minutes, or until the chicken reaches an internal temperature of 165 degrees F. Thighs may take slightly longer than breasts."
+      },
+      {
+        "S": "Remove the chicken to a cutting board. Shred the chicken into bite-sized pieces using two forks. Discard the bay leaf. Stir the 12 oz can of evaporated milk and 1/2 cup frozen peas into the soup. Return the shredded chicken to the pot and stir to combine. Taste and adjust salt and pepper as needed."
+      },
+      {
+        "S": "Combine 1 2/3 cups all-purpose flour, 1 tablespoon baking powder, and 1/2 teaspoon kosher salt in a medium bowl and whisk together. Make a well in the center and add 3/4 cup whole milk, 1/4 cup sour cream, and 2 tablespoons melted butter. Stir with a fork or spatula until just combined. The dough should be thick, sticky, and slightly shaggy. Do not overmix as a few lumps are fine."
+      },
+      {
+        "S": "Bring the soup back to a gentle simmer over medium heat. Drop rounded spoonfuls of dough about 1 1/2 inches in size onto the surface of the simmering soup using a tablespoon or small cookie scoop, spacing them about 1 inch apart. You should get 12 to 15 dumplings. They will expand significantly as they cook."
+      },
+      {
+        "S": "Cover the pot with a tight-fitting lid once all dumplings are placed. Reduce heat to low and simmer for 14 to 16 minutes. Do not lift the lid during this time. The dumplings cook by steam and releasing it will result in dense, gummy dumplings."
+      },
+      {
+        "S": "Remove the lid after 14 to 16 minutes. Check that the dumplings appear puffed, fluffy, and set on top. Break one open to test doneness and confirm there is no raw dough in the center. If still doughy, cover and cook 2 to 3 more minutes. Ladle into bowls gently stirring the soup around, not through, the dumplings. Garnish with fresh chopped parsley and serve immediately."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For a gluten-free version, substitute the all-purpose flour with a 1-to-1 gluten-free flour blend in both the roux and the dumplings. Results may vary slightly in texture."
+      },
+      {
+        "S": "For a dairy-free variation, substitute the butter with olive oil or dairy-free butter, use full-fat coconut milk in place of evaporated milk, and use unsweetened oat milk and dairy-free yogurt in place of the whole milk and sour cream in the dumplings."
+      },
+      {
+        "S": "Start with 1/2 teaspoon of kosher salt and adjust at the end, as bouillon brands vary significantly in sodium content."
+      },
+      {
+        "S": "Thighs stay more tender and flavorful in the soup. Breasts work well but can dry out if overcooked. Remove them promptly at 165 degrees F."
+      },
+      {
+        "S": "The soup base without dumplings can be made a day ahead and refrigerated. Reheat and make fresh dumplings when ready to serve. Dumplings do not store or reheat well as they become dense and waterlogged."
+      },
+      {
+        "S": "Leftovers can be stored in an airtight container in the refrigerator for up to 3 days. Reheat gently over low heat. Not recommended for freezing."
+      },
+      {
+        "S": "Use at least a 5-quart pot or Dutch oven. The dumplings need surface area to expand without being crowded."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "a2a3fa67-04fd-4376-b799-a51097819563"
+      },
+      {
+        "S": "9828f9f0-9be6-4b64-8563-d255234b9db3"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      },
+      {
+        "S": "615d1420-7027-4699-96a6-705a2d9fe7a3"
+      },
+      {
+        "S": "197bf75c-57b3-40fd-9097-737c59cf6851"
+      },
+      {
+        "S": "2d23e3ad-b1ed-41c6-ad1f-76831111b51e"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

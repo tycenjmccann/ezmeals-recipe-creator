@@ -1,0 +1,739 @@
+{
+  "id": {
+    "S": "slow-cooker-coconut-curry-lentils"
+  },
+  "title": {
+    "S": "Slow Cooker Coconut Curry Lentils"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Slow_Cooker_Coconut_Curry_Lentils.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Slow_Cooker_Coconut_Curry_Lentils_thumbnail.jpg"
+  },
+  "description": {
+    "S": "An easy, hands-off, fiber-filled, freezer-friendly vegan dinner with warming spices and creamy coconut milk."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "240"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "10"
+  },
+  "cuisineType": {
+    "S": "Indian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "2 cups Brown Lentils, rinsed and picked over for debris"
+      },
+      {
+        "S": "1 Yellow Onion, diced"
+      },
+      {
+        "S": "4 cloves Garlic, minced"
+      },
+      {
+        "S": "1 tablespoon Fresh Ginger, grated or finely minced"
+      },
+      {
+        "S": "2 Carrots, peeled and sliced into 1/4-inch rounds"
+      },
+      {
+        "S": "1 Sweet Potato (about 3/4 pound), peeled and diced into 1/2-inch cubes"
+      },
+      {
+        "S": "3 tablespoons Curry Powder (hot or mild, to preference)"
+      },
+      {
+        "S": "1 teaspoon Ground Cumin"
+      },
+      {
+        "S": "1/2 teaspoon Turmeric"
+      },
+      {
+        "S": "1/4 teaspoon Ground Cloves (optional)"
+      },
+      {
+        "S": "1/4 teaspoon Cayenne Pepper (optional, omit if using hot curry powder)"
+      },
+      {
+        "S": "1 teaspoon Kosher Salt, plus more to taste"
+      },
+      {
+        "S": "1/4 teaspoon Black Pepper"
+      },
+      {
+        "S": "1 (15 ounce) can petite Diced Tomatoes, with juices"
+      },
+      {
+        "S": "1 (15 ounce) can Tomato Sauce"
+      },
+      {
+        "S": "3 cups Vegetable Broth (low-sodium recommended)"
+      },
+      {
+        "S": "1 (14 ounce) can full-fat Coconut Milk, shake well before opening"
+      },
+      {
+        "S": "1 to 2 tablespoons fresh Lime Juice (about 1 lime)"
+      },
+      {
+        "S": "10 cups cooked Basmati Rice or Jasmine Rice (about 1 cup per serving)"
+      },
+      {
+        "S": "1/2 Red Onion, finely diced"
+      },
+      {
+        "S": "1/2 bunch Fresh Cilantro, roughly chopped (or sliced green onions)"
+      },
+      {
+        "S": "1 Lime, cut into wedges"
+      },
+      {
+        "S": "Naan Bread (optional)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Brown Lentils"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Rinsed and picked over for debris"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Fresh, grated or finely minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Peeled and sliced into 1/4-inch rounds"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sweet Potato"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "About 3/4 pound, peeled and diced into 1/2-inch cubes"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Curry Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Hot or mild, to preference"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cloves"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cayenne Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Optional, omit if using hot curry powder"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Diced Tomatoes"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "15 ounce can"
+          },
+          "note": {
+            "S": "Petite, with juices"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "15 ounce can"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "14 ounce can"
+          },
+          "note": {
+            "S": "Full-fat, shake well before opening"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lime Juice"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1 to 2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Fresh, about 1 lime"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Basmati Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "10"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Cooked; or jasmine rice (about 1 cup per serving)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Finely diced, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "bunch"
+          },
+          "note": {
+            "S": "Fresh, roughly chopped (or sliced green onions)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lime"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Cut into wedges, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Naan Bread"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "package"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Place 2 cups brown lentils in a fine-mesh strainer and rinse thoroughly under cold running water, picking out any stones or debris. Drain well. Dice 1 yellow onion and mince 4 cloves garlic and 1 tablespoon fresh ginger. Peel 1 sweet potato and 2 carrots. Dice the sweet potato into 1/2-inch cubes and slice the carrots into 1/4-inch rounds."
+      },
+      {
+        "S": "Add the rinsed lentils, diced onion, minced garlic, grated ginger, sweet potato cubes, carrot rounds, 3 tablespoons curry powder, 1 teaspoon ground cumin, 1/2 teaspoon turmeric, 1/4 teaspoon ground cloves if using, 1/4 teaspoon cayenne pepper if using, 1 teaspoon kosher salt, 1/4 teaspoon black pepper, 1 (15 ounce) can petite diced tomatoes with their juices, 1 (15 ounce) can tomato sauce, and 3 cups vegetable broth to a 5 to 6 quart slow cooker. Stir well to combine, making sure the spices are evenly distributed."
+      },
+      {
+        "S": "Place the lid on the slow cooker and cook on HIGH for 4 hours or LOW for 7 to 8 hours. The lentils should be tender and most of the liquid should be absorbed. Avoid lifting the lid during cooking, as this releases heat and extends cooking time."
+      },
+      {
+        "S": "Shake the can of coconut milk well, then stir 1 (14 ounce) can full-fat coconut milk into the cooked lentils until fully incorporated. Squeeze in 1 to 2 tablespoons fresh lime juice, starting with 1 tablespoon. Taste and adjust seasoning with additional salt (up to 1/2 teaspoon more), a pinch more curry powder, or a dash of cayenne pepper for heat as desired."
+      },
+      {
+        "S": "Spoon about 1 cup of the lentil curry over 1 cup of cooked basmati or jasmine rice in a bowl. Top with finely diced red onion, fresh chopped cilantro or sliced green onions, and a lime wedge on the side. Serve with warm naan bread if desired."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free as written. Verify that curry powder, vegetable broth, and canned tomato products are certified gluten-free. If serving with naan, use gluten-free naan."
+      },
+      {
+        "S": "Dairy-Free and Vegan: This recipe is naturally vegan and dairy-free as written."
+      },
+      {
+        "S": "Storage: Store the lentil curry (without rice) in airtight containers in the refrigerator for up to 5 days. The curry thickens as it cools - thin with a splash of broth or water when reheating."
+      },
+      {
+        "S": "Freezer: Freeze the lentil curry (without rice) in portioned containers or freezer bags for up to 3 months. Thaw overnight in the refrigerator and reheat on the stovetop or microwave. Cook rice fresh when serving."
+      },
+      {
+        "S": "Lentil type matters: Brown or green lentils hold their shape best in the slow cooker. Do not substitute red or yellow lentils - they will disintegrate into mush over this cooking time."
+      },
+      {
+        "S": "Coconut milk: Full-fat coconut milk is essential for the creamy texture. Light coconut milk will produce a thinner, less rich result."
+      },
+      {
+        "S": "Instant Pot adaptation: Cook on Manual or Pressure Cook HIGH for 15 minutes with a natural pressure release of 10 minutes."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "9a02ba4a-0dce-43f5-90c9-125a1cb4988a"
+      },
+      {
+        "S": "fff9f91e-3fb1-4368-99db-abfa0da7cf03"
+      },
+      {
+        "S": "3e5a8245-bff7-463f-8295-60ad4bad1601"
+      },
+      {
+        "S": "572cbdc3-03f0-425e-91ec-115daccd12d4"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "c9c8182f-95c4-41cd-811d-5dfacc787596"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "cf638481-5d13-4692-8cb3-3cb21b8b42fd"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": true
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": true
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

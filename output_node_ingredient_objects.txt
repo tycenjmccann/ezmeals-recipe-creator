@@ -2,47 +2,97 @@
     "L": [
         {
             "M": {
-                "ingredient_name": {"S": "Boneless Skinless Chicken Breasts"},
+                "ingredient_name": {"S": "Olive Oil"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "tablespoon"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Yellow Onion"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "1"},
+                "unit": {"S": ""},
+                "note": {"S": "medium, diced"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Garlic"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "3"},
+                "unit": {"S": "cloves"},
+                "note": {"S": "minced"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Jalapeño"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": "1"},
+                "unit": {"S": ""},
+                "note": {"S": "seeded and minced"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Black Beans"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "15 oz can"},
+                "note": {"S": "drained and rinsed"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Fire-Roasted Diced Tomatoes"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "15 oz can"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Corn"},
+                "category": {"S": "Frozen Foods"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "15 oz can"},
+                "note": {"S": "drained (or 1 1/2 cups frozen corn)"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Chicken Broth"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": "4"},
+                "unit": {"S": "cups"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Chicken Breasts"},
                 "category": {"S": "Proteins"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "pounds"},
-                "note": {"S": "cut into bite-size pieces"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "pound"},
+                "note": {"S": "boneless, skinless"},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "Low-Sodium Soy Sauce"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "2"},
-                "unit": {"S": "tablespoons"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Oyster Sauce"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "2"},
-                "unit": {"S": "teaspoons"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Fresh Cracked Black Pepper"},
-                "category": {"S": "Seasonings"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "teaspoons"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Salt"},
+                "ingredient_name": {"S": "Cumin"},
                 "category": {"S": "Seasonings"},
                 "quantity": {"S": "1"},
                 "unit": {"S": "teaspoon"},
@@ -52,141 +102,121 @@
         },
         {
             "M": {
-                "ingredient_name": {"S": "Cornstarch"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "1/2"},
-                "unit": {"S": "cup"},
-                "note": {"S": "for coating"},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Oyster Sauce"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "tablespoons"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Low-Sodium Soy Sauce"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "3"},
-                "unit": {"S": "tablespoons"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Low-Sodium Chicken Stock"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "cups"},
-                "note": {"S": ""},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Garlic Cloves"},
-                "category": {"S": "Produce"},
-                "quantity": {"S": "3-4"},
-                "unit": {"S": ""},
-                "note": {"S": "minced"},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Fresh Ginger"},
-                "category": {"S": "Produce"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "tablespoons"},
-                "note": {"S": "freshly grated"},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Fresh Cracked Black Pepper"},
+                "ingredient_name": {"S": "Chili Powder"},
                 "category": {"S": "Seasonings"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "teaspoons"},
+                "quantity": {"S": "1"},
+                "unit": {"S": "teaspoon"},
                 "note": {"S": ""},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "Granulated Sugar"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "3"},
-                "unit": {"S": "tablespoons"},
+                "ingredient_name": {"S": "Garlic Powder"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1/2"},
+                "unit": {"S": "teaspoon"},
                 "note": {"S": ""},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "Cornstarch"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "1 1/2"},
-                "unit": {"S": "teaspoons"},
+                "ingredient_name": {"S": "Onion Powder"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1/2"},
+                "unit": {"S": "teaspoon"},
                 "note": {"S": ""},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "Vegetable Oil"},
-                "category": {"S": "Pantry Staples"},
-                "quantity": {"S": "1/3"},
-                "unit": {"S": "cup"},
-                "note": {"S": "plus more if needed"},
+                "ingredient_name": {"S": "Salt"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1/2"},
+                "unit": {"S": "teaspoon"},
+                "note": {"S": ""},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "White Onion"},
+                "ingredient_name": {"S": "Black Pepper"},
+                "category": {"S": "Seasonings"},
+                "quantity": {"S": "1/4"},
+                "unit": {"S": "teaspoon"},
+                "note": {"S": ""},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Lime"},
                 "category": {"S": "Produce"},
                 "quantity": {"S": "1"},
                 "unit": {"S": ""},
-                "note": {"S": "medium, chopped into bite-size pieces"},
+                "note": {"S": "juice of"},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "Celery"},
-                "category": {"S": "Produce"},
-                "quantity": {"S": "2"},
-                "unit": {"S": "ribs"},
-                "note": {"S": "chopped"},
-                "affiliate_link": {"S": ""}
-            }
-        },
-        {
-            "M": {
-                "ingredient_name": {"S": "Red Bell Pepper"},
-                "category": {"S": "Produce"},
-                "quantity": {"S": "1"},
+                "ingredient_name": {"S": "Tortilla Chips"},
+                "category": {"S": "Pantry Staples"},
+                "quantity": {"S": ""},
                 "unit": {"S": ""},
-                "note": {"S": "large, chopped into bite-size pieces"},
+                "note": {"S": "or fried tortilla strips for topping"},
                 "affiliate_link": {"S": ""}
             }
         },
         {
             "M": {
-                "ingredient_name": {"S": "White Rice"},
-                "category": {"S": "Grains & Bakery"},
-                "quantity": {"S": "5-6"},
-                "unit": {"S": "cups"},
-                "note": {"S": "hot cooked"},
+                "ingredient_name": {"S": "Avocado"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": ""},
+                "unit": {"S": ""},
+                "note": {"S": "diced for topping"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Sour Cream"},
+                "category": {"S": "Dairy"},
+                "quantity": {"S": ""},
+                "unit": {"S": ""},
+                "note": {"S": "for topping"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Shredded Cheese"},
+                "category": {"S": "Dairy"},
+                "quantity": {"S": ""},
+                "unit": {"S": ""},
+                "note": {"S": "Monterey Jack or Mexican blend for topping"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Fresh Cilantro"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": ""},
+                "unit": {"S": ""},
+                "note": {"S": "for topping"},
+                "affiliate_link": {"S": ""}
+            }
+        },
+        {
+            "M": {
+                "ingredient_name": {"S": "Lime Wedges"},
+                "category": {"S": "Produce"},
+                "quantity": {"S": ""},
+                "unit": {"S": ""},
+                "note": {"S": "for serving"},
                 "affiliate_link": {"S": ""}
             }
         }

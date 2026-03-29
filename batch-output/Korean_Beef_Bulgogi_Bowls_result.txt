@@ -1,0 +1,73 @@
+Recipe: Korean Beef Bulgogi Bowls
+URL: https://thewoksoflife.com/bulgogi/
+Time: 652.0s
+
+---
+
+# ✅ Pipeline Complete: Beef Bulgogi Bowls
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from thewoksoflife.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **20 improvements** made (most of any recipe so far!) |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; cookTime=15 min, isBalanced=true |
+| 4 | **Standardize** | ✅ | 19 ingredients matched to DB names |
+| 5 | **Ingredient Objects** | ✅ | 19 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 5 sides recommended from catalog |
+| 7 | **Products** | ✅ | 6 affiliate products matched |
+| 8 | **Assembly** | ✅ | Cleaned Map→String format, removed headers, consolidated duplicates, fixed flags |
+| 9 | **QA Review** | ✅ | Fixes applied (lettuce quantity, glutenFree=false confirmed) |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (20 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Fixes** | Specified beef cut (rib eye/sirloin/top round — original just said "beef"); added freeze-then-slice technique for paper-thin 1/8" slices; fixed serving inconsistency (6 → 4-6) |
+| **Severely Underseasoned Marinade** | Soy sauce +60% (2.5→4 Tbsp); brown sugar +50% (2→3 Tbsp); sesame oil +50% (1→1.5 Tbsp); black pepper doubled (1/8→1/4 tsp); garlic +25% (4→5 cloves) |
+| **Missing Ingredients** | Added mirin/rice wine (1.5 Tbsp — entirely absent, present in every authentic reference); added sesame seeds to marinade; added water for blending; added lettuce wraps |
+| **Technique** | Added "shake off excess marinade" before searing (prevents steaming); added garlic chip frying step (raw garlic slices were odd); reduced oil per batch; added refrigeration for marinating (food safety) |
+| **Completeness** | Restructured prep/cook times (active 20 min, not 90); added make-ahead/storage; added Korean pear enzyme warning; added ventilation safety note; increased kimchi +50% |
+
+## 🔴 QA Fixes Applied
+1. **`glutenFree`** → `false` (contains soy sauce, mirin, ssamjang — all contain gluten)
+2. **Ingredients format** → Cleaned from Map/header format to standard String format
+3. **Instructions format** → Cleaned from Map/header format to standard String format
+4. **Lettuce Leaves** → Added quantity `"6 to 12"` / `"leaves"` (was empty, poor for shopping lists)
+5. **Duplicate consolidation** → Garlic (4 marinade + 3 chips = 8 total, divided); Sesame seeds (1.5 tsp + 1 Tbsp = 2.5 Tbsp total, divided)
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Beef_Bulgogi_Bowls.jpg` |
+| **S3 Thumb** | `menu-item-images/Beef_Bulgogi_Bowls_thumbnail.jpg` |
+| **DynamoDB** | `beef-bulgogi-bowls` in MenuItemData table |
+| **Local** | `output/beef-bulgogi-bowls/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Japchae (Korean Glass Noodles) | 🔴 Critical — #1 most popular banchan with bulgogi |
+| **Side** | Kongnamul (Seasoned Bean Sprouts) | 🔴 Critical — foundational Korean banchan |
+| **Side** | Korean Cucumber Salad (Oi-Muchim) | 🟡 High — classic cool/spicy banchan |
+| **Side** | Sigeumchi Namul (Korean Spinach) | 🟡 High — essential namul category |
+| **Side** | Gyeran-jjim (Korean Steamed Egg) | 🟡 Moderate |
+| **Side** | Pajeon (Scallion Pancakes) | 🟡 Moderate |
+| **Product** | Japanese/Korean Chef's Knife | 🔴 Critical — essential for paper-thin beef slicing |
+| **Product** | Korean Stone Dolsot Bowls | 🟡 High — authentic serving for Korean bowl recipes |
+| **Product** | Glass Mixing Bowl Set with Lids | 🟡 High — needed for marinating |
+| **Product** | Rice Cooker (Zojirushi) | 🟡 Moderate — high cross-recipe value |
+| **Product** | Mandoline Slicer | 🟡 Moderate — precision alternative to knife skills |
+
+> **Key Insight:** Our catalog has **zero dedicated Korean sides**, which is a major gap given the popularity of Korean cuisine. Adding Japchae and Kongnamul alone would unlock proper banchan pairings for this and future Korean recipes.

@@ -1,0 +1,794 @@
+{
+  "id": {
+    "S": "slow-cooker-white-chicken-chili"
+  },
+  "title": {
+    "S": "Easy Slow Cooker White Chicken Chili"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Slow_Cooker_White_Chicken_Chili.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Slow_Cooker_White_Chicken_Chili_thumbnail.jpg"
+  },
+  "description": {
+    "S": "The slow cooker does all the work with this easy, flavorful, and healthy crockpot white chicken chili. Creamy, comforting, and loaded with tender shredded chicken and hearty beans in a smoky salsa verde broth finished with cream cheese and fresh lime."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "240"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6"
+  },
+  "cuisineType": {
+    "S": "Latin"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "-- In the Slow Cooker --"
+      },
+      {
+        "S": "1 to 1 1/4 pounds Boneless Skinless Chicken Breasts (about 2 medium breasts)"
+      },
+      {
+        "S": "1 Yellow Onion, finely diced (heaping 1 cup)"
+      },
+      {
+        "S": "3 cloves Garlic, minced"
+      },
+      {
+        "S": "1 Jalapeno, seeded and finely diced (optional)"
+      },
+      {
+        "S": "2 (15 ounce) cans Cannellini Beans, drained and rinsed"
+      },
+      {
+        "S": "1 (15 ounce) can Pinto Beans, drained and rinsed"
+      },
+      {
+        "S": "1 (16 ounce) jar Salsa Verde"
+      },
+      {
+        "S": "2 cups Low-Sodium Chicken Broth"
+      },
+      {
+        "S": "1 cup Frozen Corn Kernels"
+      },
+      {
+        "S": "-- Spice Blend --"
+      },
+      {
+        "S": "1 1/2 teaspoons Ground Cumin"
+      },
+      {
+        "S": "1 teaspoon Dried Oregano"
+      },
+      {
+        "S": "1/2 teaspoon Ground Coriander"
+      },
+      {
+        "S": "1/2 teaspoon Smoked Paprika"
+      },
+      {
+        "S": "1/4 teaspoon Cayenne Pepper"
+      },
+      {
+        "S": "1/2 teaspoon Kosher Salt, plus more to taste"
+      },
+      {
+        "S": "1/4 teaspoon Freshly Ground Black Pepper"
+      },
+      {
+        "S": "-- Finish (stirred in after cooking) --"
+      },
+      {
+        "S": "4 ounces Cream Cheese or Neufchatel, softened and cut into cubes"
+      },
+      {
+        "S": "1 tablespoon fresh Lime Juice (about 1/2 lime)"
+      },
+      {
+        "S": "2 tablespoons chopped Fresh Cilantro (optional)"
+      },
+      {
+        "S": "-- Toppings (optional) --"
+      },
+      {
+        "S": "Shredded Monterey Jack or Pepper Jack Cheese"
+      },
+      {
+        "S": "Diced Avocado"
+      },
+      {
+        "S": "Fresh Cilantro Leaves"
+      },
+      {
+        "S": "Lime Wedges"
+      },
+      {
+        "S": "Sour Cream or Greek Yogurt"
+      },
+      {
+        "S": "Tortilla Chips or strips"
+      },
+      {
+        "S": "Sliced Scallions"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Breasts"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1 to 1 1/4"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Boneless skinless, about 2 medium breasts"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "note": {
+            "S": "Finely diced (heaping 1 cup)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Jalapeno"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "note": {
+            "S": "Seeded and finely diced, optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cannellini Beans"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "15 oz cans"
+          },
+          "note": {
+            "S": "Drained and rinsed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Pinto Beans"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "15 oz can"
+          },
+          "note": {
+            "S": "Drained and rinsed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salsa Verde"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "16 oz jar"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Corn Kernels"
+          },
+          "category": {
+            "S": "Frozen Foods"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Frozen"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Oregano"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Coriander"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Smoked Paprika"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cayenne Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Freshly ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cream Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Or Neufchatel, softened and cut into cubes"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lime"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "note": {
+            "S": "Juiced, about 1 tablespoon"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Chopped, optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Monterey Jack Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Shredded, or pepper jack, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Avocado"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Diced, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sour Cream"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Or Greek yogurt, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tortilla Chips"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Or strips, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Scallions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Sliced, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Dice the 1 Yellow Onion finely and mince the 3 cloves of Garlic. If using the Jalapeno, slice it lengthwise, scrape out the seeds and ribs with a spoon, then finely dice. Wear food-safe gloves or wash hands thoroughly with soap immediately after handling Jalapeno. Avoid touching your eyes or face."
+      },
+      {
+        "S": "Place the diced onion, garlic, and jalapeno in the bottom of a 5 to 6 quart slow cooker. Lay the 1 to 1 1/4 pounds of chicken breasts on top of the aromatics to keep them submerged in liquid for even cooking. Add the 2 drained and rinsed cans of cannellini beans, 1 can of drained and rinsed pinto beans, and 1 cup frozen corn kernels. Sprinkle in the 1 1/2 teaspoons ground cumin, 1 teaspoon dried oregano, 1/2 teaspoon ground coriander, 1/2 teaspoon smoked paprika, 1/4 teaspoon cayenne pepper, 1/2 teaspoon kosher salt, and 1/4 teaspoon black pepper."
+      },
+      {
+        "S": "Pour the 16 ounce jar of salsa verde and 2 cups low-sodium chicken broth over everything. Stir gently while keeping the chicken breasts submerged beneath the liquid as much as possible. Place the lid on the slow cooker."
+      },
+      {
+        "S": "Cook on high for 4 hours or on low for 8 hours, until the chicken reaches an internal temperature of 165 degrees F when checked with an instant-read thermometer."
+      },
+      {
+        "S": "Remove the chicken breasts carefully to a cutting board using tongs or a slotted spoon. Use two forks to shred the hot meat into bite-sized pieces."
+      },
+      {
+        "S": "Add the 4 ounces of softened cream cheese cubes directly to the hot chili and stir until melted and fully incorporated, about 1 to 2 minutes. Mash about one-third of the beans against the side of the slow cooker using the back of a wooden spoon or a potato masher to thicken the chili. Return the shredded chicken to the pot. Stir in the 1 tablespoon fresh lime juice and 2 tablespoons chopped fresh cilantro if using. Taste and adjust salt and pepper as needed."
+      },
+      {
+        "S": "Ladle into bowls and top with your favorites such as shredded Monterey Jack or pepper jack cheese, diced avocado, a squeeze of fresh lime, sour cream or Greek yogurt, fresh cilantro, sliced scallions, and tortilla chips or strips."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Make-ahead and Freezer-friendly: This chili stores well in the refrigerator for up to 4 days and freezes beautifully for up to 3 months. Omit the cream cheese and lime juice if freezing. Stir those in when reheating."
+      },
+      {
+        "S": "Chicken thighs option: Boneless skinless thighs are even more forgiving in a slow cooker and will not dry out. Use the same weight."
+      },
+      {
+        "S": "Low-sodium tip: Between the broth, salsa verde, and canned beans, sodium can add up. Using low-sodium broth and tasting before adding salt is important."
+      },
+      {
+        "S": "Vegetarian adaptation: Omit the chicken. Add an extra can of beans and increase the frozen corn to 1 1/2 cups for a hearty vegetarian version."
+      },
+      {
+        "S": "Scaling up: Recipe doubles easily for a larger slow cooker (6+ quart). Cook time remains the same."
+      },
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free. Verify that your salsa verde and chicken broth are certified gluten-free, as some brands may contain wheat-based thickeners or additives."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "a2a3fa67-04fd-4376-b799-a51097819563"
+      },
+      {
+        "S": "c8a28f0e-af95-4b93-ace5-7153134772c2"
+      },
+      {
+        "S": "37e2cac0-7fdb-4659-b5bc-0bef5686aaa0"
+      },
+      {
+        "S": "e6bac67b-32ea-4e4b-ab5c-eecba841892a"
+      },
+      {
+        "S": "bfb7d782-4421-4bd4-9e8a-fa3059ba6a0b"
+      },
+      {
+        "S": "d36a24d9-bbe5-4ab8-abb8-af206fe4528d"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "cf638481-5d13-4692-8cb3-3cb21b8b42fd"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "650e3cfd-9c6e-495c-b7b8-eb682de555ae"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "74e75e4c-dfe0-4a74-b637-44668e9c5f7f"
+      },
+      {
+        "S": "81cf6862-8f59-48ab-a7f5-2b545fc904cf"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

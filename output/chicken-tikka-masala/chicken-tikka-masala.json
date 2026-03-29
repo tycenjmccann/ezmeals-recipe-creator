@@ -1,0 +1,1060 @@
+{
+  "id": {
+    "S": "chicken-tikka-masala"
+  },
+  "title": {
+    "S": "Chicken Tikka Masala"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Chicken_Tikka_Masala.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Chicken_Tikka_Masala_thumbnail.jpg"
+  },
+  "description": {
+    "S": "A rich, restaurant-quality Chicken Tikka Masala with yogurt-marinated, charred chicken in a silky, spice-infused tomato cream sauce. Made from scratch at home with supermarket ingredients."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "45"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "5"
+  },
+  "cuisineType": {
+    "S": "Indian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "1 1/2 pounds boneless, skinless Chicken Thighs, cut into bite-sized pieces"
+      },
+      {
+        "S": "3/4 cup Plain Greek Yogurt (full-fat)"
+      },
+      {
+        "S": "2 tablespoons Lemon Juice"
+      },
+      {
+        "S": "1 1/2 tablespoons Garlic, minced (about 4 to 5 cloves, for marinade)"
+      },
+      {
+        "S": "1 tablespoon Fresh Ginger, minced or grated (for marinade)"
+      },
+      {
+        "S": "2 teaspoons Ground Cumin (for marinade)"
+      },
+      {
+        "S": "1 teaspoon Garam Masala (for marinade)"
+      },
+      {
+        "S": "1 teaspoon Paprika (for marinade)"
+      },
+      {
+        "S": "1 teaspoon Ground Coriander (for marinade)"
+      },
+      {
+        "S": "1/2 teaspoon Turmeric (for marinade)"
+      },
+      {
+        "S": "1/2 teaspoon Ground Cinnamon"
+      },
+      {
+        "S": "1/4 teaspoon Cayenne Pepper (adjust to taste)"
+      },
+      {
+        "S": "1/2 teaspoon Black Pepper"
+      },
+      {
+        "S": "1 teaspoon Salt (for marinade)"
+      },
+      {
+        "S": "1 tablespoon Vegetable Oil (for marinade)"
+      },
+      {
+        "S": "2 tablespoons Butter or Ghee (for sauce)"
+      },
+      {
+        "S": "2 tablespoons Vegetable Oil (for sauce), plus 1 to 2 tablespoons for charring"
+      },
+      {
+        "S": "1 large Yellow Onion, finely diced"
+      },
+      {
+        "S": "1 tablespoon Fresh Ginger, minced or grated (for sauce)"
+      },
+      {
+        "S": "3 cloves Garlic, minced (for sauce)"
+      },
+      {
+        "S": "2 teaspoons Ground Cumin (for sauce)"
+      },
+      {
+        "S": "2 teaspoons Paprika (for sauce)"
+      },
+      {
+        "S": "1 teaspoon Ground Coriander (for sauce)"
+      },
+      {
+        "S": "1 teaspoon Turmeric (for sauce)"
+      },
+      {
+        "S": "1 tablespoon Garam Masala (for sauce)"
+      },
+      {
+        "S": "1 teaspoon Salt (for sauce)"
+      },
+      {
+        "S": "1 (14 ounce) can Tomato Sauce or tomato passata"
+      },
+      {
+        "S": "1/2 cup Water"
+      },
+      {
+        "S": "1 cup Heavy Cream or full-fat coconut milk"
+      },
+      {
+        "S": "1 teaspoon Sugar"
+      },
+      {
+        "S": "2 tablespoons cold Butter, for finishing (optional but recommended)"
+      },
+      {
+        "S": "1/4 cup Fresh Cilantro, chopped (divided - half stirred in, half for garnish)"
+      },
+      {
+        "S": "5 cups hot cooked Basmati Rice (about 1 cup per serving)"
+      },
+      {
+        "S": "Naan Bread (for serving)"
+      },
+      {
+        "S": "1 Lemon, cut into wedges (optional, for serving)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Thighs"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Boneless, skinless, cut into bite-sized pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Plain Greek Yogurt"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "3/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Full-fat, Greek or regular"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemon Juice"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Fresh or bottled"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Minced, about 4 to 5 cloves, for marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Fresh, minced or grated, for marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garam Masala"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Paprika"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Coriander"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cinnamon"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cayenne Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Adjust to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "For marinade"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Butter"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or ghee, for sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3 to 4"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "For sauce and charring"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Large, finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Fresh, minced or grated, for sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced, for sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Paprika"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Coriander"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garam Masala"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "For sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "14 ounce can"
+          },
+          "note": {
+            "S": "Or tomato passata"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Heavy Cream"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Or full-fat coconut milk"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Butter"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Cold, for finishing, optional but recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Fresh, chopped, divided - half stirred in, half for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Basmati Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Hot cooked, about 1 cup per serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Naan Bread"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "package"
+          },
+          "note": {
+            "S": "For serving, about 5 pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemon"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Cut into wedges, optional, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Marinate the chicken 1 to 24 hours ahead. Whisk together 3/4 cup yogurt, 2 tablespoons lemon juice, 1 1/2 tablespoons minced garlic, 1 tablespoon minced ginger, 2 teaspoons cumin, 1 teaspoon garam masala, 1 teaspoon paprika, 1 teaspoon coriander, 1/2 teaspoon turmeric, 1/2 teaspoon cinnamon, 1/4 teaspoon cayenne, 1/2 teaspoon black pepper, 1 teaspoon salt, and 1 tablespoon vegetable oil in a large bowl. Add 1 1/2 pounds chicken thigh pieces and turn to coat thoroughly. Cover with plastic wrap and refrigerate for at least 1 hour, or ideally overnight (up to 24 hours) for the best flavor."
+      },
+      {
+        "S": "Remove chicken from the fridge 15 minutes before cooking. Heat 1 tablespoon additional vegetable oil in a large non-stick or cast-iron skillet over high heat until the pan is very hot and nearly smoking. Working in 2 to 3 batches to avoid crowding, add chicken in a single layer. Cook undisturbed for 3 minutes until charred on the bottom, then flip and cook 2 to 3 minutes on the second side until charred. Transfer to a plate. Between batches, scrape out any burnt bits and add a little more oil if needed. The chicken does not need to be cooked through at this stage."
+      },
+      {
+        "S": "Build the sauce by reducing heat to medium. In the same skillet (wipe clean if heavily charred), melt 2 tablespoons butter with 2 tablespoons vegetable oil. Add 1 finely diced large yellow onion and a pinch of salt. Cook, stirring frequently, until softened and lightly golden, about 5 to 7 minutes. Add 1 tablespoon minced ginger and cook 1 minute. Add 3 cloves minced garlic and cook 1 minute more until fragrant."
+      },
+      {
+        "S": "Bloom the spices by adding 2 teaspoons ground cumin, 2 teaspoons paprika, 1 teaspoon ground coriander, 1 teaspoon turmeric, 1 tablespoon garam masala, and 1 teaspoon salt to the skillet. Stir constantly for 30 to 60 seconds until the spices are fragrant and coat the onions. This step is essential to develop deep flavor."
+      },
+      {
+        "S": "Pour in 1 (14 ounce) can tomato sauce and 1/2 cup water. Stir well, scraping up any browned bits from the pan bottom. Bring to a boil, then reduce heat to low. Cover and simmer for 15 to 20 minutes, stirring occasionally, until the sauce thickens and turns a deep, rich color."
+      },
+      {
+        "S": "Blend the sauce for restaurant-quality smoothness (optional but recommended). Carefully transfer the sauce to a bowl and use an immersion blender or countertop blender to puree until smooth. Return sauce to the skillet. Skip this step if you prefer a chunkier, more rustic sauce."
+      },
+      {
+        "S": "Stir 1 cup heavy cream or coconut milk and 1 teaspoon sugar into the sauce. Add the seared chicken along with any accumulated juices. Stir to coat. Simmer uncovered over medium-low heat for 8 to 10 minutes, or until the chicken is cooked through to an internal temperature of 165 degrees Fahrenheit and the sauce reaches your desired consistency. Add a splash of water if the sauce is too thick."
+      },
+      {
+        "S": "Remove from heat. Stir in 2 tablespoons cold butter for extra richness and gloss if desired. Taste and adjust salt and spice levels. Stir in half of the 1/4 cup chopped cilantro."
+      },
+      {
+        "S": "Spoon over 5 cups hot cooked basmati rice (about 1 cup per serving) or alongside warm naan bread. Garnish with remaining fresh cilantro and lemon wedges. Serve immediately."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Chicken Thighs vs. Breasts: Thighs are strongly recommended. Their higher fat content keeps them juicy through high-heat charring and extended simmering. If using breasts, reduce the charring time and monitor closely to avoid dryness."
+      },
+      {
+        "S": "Heat Level: This version uses 1/4 teaspoon cayenne for mild heat. Adjust up to 1 teaspoon for medium heat, or substitute with 1 teaspoon Kashmiri chili powder for vibrant color with gentle warmth."
+      },
+      {
+        "S": "Dairy-Free Substitution: Replace yogurt with coconut yogurt for the marinade. Use coconut milk instead of heavy cream in the sauce. Replace butter with coconut oil or vegan butter."
+      },
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free as written. If serving with naan, use gluten-free naan."
+      },
+      {
+        "S": "Make-Ahead and Storage: The cooked curry keeps refrigerated for up to 3 days or frozen for up to 3 months. Reheat gently on the stove with a splash of water. A pinch of garam masala when reheating refreshes the spice aromatics."
+      },
+      {
+        "S": "Oil Choice: Use a neutral, high-smoke-point oil such as vegetable, canola, or grapeseed. Avoid olive oil for the charring step."
+      },
+      {
+        "S": "Food Safety: Always ensure chicken reaches an internal temperature of 165 degrees Fahrenheit (74 degrees Celsius). When reheating leftovers, bring to a full simmer before serving."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "3e5a8245-bff7-463f-8295-60ad4bad1601"
+      },
+      {
+        "S": "572cbdc3-03f0-425e-91ec-115daccd12d4"
+      },
+      {
+        "S": "9a02ba4a-0dce-43f5-90c9-125a1cb4988a"
+      },
+      {
+        "S": "fff9f91e-3fb1-4368-99db-abfa0da7cf03"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "00702059-2dfa-4cf4-961c-7fda3331b1bd"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "ba602838-93f6-4e80-9030-3b58d28e8725"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "77024055-0755-4cab-89d8-3bfc2bcc9869"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

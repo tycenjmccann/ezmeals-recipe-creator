@@ -1,0 +1,582 @@
+{
+  "id": {
+    "S": "baked-ziti"
+  },
+  "title": {
+    "S": "Baked Ziti"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Baked_Ziti.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Baked_Ziti_thumbnail.jpg"
+  },
+  "description": {
+    "S": "A big pan of Baked Ziti filled with pasta, ricotta, Italian sausage, and marinara sauce - hearty, cheesy, and deeply satisfying. Serve with garlic bread and a simple green salad for the ultimate family dinner."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "50"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "10"
+  },
+  "cuisineType": {
+    "S": "Italian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "16 ounces Ziti or Penne Pasta"
+      },
+      {
+        "S": "1 tablespoon Olive Oil, plus more for drizzling"
+      },
+      {
+        "S": "1 pound Italian Sausage (sweet, hot, or a mix), casings removed"
+      },
+      {
+        "S": "1 medium Yellow Onion, finely diced"
+      },
+      {
+        "S": "4 cloves Garlic, minced"
+      },
+      {
+        "S": "32 ounces Marinara Sauce"
+      },
+      {
+        "S": "1/2 cup reserved pasta cooking Water or plain water"
+      },
+      {
+        "S": "1 teaspoon Italian Seasoning"
+      },
+      {
+        "S": "Pinch of Crushed Red Pepper Flakes (optional)"
+      },
+      {
+        "S": "Kosher Salt and Black Pepper, to taste"
+      },
+      {
+        "S": "15 ounces whole-milk Ricotta Cheese"
+      },
+      {
+        "S": "1 large Egg, lightly beaten"
+      },
+      {
+        "S": "2 cups shredded Mozzarella Cheese (divided - 1 cup for ricotta mixture, 1 cup for topping)"
+      },
+      {
+        "S": "3/4 cup finely grated Parmesan Cheese (divided - 1/2 cup for ricotta mixture, 1/4 cup for topping)"
+      },
+      {
+        "S": "3 tablespoons Fresh Basil Leaves, chopped (2 tablespoons for ricotta mixture, plus more for garnish)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ziti Pasta"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "16"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Or penne pasta"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Plus more for drizzling"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Italian Sausage"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Sweet, hot, or a mix; casings removed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Medium, finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Marinara Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "32"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Reserved pasta cooking water or plain water"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Italian Seasoning"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Red Pepper Flakes"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pinch"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "To taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "To taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ricotta Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "15"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Whole-milk"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Egg"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "large"
+          },
+          "note": {
+            "S": "Lightly beaten"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Mozzarella Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Shredded, divided; 1 cup for ricotta mixture, 1 cup for topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Parmesan Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "3/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Finely grated, divided; 1/2 cup for ricotta mixture, 1/4 cup for topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Basil Leaves"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Chopped; 2 tablespoons for ricotta mixture, plus more for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Preheat the oven to 375 degrees Fahrenheit and position a rack in the center. Lightly grease a 9 by 13 inch baking dish with cooking spray or olive oil and set aside."
+      },
+      {
+        "S": "Bring a large pot of generously salted water to a rolling boil. Cook 16 ounces ziti or penne pasta for 2 minutes less than the package directions so the pasta remains noticeably firm. Reserve 1 cup of the starchy pasta water before draining. Drain the pasta in a colander, drizzle with a little olive oil, and toss gently to prevent sticking. Transfer to a large bowl."
+      },
+      {
+        "S": "Heat 1 tablespoon olive oil in a large skillet over medium-high heat. Add 1 pound Italian sausage with casings removed and cook, breaking it into small pieces with a wooden spoon, until browned and cooked through to an internal temperature of 160 degrees Fahrenheit, about 6 to 8 minutes. Drain all but about 1 tablespoon of fat from the pan."
+      },
+      {
+        "S": "Reduce heat to medium. Add 1 finely diced medium yellow onion to the pan and cook, stirring occasionally, until softened and translucent, about 3 to 4 minutes. Add 4 cloves minced garlic and cook until fragrant, about 30 seconds. Do not let the garlic brown."
+      },
+      {
+        "S": "Add 32 ounces marinara sauce, 1/2 cup reserved pasta water, 1 teaspoon Italian seasoning, and a pinch of crushed red pepper flakes if desired. Stir to combine, bring to a gentle simmer, and cook for 5 minutes to allow the flavors to meld. Taste and adjust seasoning with kosher salt and black pepper. Remove from heat."
+      },
+      {
+        "S": "Combine 15 ounces whole-milk ricotta cheese, 1 lightly beaten large egg, 1 cup shredded mozzarella cheese, 1/2 cup grated Parmesan cheese, 2 tablespoons chopped fresh basil, 1/4 teaspoon kosher salt, and 1/4 teaspoon black pepper in a medium bowl. Stir until smooth and well blended."
+      },
+      {
+        "S": "Add the ricotta mixture to the bowl of cooked pasta and fold gently until the pasta is evenly coated. Pour in the meat sauce and fold together gently, leaving a few streaks of ricotta visible throughout. Transfer the mixture into the prepared 9 by 13 inch baking dish and spread evenly. Top with the remaining 1 cup shredded mozzarella cheese and 1/4 cup grated Parmesan cheese."
+      },
+      {
+        "S": "Cover the dish tightly with aluminum foil. Bake at 375 degrees Fahrenheit for 15 minutes covered. Remove the foil and continue baking for 15 to 20 minutes more, until the cheese is melted, golden in spots, and the sauce is bubbling vigorously around the edges."
+      },
+      {
+        "S": "Switch the oven to broil on high for an extra-golden cheese crust (optional). Broil for 2 to 3 minutes, watching closely to prevent burning, until the cheese is deeply golden with a few dark spots."
+      },
+      {
+        "S": "Remove from the oven and let the baked ziti rest for 5 to 10 minutes to allow the sauce to thicken and the dish to set. Garnish with torn fresh basil leaves and serve warm."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free: Use a gluten-free ziti or penne pasta. Verify that the marinara sauce and Italian seasoning are certified gluten-free."
+      },
+      {
+        "S": "Make Ahead: Assemble through the folding step, cover tightly with plastic wrap and then foil, and refrigerate for up to 24 hours. Add 10 to 15 minutes to the covered baking time when baking from cold. Can also be frozen for up to 3 months; thaw overnight in the refrigerator before baking."
+      },
+      {
+        "S": "Pasta Choice: Ziti is traditional but penne, rigatoni, or even large shells all work well. Tube shapes and ridges catch sauce beautifully."
+      },
+      {
+        "S": "Ricotta Tip: Use whole-milk ricotta for the creamiest result. If your ricotta seems watery, drain it in a fine-mesh strainer for 15 minutes before using."
+      },
+      {
+        "S": "Sausage Choice: Sweet Italian sausage gives a milder, family-friendly flavor. Hot Italian sausage adds a kick. A 50/50 mix is excellent."
+      },
+      {
+        "S": "Storage: Refrigerate leftovers in an airtight container for up to 4 days. Reheat in a 350 degree Fahrenheit oven covered with foil until heated through, about 20 to 25 minutes. Add a splash of water or sauce before reheating to prevent drying out."
+      },
+      {
+        "S": "Food Safety: Ensure sausage reaches an internal temperature of 160 degrees Fahrenheit before assembling."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "453b0798-847b-4bb4-9284-96410e29afe1"
+      },
+      {
+        "S": "e094268d-3d62-449b-933b-65b7c819deee"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      },
+      {
+        "S": "2d23e3ad-b1ed-41c6-ad1f-76831111b51e"
+      },
+      {
+        "S": "b9b2cc09-321a-4f26-b610-b8affbf12cbb"
+      },
+      {
+        "S": "615d1420-7027-4699-96a6-705a2d9fe7a3"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "d14e781b-31cb-4196-a83f-29feb9bfdde0"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "3e63f6a0-04f9-4f72-bcb1-28c2598658c6"
+      },
+      {
+        "S": "ba602838-93f6-4e80-9030-3b58d28e8725"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "id": {
+    "S": "93ba29ae-c275-4de6-95f5-909788861f39"
+  },
+  "title": {
+    "S": "Pad Thai"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Pad_Thai.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Pad_Thai_thumbnail.jpg"
+  },
+  "description": {
+    "S": "An authentic Thai stir-fried noodle dish featuring tender rice noodles tossed with your choice of protein, scrambled eggs, and crisp vegetables in a perfect balance of sweet, sour, and savory flavors. This restaurant-quality pad thai comes together in just 30 minutes with proper high-heat cooking techniques."
+  },
+  "link": {
+    "S": "https://tastesbetterfromscratch.com/pad-thai/"
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "15"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": true
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "3 Tablespoons fish sauce"
+      },
+      {
+        "S": "1 Tablespoon low-sodium soy sauce"
+      },
+      {
+        "S": "5 Tablespoons light brown sugar"
+      },
+      {
+        "S": "2 Tablespoons rice vinegar OR tamarind paste"
+      },
+      {
+        "S": "1 Tablespoon Sriracha hot sauce (or more, to taste)"
+      },
+      {
+        "S": "2 Tablespoons creamy peanut butter (optional)"
+      },
+      {
+        "S": "8 ounces flat rice noodles"
+      },
+      {
+        "S": "3 Tablespoons oil (vegetable or peanut)"
+      },
+      {
+        "S": "3 cloves garlic, minced"
+      },
+      {
+        "S": "8 ounces uncooked shrimp, chicken, OR extra-firm tofu, cut into small pieces"
+      },
+      {
+        "S": "2 eggs, beaten"
+      },
+      {
+        "S": "1 cup fresh bean sprouts"
+      },
+      {
+        "S": "1 red bell pepper, thinly sliced"
+      },
+      {
+        "S": "3 green onions, chopped"
+      },
+      {
+        "S": "1/2 cup dry roasted peanuts"
+      },
+      {
+        "S": "2 limes"
+      },
+      {
+        "S": "1/2 cup fresh cilantro, chopped"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fish Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Light Brown Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Rice Vinegar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "OR tamarind paste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sriracha Hot Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "or more, to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Creamy Peanut Butter"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Flat Rice Noodles"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "ounce"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "vegetable or peanut"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "clove"
+          },
+          "note": {
+            "S": "minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shrimp"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "ounce"
+          },
+          "note": {
+            "S": "uncooked; OR use chicken or extra-firm tofu, cut into small pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Eggs"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "beaten"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Bean Sprouts"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Bell Pepper"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Green Onions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dry Roasted Peanuts"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Limes"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Prepare the sauce by whisking together 3 tablespoons fish sauce, 1 tablespoon soy sauce, 5 tablespoons brown sugar, 2 tablespoons rice vinegar or tamarind paste, 1 tablespoon Sriracha, and 2 tablespoons peanut butter (if using) in a small bowl until smooth. Set aside."
+      },
+      {
+        "S": "Cook 8 ounces rice noodles according to package instructions, just until tender \u2014 do not overcook as they will continue to soften in the wok. Drain and rinse under cold water to stop cooking. Toss with a small drizzle of oil to prevent sticking."
+      },
+      {
+        "S": "Heat 1 1/2 tablespoons oil in a wok or large skillet over high heat until shimmering. Add 3 cloves minced garlic and 1 sliced bell pepper. Stir for 30 seconds, then add 8 ounces protein."
+      },
+      {
+        "S": "Cook the protein: For shrimp, cook 1-2 minutes per side until pink and opaque. For chicken, cook 3-4 minutes total, flipping once, until internal temperature reaches 165\u00b0F. For tofu, cook 2-3 minutes per side until golden. If using chicken, wash hands and any surfaces that contacted raw chicken with hot soapy water."
+      },
+      {
+        "S": "Push everything to one side of the wok. Add remaining 1 1/2 tablespoons oil to the empty side. Pour in 2 beaten eggs and scramble, breaking into small pieces with a spatula as they set (about 30-45 seconds)."
+      },
+      {
+        "S": "Add cooked noodles and sauce to the wok. Toss everything together over high heat for 1-2 minutes until noodles are well coated and heated through."
+      },
+      {
+        "S": "Add 1 cup bean sprouts and most of the 1/2 cup peanuts (reserving a couple tablespoons for garnish). Toss briefly \u2014 do not overcook the sprouts, they should stay crisp."
+      },
+      {
+        "S": "Serve immediately. Plate and garnish with remaining peanuts, 3 chopped green onions, 1/2 cup cilantro, and lime wedges from 2 limes. Squeeze lime generously over each serving."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For gluten-free: use tamari instead of soy sauce and ensure rice noodles are certified gluten-free."
+      },
+      {
+        "S": "If substituting tamarind paste for rice vinegar, use tamarind puree/paste, NOT tamarind concentrate (which is 3-4x stronger). If you only have concentrate, use about 1 1/2 teaspoons diluted with water to equal 2 tablespoons."
+      },
+      {
+        "S": "5 tablespoons brown sugar is on the sweeter side (authentic). Taste the sauce before adding to the wok \u2014 reduce to 3-4 tablespoons if you prefer less sweet."
+      },
+      {
+        "S": "If using dried noodles that require soaking rather than boiling, soak in room temperature water for 30 minutes until pliable but still firm. They'll finish cooking in the wok."
+      },
+      {
+        "S": "The key to good pad thai is high heat and working quickly. A large (12 inches or larger) skillet works if you don't have a wok \u2014 just don't overcrowd."
+      },
+      {
+        "S": "Refrigerate leftovers in an airtight container for up to 2-3 days. Reheat in a hot skillet with a splash of water."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "M": {
+          "title": {
+            "S": "Thai Cucumber Salad"
+          },
+          "description": {
+            "S": "Cool, tangy sliced cucumbers tossed with rice vinegar, sesame oil, and a pinch of red pepper flakes \u2014 the perfect crisp, refreshing contrast to the rich, savory noodles."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Fresh Spring Rolls"
+          },
+          "description": {
+            "S": "Light rice paper rolls filled with crisp lettuce, herbs, carrots, and vermicelli with a peanut dipping sauce \u2014 a classic Thai-inspired starter that keeps the meal light."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Coconut Lemongrass Soup (Tom Kha)"
+          },
+          "description": {
+            "S": "A fragrant, creamy coconut broth with lemongrass, galangal, and mushrooms that complements pad thai's bold sweet-sour-savory profile beautifully."
+          }
+        }
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Carbon Steel Wok (14-inch)"
+          },
+          "reason": {
+            "S": "A proper wok delivers the intense heat and tossing action essential for authentic pad thai texture and wok hei char."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Spider Strainer Skimmer"
+          },
+          "reason": {
+            "S": "Gently lifts delicate rice noodles from boiling water without breaking them \u2014 far better than dumping through a colander."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Tamarind Paste"
+          },
+          "reason": {
+            "S": "The authentic pad thai ingredient that delivers signature sweet-sour depth rice vinegar can only approximate. A Southeast Asian pantry essential."
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "stir-fry"
+      },
+      {
+        "S": "rice noodles"
+      },
+      {
+        "S": "wok"
+      },
+      {
+        "S": "thai street food"
+      },
+      {
+        "S": "peanut noodles"
+      },
+      {
+        "S": "weeknight noodle dinner"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

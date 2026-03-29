@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-29 00:02:00):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gluten-free-mediterranean-falafel-bowl/gluten-free-mediterranean-falafel-bowl.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gluten-free-mediterranean-falafel-bowl/gluten-free-mediterranean-falafel-bowl_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gluten-free-mediterranean-falafel-bowl/gluten-free-mediterranean-falafel-bowl_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Gluten-Free_Mediterranean_Falafel_Bowl.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Gluten-Free_Mediterranean_Falafel_Bowl_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Gluten-Free_Mediterranean_Falafel_Bowl.json (triggers DB import)

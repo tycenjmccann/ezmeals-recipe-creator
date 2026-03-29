@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 06:24:40):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/tom-kha-gai/tom-kha-gai.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/tom-kha-gai/tom-kha-gai_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/tom-kha-gai/tom-kha-gai_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Tom_Kha_Gai.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Tom_Kha_Gai_thumbnail.jpg
+✅ DynamoDB: recipe 'tom-kha-gai' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

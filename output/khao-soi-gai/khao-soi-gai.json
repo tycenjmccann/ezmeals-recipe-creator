@@ -1,0 +1,754 @@
+{
+  "id": {
+    "S": "khao-soi-gai"
+  },
+  "title": {
+    "S": "Khao Soi Gai (Chiang Mai Curry Noodles)"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Khao_Soi_Gai.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Khao_Soi_Gai_thumbnail.jpg"
+  },
+  "description": {
+    "S": "This authentic Khao Soi curry from Northern Thailand features a rich, creamy coconut curry broth, tender bone-in chicken, soft egg noodles, and a crispy noodle topping - served with the essential accompaniment plate of pickled mustard greens, shallots, lime, and chili oil."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "35"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "4 to 6 Dried Red Chilis (guajillo or Thai), soaked in hot water 15 minutes, seeded"
+      },
+      {
+        "S": "4 1/2 ounces Shallots total, divided (2 1/2 ounces roughly chopped for paste, 2 to 3 thinly sliced for garnish)"
+      },
+      {
+        "S": "4 cloves Garlic, roughly chopped"
+      },
+      {
+        "S": "2 tablespoons Fresh Ginger, roughly chopped"
+      },
+      {
+        "S": "3 1/2 tablespoons Fresh Turmeric, sliced (or 1 1/2 tablespoons ground turmeric)"
+      },
+      {
+        "S": "2 stalks Lemongrass, tender inner parts only, thinly sliced"
+      },
+      {
+        "S": "1 tablespoon Coriander Seeds (or 2 teaspoons ground)"
+      },
+      {
+        "S": "3 Brown Cardamom Pods, seeds only (or 1 teaspoon ground)"
+      },
+      {
+        "S": "1 tablespoon Curry Powder"
+      },
+      {
+        "S": "1 1/2 teaspoons Shrimp Paste"
+      },
+      {
+        "S": "2 cans (27 ounces total) full-fat Coconut Milk, refrigerated overnight"
+      },
+      {
+        "S": "3 cups unsalted or low-sodium Chicken Stock"
+      },
+      {
+        "S": "1 1/2 pounds Chicken Drumsticks (or bone-in, skin-on thighs)"
+      },
+      {
+        "S": "2 1/2 tablespoons Soy Sauce"
+      },
+      {
+        "S": "1 1/2 tablespoons Fish Sauce"
+      },
+      {
+        "S": "1 1/2 tablespoons Palm Sugar or Light Brown Sugar"
+      },
+      {
+        "S": "1 teaspoon Salt"
+      },
+      {
+        "S": "1 pound fresh Egg Noodles (Chinese-style or wonton noodles)"
+      },
+      {
+        "S": "Vegetable Oil for deep frying (or peanut), about 2 inches in a wok"
+      },
+      {
+        "S": "Pickled Mustard Greens, roughly chopped (for garnish)"
+      },
+      {
+        "S": "2 Limes, quartered (for garnish)"
+      },
+      {
+        "S": "Fried Chili Oil or roasted dried chili flakes in oil (for garnish)"
+      },
+      {
+        "S": "Fresh Cilantro leaves (optional, for garnish)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Red Chilis"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "4 to 6"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Guajillo or Thai; soaked in hot water 15 minutes, seeded"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shallots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4 1/2"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Divided: 2 1/2 ounces roughly chopped for paste, 2 to 3 thinly sliced for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Roughly chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Roughly chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Turmeric"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Sliced; or substitute 1 1/2 tablespoons ground turmeric"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemongrass"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "stalks"
+          },
+          "note": {
+            "S": "Tender inner parts only, thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coriander Seeds"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Or substitute 2 teaspoons ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cardamom Pods"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Brown or black, seeds only; or substitute 1 teaspoon ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Curry Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shrimp Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cans"
+          },
+          "note": {
+            "S": "27 ounces total; full-fat, refrigerated overnight"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Stock"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Unsalted or low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Drumsticks"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Or bone-in, skin-on thighs"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fish Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Palm Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or light brown sugar"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Egg Noodles"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Fresh; Chinese-style or wonton noodles"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "For deep frying; about 2 inches depth in a wok or deep pot"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Pickled Mustard Greens"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Roughly chopped, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Limes"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Quartered, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fried Chili Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Or roasted dried chili flakes in oil, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Fresh leaves, optional, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Toast 1 tablespoon coriander seeds and 3 cardamom pods in a dry skillet over medium heat for 1 to 2 minutes, shaking frequently, until fragrant. Let cool, then grind to a powder in a spice grinder or mortar. Combine 4 to 6 soaked and drained dried red chilis, 2 1/2 ounces shallots, 4 cloves garlic, 2 tablespoons ginger, 3 1/2 tablespoons turmeric, 2 stalks lemongrass, ground spices, 1 tablespoon curry powder, 1 1/2 teaspoons shrimp paste, and 2 tablespoons water in a food processor or mortar. Blend or pound to a smooth paste, scraping down sides as needed. Set aside."
+      },
+      {
+        "S": "Separate about one-quarter of the 1 pound egg noodles (approximately 4 ounces) and gently pull apart the strands. Pat dry with paper towels to prevent dangerous splattering in hot oil. Heat 2 inches of vegetable oil in a wok or deep pot to 350 degrees Fahrenheit. Test readiness with a single noodle strand \u2014 it should puff and float immediately. Fry noodles in small batches, a loose handful at a time, for 5 to 10 seconds until golden and puffed. Remove immediately with a spider strainer or slotted spoon and drain on paper towels. Set aside."
+      },
+      {
+        "S": "Bring a large pot of water to a boil. Cook the remaining 12 ounces of egg noodles according to package directions, usually 2 to 3 minutes for fresh egg noodles. Drain, rinse briefly with cool water to prevent sticking, and set aside."
+      },
+      {
+        "S": "Open the 2 refrigerated cans of coconut milk. Scoop out the thick coconut cream from the top of both cans (about 1/2 to 3/4 cup of thick cream) and reserve the remaining thinner coconut milk. Heat the thick coconut cream in a large pot or Dutch oven over medium heat. Stir frequently until the cream breaks and oils begin to separate and shimmer on the surface, about 3 to 5 minutes. Add the curry paste to the separated cream. Stir and fry the paste vigorously for 2 to 3 minutes until very fragrant, darkened slightly, and oil pools around the edges."
+      },
+      {
+        "S": "Pour in the reserved thinner coconut milk and 3 cups chicken stock. Stir well to combine. Add 2 1/2 tablespoons soy sauce, 1 1/2 tablespoons fish sauce, 1 1/2 tablespoons palm sugar, and 1 teaspoon salt. Stir to dissolve. Add 1 1/2 pounds chicken drumsticks, making sure they are mostly submerged. Bring to a gentle boil, then reduce to a low simmer. Cover and cook for 30 minutes, until chicken is very tender and reaches an internal temperature of 165 degrees Fahrenheit at the bone. Taste the broth and adjust seasoning: add more fish sauce for saltiness and umami, more sugar to balance, or a squeeze of lime for brightness."
+      },
+      {
+        "S": "Divide the cooked egg noodles among 4 large, deep bowls. Place a chicken drumstick in each bowl. Ladle the hot curry broth generously over the noodles and chicken. Top each bowl with a generous crown of crispy fried noodles. Serve immediately with the garnish plate alongside: pickled mustard greens, sliced shallots, lime wedges, and chili oil. Each diner adds garnishes to taste."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free Substitution: Replace egg noodles with rice noodles. Replace soy sauce with gluten-free tamari. Check that curry powder and fish sauce are gluten-free."
+      },
+      {
+        "S": "Dairy-Free: This recipe is naturally dairy-free as written."
+      },
+      {
+        "S": "Shrimp paste alternative: For a shellfish-free version, substitute 1 tablespoon soy sauce plus 1/2 teaspoon miso paste for the shrimp paste."
+      },
+      {
+        "S": "The curry paste can be made ahead and refrigerated in an airtight container for up to 1 week, or frozen for up to 3 months."
+      },
+      {
+        "S": "For a quicker version, substitute 1/2 cup store-bought Khao Soi curry paste (Mae Ploy or Aroy-D brands) in place of the homemade paste."
+      },
+      {
+        "S": "The curry broth (without noodles) keeps well in the refrigerator for up to 4 days or frozen for up to 2 months. Cook noodles fresh when reheating."
+      },
+      {
+        "S": "Food safety: Never leave hot frying oil unattended. Keep a lid nearby to smother flames if oil ignites \u2014 never use water on an oil fire. Ensure noodles are dry before frying. Keep children and pets away from the frying area."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "c9c8182f-95c4-41cd-811d-5dfacc787596"
+      },
+      {
+        "S": "b4efe05b-db9e-456c-9619-d7ae393961a1"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "650e3cfd-9c6e-495c-b7b8-eb682de444ae"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      },
+      {
+        "S": "77024055-0755-4cab-89d8-3bfc2bcc9869"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "5f8f54ff-991f-4e19-a4d9-3d5c476e36f0"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

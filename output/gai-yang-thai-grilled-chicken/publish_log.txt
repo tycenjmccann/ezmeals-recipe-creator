@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 01:25:26):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gai-yang-thai-grilled-chicken/gai-yang-thai-grilled-chicken.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gai-yang-thai-grilled-chicken/gai-yang-thai-grilled-chicken_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/gai-yang-thai-grilled-chicken/gai-yang-thai-grilled-chicken_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Gai_Yang_Thai_Grilled_Chicken.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Gai_Yang_Thai_Grilled_Chicken_thumbnail.jpg
+✅ DynamoDB: recipe 'gai-yang-thai-grilled-chicken' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

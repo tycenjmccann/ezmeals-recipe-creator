@@ -1,0 +1,49 @@
+Recipe: Thai Grilled Chicken (Gai Yang)
+URL: https://www.simplysuwanee.com/gai-yang/
+Time: 584.2s
+
+---
+
+# ✅ Pipeline Complete: Gai Yang — Thai Grilled Chicken
+
+The recipe has been fully processed and published! Here's a summary of the entire pipeline:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from simplysuwanee.com + downloaded image |
+| 2 | **Chef Review** | ✅ | 20 improvements made (see below) |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON with all fields |
+| 4 | **Standardize** | ✅ | 14 ingredients matched to DB names |
+| 5 | **Ingredient Objects** | ✅ | 14 structured objects with categories |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 7 affiliate products matched |
+| 8 | **Assembly** | ✅ | All data merged into single JSON |
+| 9 | **QA Review** | ✅ | 3 fixes applied (glutenFree, cookTime, White Pepper name) |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+## 🔑 Key Chef Review Changes
+- **Fish sauce** 1 → 3 tbsp (was critically low)
+- **Oyster sauce** 1/4 cup → 1 tbsp optional (was overpowering)
+- **Soy sauce** expanded to light + dark (for depth & color)
+- **Removed** standalone salt & water from marinade
+- **Added** scoring step, two-zone grill setup, flipping schedule, resting step, Nam Jim Jaew recipe, and comprehensive safety notes
+
+## 🔴 QA Fixes Applied
+1. `glutenFree` → `false` (contains soy & oyster sauce)
+2. `cookTime` → `55` (better reflects 45-60 min range; keeps `isGourmet: true`)
+3. Ingredient object "Ground White Peppercorns" → "White Pepper" (consistency)
+
+## 📦 Published Assets
+- **S3 Hero**: `menu-item-images/Gai_Yang_Thai_Grilled_Chicken.jpg`
+- **S3 Thumb**: `menu-item-images/Gai_Yang_Thai_Grilled_Chicken_thumbnail.jpg`
+- **DynamoDB**: `gai-yang-thai-grilled-chicken` in MenuItemData table
+- **Local**: `output/gai-yang-thai-grilled-chicken/`
+
+## 📝 Catalog Gaps Identified
+**Sides to create:** Sticky Rice (critical), Nam Jim Jaew (critical), Som Tum (high priority)
+**Products to add:** Charcoal Chimney Starter, Wireless Leave-In Thermometer, Reusable Marinating Bags

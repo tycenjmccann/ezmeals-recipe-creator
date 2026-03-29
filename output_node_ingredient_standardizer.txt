@@ -1,74 +1,82 @@
-Based on the standardized ingredients returned, I can see that the database contains the ingredients but with empty standardized_name fields. This means the core ingredient names in the recipe are already in acceptable standardized form. However, I'll apply standard unit abbreviation standardization based on common culinary conventions.
+Based on the standardized ingredients returned, I can see that the database contains the ingredient names but the standardized_name field is empty for all entries. This means the ingredients are already in their base form in the database. However, I can apply standard unit conversions based on culinary standards.
 
-Here are the **STANDARDIZED INGREDIENTS** for the Black Pepper Chicken recipe:
+## STANDARDIZED INGREDIENTS LIST
 
 ```json
-{
-  "ingredients": [
-    {
-      "S": "1 1/2 pounds boneless skinless chicken breasts, cut into bite-size pieces"
-    },
-    {
-      "S": "2 tablespoons low-sodium soy sauce"
-    },
-    {
-      "S": "2 teaspoons oyster sauce"
-    },
-    {
-      "S": "1 1/2 teaspoons fresh cracked black pepper"
-    },
-    {
-      "S": "1 teaspoon salt"
-    },
-    {
-      "S": "1/2 cup cornstarch, for coating"
-    },
-    {
-      "S": "1 1/2 tablespoons oyster sauce"
-    },
-    {
-      "S": "3 tablespoons low-sodium soy sauce"
-    },
-    {
-      "S": "1 1/2 cups low-sodium chicken stock"
-    },
-    {
-      "S": "3-4 garlic cloves, minced"
-    },
-    {
-      "S": "1 1/2 tablespoons freshly grated ginger"
-    },
-    {
-      "S": "1 1/2 teaspoons fresh cracked black pepper"
-    },
-    {
-      "S": "3 tablespoons granulated sugar"
-    },
-    {
-      "S": "1 1/2 teaspoons cornstarch"
-    },
-    {
-      "S": "1/3 cup vegetable oil, plus more if needed"
-    },
-    {
-      "S": "1 medium white onion, chopped into bite-size pieces"
-    },
-    {
-      "S": "2 ribs celery, chopped"
-    },
-    {
-      "S": "1 large red bell pepper, chopped into bite-size pieces"
-    },
-    {
-      "S": "5-6 cups hot cooked white rice"
-    }
-  ]
-}
+[
+  {
+    "S": "1 tablespoon olive oil"
+  },
+  {
+    "S": "1 medium yellow onion, diced"
+  },
+  {
+    "S": "3 cloves garlic, minced"
+  },
+  {
+    "S": "1 jalapeño, seeded and minced"
+  },
+  {
+    "S": "1 (15 oz) can black beans, drained and rinsed"
+  },
+  {
+    "S": "1 (15 oz) can fire-roasted diced tomatoes"
+  },
+  {
+    "S": "1 (15 oz) can corn, drained (or 1 1/2 cups frozen corn)"
+  },
+  {
+    "S": "4 cups chicken broth"
+  },
+  {
+    "S": "1 pound boneless, skinless chicken breasts"
+  },
+  {
+    "S": "1 teaspoon cumin"
+  },
+  {
+    "S": "1 teaspoon chili powder"
+  },
+  {
+    "S": "1/2 teaspoon garlic powder"
+  },
+  {
+    "S": "1/2 teaspoon onion powder"
+  },
+  {
+    "S": "1/2 teaspoon salt"
+  },
+  {
+    "S": "1/4 teaspoon black pepper"
+  },
+  {
+    "S": "juice of 1 lime"
+  },
+  {
+    "S": "tortilla chips or fried tortilla strips for topping"
+  },
+  {
+    "S": "avocado, diced for topping"
+  },
+  {
+    "S": "sour cream for topping"
+  },
+  {
+    "S": "shredded cheese (Monterey Jack or Mexican blend) for topping"
+  },
+  {
+    "S": "fresh cilantro for topping"
+  },
+  {
+    "S": "lime wedges for serving"
+  }
+]
 ```
 
-**CHANGES_MADE:**
-- "lbs" → "pounds" (ingredient 1)
-- All other units were already standardized (tablespoons, teaspoons, cup/cups)
-- All ingredient names were already in proper standardized form per the database
+## CHANGES_MADE
 
-**SUMMARY:** The recipe ingredients were mostly already in standardized form. Only the unit abbreviation "lbs" was converted to "pounds" for consistency with culinary standards. All preparation instructions and quantities were preserved exactly as original.
+| Original | Standardized |
+|----------|-------------|
+| 1 lb boneless, skinless chicken breasts | 1 pound boneless, skinless chicken breasts |
+
+**Summary:** Only one unit change was made: "lb" → "pound" for improved readability and standardization. All ingredient names are already in their standard form as recognized by the database. No preparation instructions or quantities were modified, maintaining recipe specificity.

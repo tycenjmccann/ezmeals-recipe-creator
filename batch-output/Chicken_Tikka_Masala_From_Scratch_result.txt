@@ -1,0 +1,91 @@
+Recipe: Chicken Tikka Masala From Scratch
+URL: https://tastesbetterfromscratch.com/chicken-tikka-masala-recipe/
+Time: 704.3s
+
+---
+
+# ✅ Pipeline Complete: Chicken Tikka Masala
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from tastesbetterfromscratch.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **20 improvements** — major overhaul of technique, spicing, and protein |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; prepTime=25, cookTime=45, isGourmet=true |
+| 4 | **Standardize** | ✅ | 35 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 35 structured objects (marinade + sauce separated) |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 7 non-food affiliate products matched |
+| 8 | **Assembly** | ✅ | All fixes applied: standardized names, quantities, fractions, section headers |
+| 9 | **QA Review** | 🟡→✅ | 7 fixes applied (yogurt string, oil clarity, object fields, Step 6 wording), then passed |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (20 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Protein Fix** | **Switched from chicken breast → chicken thighs** — all 3 reference recipes (BBC Good Food, Cafe Delites, RecipeTin Eats) prefer/insist on thighs. Breasts dry out during high-heat charring and extended simmering. |
+| **Critical Spice Fix** | **Reduced cayenne from 2 tsp → 1/4 tsp** — 2 tsp is aggressively hot (~20,000+ SHU contribution). RecipeTin uses 1/8 tsp, Cafe Delites uses 1 tsp mild Kashmiri chili. Added scaling note. |
+| **Missing Spices Added** | **Turmeric** (1/2 tsp marinade + 1 tsp sauce) — signature CTM color/flavor, in all comparisons but missing from original. **Ground coriander** (1 tsp each) — standard tikka masala spice across all references. |
+| **Sauce Fixes** | Doubled tomato sauce 8→14 oz + 1/2 cup water (8 oz was too thin); increased butter 1→2 tbsp + 2 tbsp finishing butter (richness defines restaurant CTM); increased oil 1→2 tbsp; added 1 tsp sugar to balance acidity |
+| **Technique** | Added **batch cooking** instruction (prevents steaming vs. charring); added **spice blooming step** (30-60 sec in fat); added **sauce blending step** (optional, for restaurant silkiness); added oil to marinade; added ginger to sauce (was missing) |
+| **Accuracy/Safety** | Fixed paprika omission from Step 1; corrected cook time 35→45 min; added 165°F internal temp requirement; added "cook in batches" + visual cues; split cilantro (half cooking, half garnish); reduced cinnamon 1→1/2 tsp |
+| **Completeness** | Added make-ahead/storage/reheating notes; added dairy-free substitution; added oil choice guidance; clarified marinating time in total |
+
+## 🔴 QA Fixes Applied
+1. **Yogurt string** → `"3/4 cup Plain Greek Yogurt (full-fat)"` (removed redundant "plain full-fat Plain")
+2. **Oil string** → `"plus 1 to 2 tablespoons for charring"` (was imprecise "plus more")
+3. **Step 2** → Added `"additional"` for clarity: `"Heat 1 tablespoon additional vegetable oil"`
+4. **Step 6** → Changed `"immersion blender"` to `"immersion blender or countertop blender"` (aligns with Vitamix in products)
+5. **Yellow Onion object** → unit `""` (was `"large"` — not a unit)
+6. **Naan Bread object** → note updated: `"For serving, about 5 pieces"`
+7. **Lemon Juice object** → note updated: `"Fresh or bottled"`
+8. **Vegetable Oil (sauce) object** → consolidated to `"3 to 4"` tablespoons with note `"For sauce and charring"`
+
+## 🏷️ Special Flags
+
+| Flag | Value | Why |
+|------|-------|-----|
+| `glutenFree` | ✅ `true` | Naturally GF (yogurt, chicken, spices, cream, rice); naan optional with GF note |
+| `vegetarian` | `false` | Contains chicken |
+| `isGourmet` | ✅ `true` | Total time 70 min (>60 threshold) + 1-24 hr marinating |
+| `slowCook` | `false` | Stovetop recipe |
+| `instaPot` | `false` | No IP adaptation |
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Chicken_Tikka_Masala.jpg` |
+| **S3 Thumb** | `menu-item-images/Chicken_Tikka_Masala_thumbnail.jpg` |
+| **DynamoDB** | `chicken-tikka-masala` in MenuItemData table |
+| **Local** | `output/chicken-tikka-masala/` |
+
+## 🔗 Relationship to Existing Recipe
+> **Note:** This is the **stovetop from-scratch version** of Chicken Tikka Masala, distinct from the previously published `slow-cooker-chicken-tikka-masala`. The stovetop version features yogurt marinade, high-heat charring, spice blooming, optional sauce blending, and finishing butter — more complex technique with restaurant-quality results. The slow cooker version is a simpler dump-and-go approach. Consider setting `baseMainId` to link these as variants if the app supports it.
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Mango Chutney | 🔴 Critical — now flagged across **5 Indian recipes**. #1 most-needed Indian catalog addition. |
+| **Side** | Papadum / Papad | 🔴 Critical — flagged across 4+ recipes as essential crunch element |
+| **Side** | Garlic Naan (homemade) | 🟡 High — we have store-bought but a homemade recipe would elevate |
+| **Side** | Aloo Gobi | 🟡 High — classic vegetable side, flagged across 5 recipes |
+| **Side** | Saag / Palak Paneer | 🟡 Moderate — popular vegetable complement |
+| **Product** | Immersion (Stick) Blender | 🔴 Critical — **Step 6 of THIS recipe explicitly calls for one**. Also useful for soups across catalog. #1 product gap. |
+| **Product** | Stainless Steel Tongs (12-inch) | 🟡 High — essential for batch-charring chicken in Step 2 |
+| **Product** | Stainless Steel Whisk | 🟡 High — Step 1 starts with "whisk marinade"; flagged across 4+ recipes |
+| **Product** | Cast Iron Skillet Lid | 🟡 High — Step 5 requires covered simmering; cast iron skillets rarely come with lids |
+| **Product** | Mixing Bowl Set | 🟡 Moderate — needed for marinade (Step 1) and holding charred chicken |
+| **Product** | Indian Spice Box (Masala Dabba) | 🟡 Moderate — this recipe uses 9+ individual spices; flagged across all Indian recipes |
+
+> **💡 Key Insight:** With this publish, we now have **3 Chicken Tikka Masala variants** in the catalog (Stovetop from-scratch, Slow Cooker, and the existing 20-Minute version). Combined with the Chickpea Curry, Coconut Curry Lentils, and Khao Soi, our **Indian/Asian curry category is now 6 recipes strong**. The **Immersion Blender** has hit critical mass — it's now explicitly referenced in recipe instructions and should be the #1 priority product addition. **Mango Chutney** as a side has been flagged in every single Indian recipe processed — it's long overdue for creation.

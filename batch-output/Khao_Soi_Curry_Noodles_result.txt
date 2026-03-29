@@ -1,0 +1,72 @@
+Recipe: Khao Soi Curry Noodles
+URL: https://www.simplysuwanee.com/khao-soi/
+Time: 664.1s
+
+---
+
+# ✅ Pipeline Complete: Khao Soi Gai (Chiang Mai Curry Noodles)
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from simplysuwanee.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **14 improvements** — major authenticity and safety fixes |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; cookTime=35 min, isBalanced=true |
+| 4 | **Standardize** | ✅ | 23 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 23 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 4 sides recommended from catalog |
+| 7 | **Products** | ✅ | 10 affiliate products matched |
+| 8 | **Assembly** | ✅ | Removed section headers, consolidated shallots, fixed glutenFree, added safety note |
+| 9 | **QA Review** | ✅ | **Clean PUBLISH verdict** — zero blocking issues |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (14 total)
+
+| Category | Changes |
+|----------|---------|
+| **Missing Ingredients** | Added lemongrass (2 stalks — essential paste ingredient in virtually all authentic recipes); added complete garnish plate (pickled mustard greens, shallots, lime, chili oil — defining feature of Khao Soi completely missing) |
+| **Ratio Fixes** | Doubled coconut milk from 1 can → 2 cans (original was too thin/watery for the dish's signature rich, creamy consistency) |
+| **Technique** | Added dry-toasting step for whole spices (standard curry paste technique); added noodle-drying instruction before frying (critical safety); changed sugar to palm sugar (authentic Northern Thai) |
+| **Safety** | Added deep frying safety notes (350°F temp, oil fire protocol, moisture warning, child safety); increased cook time 20→30 min (drumsticks need more time to reach 165°F at bone) |
+| **Completeness** | Added seasoning instructions in Step 5 (soy/fish sauce/sugar listed but never used!); added assembly/serving step (original had no plating instructions); fixed duplicate water entry; narrowed chili range 2-10→4-6; increased prep time 15→25 min |
+
+## 🔴 Assembly Fixes Applied
+1. **`glutenFree`** → `false` (contains egg noodles, soy sauce)
+2. **Section headers removed** — "Curry Paste:", "Soup:", "Noodles:", "Garnish Plate:" cleaned from ingredients list
+3. **Shallots consolidated** — Combined paste shallots + garnish shallots into single entry (4.5 oz, divided)
+4. **Dried Red Chilis category** — Changed from "Produce" to "Seasonings" (more appropriate for dried goods)
+5. **Duplicate water fixed** — Original had "1 tablespoon water" listed twice
+6. **All decimals converted** — 1.5→1 1/2, 2.5→2 1/2, 3.5→3 1/2, 13.5 oz→27 oz (2 cans)
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Khao_Soi_Gai.jpg` |
+| **S3 Thumb** | `menu-item-images/Khao_Soi_Gai_thumbnail.jpg` |
+| **DynamoDB** | `khao-soi-gai` in MenuItemData table |
+| **Local** | `output/khao-soi-gai/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Som Tam (Green Papaya Salad) | 🔴 Critical — #1 Thai side dish, classic pairing with curry |
+| **Side** | Sticky Rice (Khao Niao) | 🔴 Critical — Northern Thailand's staple carb |
+| **Side** | Thai Spring Rolls (Fresh) | 🟡 High — cool, refreshing contrast to rich curry |
+| **Side** | Asian Pickled Vegetables | 🟡 High — essential palate cleanser |
+| **Side** | Miang Kham (Betel Leaf Wraps) | 🟡 Moderate — iconic Northern Thai appetizer |
+| **Product** | Deep-Fry / Candy Thermometer | 🔴 Critical — recipe requires 350°F oil temp for noodles |
+| **Product** | Spider Strainer / Wire Skimmer | 🔴 Critical — essential for lifting fried noodles from hot oil |
+| **Product** | Large Deep Noodle/Soup Bowls | 🟡 High — Khao Soi needs deep bowls for broth + toppings |
+| **Product** | Electric Spice Grinder | 🟡 Moderate — for whole spice grinding |
+| **Product** | Condiment/Accompaniment Serving Tray | 🟡 Moderate — for the garnish plate presentation |
+| **Product** | Splatter Guard/Screen | 🟡 Moderate — safety tool for deep frying |

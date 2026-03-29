@@ -1,0 +1,90 @@
+Recipe: Chickpea Curry
+URL: https://tastesbetterfromscratch.com/chickpea-curry/
+Time: 636.0s
+
+---
+
+# ✅ Pipeline Complete: Chickpea Curry
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from tastesbetterfromscratch.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **15 improvements** — critical spice technique fixes + timing corrections |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; prepTime=15, cookTime=50, isGourmet=true |
+| 4 | **Standardize** | ✅ | 23 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 23 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 8 non-food affiliate products matched |
+| 8 | **Assembly** | ✅ | All fixes applied: standardized names, fractions, quantities, dropped notes restored |
+| 9 | **QA Review** | ✅ | **Clean PUBLISH verdict** — 1 minor fix applied (Raita quantity) |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (15 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Technique Fix** | **Moved whole spice tempering (cumin + mustard seeds) to Step 1 BEFORE onions** — original had them AFTER garlic/ginger (Step 2). Whole spices must bloom in hot oil first (tadka/chaunk technique); adding after garlic risks burning garlic while seeds are still raw. Verified against Minimalist Baker and Budget Bytes. |
+| **Critical Technique Fix** | **Moved garam masala to finish OFF HEAT** (Step 6) — was added with tomatoes in Step 3 and simmered 30 min. Garam masala is a finishing spice with volatile aromatics (cardamom, clove, cinnamon) that prolonged cooking destroys. Both Serious Eats and Minimalist Baker confirm off-heat addition. |
+| **Technique** | Added ground spice toasting step (coriander + turmeric toasted 30-45 sec in oil before liquid); changed vessel from "large skillet" → "large pot or Dutch oven" (~10 cups of curry overflows a skillet); added explicit "reduce heat to medium-low" for simmer (was unspecified — would scorch) |
+| **Seasoning** | Increased salt 1/2→3/4 tsp; added optional 1 tsp sugar to balance acidity from 2 cans tomatoes + paste + lime; reduced cilantro 1.5→1 cup and split into 1/2 cup cooking + 1/2 cup garnish (cooking builds herbal depth) |
+| **Timing** | Corrected prep time 5→15 min (honest: dice onion + mince garlic/ginger + chop cilantro + drain chickpeas + juice lime); corrected cook time 45→50 min (2 min bloom + 15 min onion + 4 min aromatics + 5 min sauce + 25 min simmer = ~51 min); reduced simmer 30→20-25 min (proper spice blooming means shorter simmer; 30 min risks coconut milk separation) |
+| **Safety & UX** | Added mustard seed splatter warning; added visual/tactile cues throughout ("shimmering" oil, "deep golden brown" onions, "coats back of a spoon"); added storage/leftover notes; added spinach/kale addition tip |
+
+## 🔴 Assembly & QA Fixes Applied
+1. **Onion** → `"Yellow Onion"` per DB standardization
+2. **Ground Turmeric** → `"Turmeric"` per DB standardization
+3. **13.5 ounce** → `"13 1/2 ounce"` (decimal to fraction conversion)
+4. **Mustard Seeds** → `"Mustard Seed"` (singular per DB) in standardized string
+5. **Basmati Rice** → added `"5 cups"` quantity (1 cup × 5 servings) in both string and object
+6. **Naan Bread** → added quantity `"1"` / unit `"package"` in object
+7. **Raita** → added quantity `"1"` / unit `"container"` in object (was empty — QA fix)
+8. **Section headers removed** from ingredients
+9. **Food product IDs removed** from products array (Basmati Rice, Tandoori Naan)
+10. **2 dropped notes restored** (leftovers/storage, spinach tip)
+
+## 🏷️ Special Flags
+
+| Flag | Value | Why |
+|------|-------|-----|
+| `vegetarian` | ✅ `true` | 100% plant-based — vegan recipe |
+| `glutenFree` | ✅ `true` | Naturally GF (chickpeas, coconut milk, spices, rice); naan is optional with GF note |
+| `isGourmet` | ✅ `true` | Total time 65 min (>60 min threshold) |
+| `slowCook` | `false` | Stovetop recipe |
+| `instaPot` | `false` | No IP adaptation provided |
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Chickpea_Curry.jpg` |
+| **S3 Thumb** | `menu-item-images/Chickpea_Curry_thumbnail.jpg` |
+| **DynamoDB** | `chickpea-curry` in MenuItemData table |
+| **Local** | `output/chickpea-curry/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Mango Chutney | 🔴 Critical — now flagged across **4 Indian recipes** (Tikka Masala, Khao Soi, Coconut Curry Lentils, Chickpea Curry). The single most-requested Indian condiment. |
+| **Side** | Papadum / Papad | 🔴 Critical — crispy lentil wafers add essential crunch to any Indian curry meal; 30-second prep |
+| **Side** | Aloo Gobi | 🟡 High — classic dry Indian veg side; keeps meal vegan. Flagged across 4 recipes. |
+| **Side** | Jeera Rice (Cumin Rice) | 🟡 High — cumin-toasted basmati; echoes the cumin tempering in this curry |
+| **Side** | Saag (Creamed Spinach) | 🟡 Moderate — color/nutrition contrast; classic with chickpea dishes |
+| **Side** | Onion Bhaji / Pakora | 🟡 Moderate — crispy fried fritters for texture |
+| **Product** | Stainless Steel Whisk | 🔴 Critical — needed for cornstarch slurry in Step 5; flagged in 3+ recipes now |
+| **Product** | Citrus Juicer / Lime Squeezer | 🔴 Critical — needed for lime juice in Step 6; flagged across many curry/Latin recipes |
+| **Product** | Splatter Screen / Guard | 🟡 High — Step 1 explicitly warns about mustard seed popping; safety tool |
+| **Product** | Microplane / Ginger Grater | 🟡 High — recipe uses 2 Tbsp fresh ginger; flagged across multiple recipes |
+| **Product** | Masala Dabba (Indian Spice Box) | 🟡 Moderate — this recipe uses 7+ spices; beautiful organizational piece |
+| **Product** | Wooden/Silicone Cooking Spoon Set | 🟡 Moderate — needed for stirring during 25 min simmer |
+
+> **💡 Key Insight:** This is our **second vegan main dish** (alongside Slow Cooker Coconut Curry Lentils), building a strong plant-based category. Unlike the slow cooker lentils, this is a **stovetop recipe** giving variety in cooking methods. The recipe shares nearly identical side pairings with the Lentil Curry, reinforcing that **Mango Chutney** and **Papadum** are critical gaps — they've now been flagged across 4 Indian recipes. The **Citrus Juicer** and **Whisk** product gaps are also reaching critical mass across the catalog.

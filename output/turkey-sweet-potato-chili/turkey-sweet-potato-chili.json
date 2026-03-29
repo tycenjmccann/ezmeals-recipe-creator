@@ -1,0 +1,813 @@
+{
+  "id": {
+    "S": "turkey-sweet-potato-chili"
+  },
+  "title": {
+    "S": "Turkey Sweet Potato Chili"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Turkey_Sweet_Potato_Chili.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Turkey_Sweet_Potato_Chili_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Hearty and healthy, this Turkey Sweet Potato Chili is packed with tender sweet potatoes, ground turkey, beans, and warm spices. A squeeze of lime at the end brightens everything up. Perfect for weeknight dinners or meal prep, and topped with your favorites like cheese, Greek yogurt, or avocado."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "45"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6-8"
+  },
+  "cuisineType": {
+    "S": "American"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "-- For the Chili --"
+      },
+      {
+        "S": "1 tablespoon Olive Oil"
+      },
+      {
+        "S": "1 small Yellow Onion, diced"
+      },
+      {
+        "S": "1 Red Bell Pepper, cored, seeded, and small-diced"
+      },
+      {
+        "S": "3 Garlic Cloves, minced"
+      },
+      {
+        "S": "1 pound Ground Turkey (93% lean recommended)"
+      },
+      {
+        "S": "1/2 teaspoon Kosher Salt, plus more to taste"
+      },
+      {
+        "S": "Freshly Ground Black Pepper, to taste"
+      },
+      {
+        "S": "2 tablespoons Tomato Paste"
+      },
+      {
+        "S": "2 to 3 tablespoons Chili Powder"
+      },
+      {
+        "S": "1 1/2 teaspoons Ground Cumin"
+      },
+      {
+        "S": "1 teaspoon Smoked Paprika"
+      },
+      {
+        "S": "1 teaspoon Dried Oregano"
+      },
+      {
+        "S": "1/4 teaspoon Cayenne Pepper (optional, adjust to taste)"
+      },
+      {
+        "S": "2 (14.5 ounce) cans Fire-Roasted Diced Tomatoes, with juices"
+      },
+      {
+        "S": "2 (15 ounce) cans Kidney Beans, rinsed and drained"
+      },
+      {
+        "S": "1 large Sweet Potato, peeled and diced into 1/2-inch cubes (about 2 cups)"
+      },
+      {
+        "S": "1 cup Low-Sodium Chicken Broth"
+      },
+      {
+        "S": "1 to 2 tablespoons Lime Juice (about 1 lime)"
+      },
+      {
+        "S": "-- Toppings (optional) --"
+      },
+      {
+        "S": "Shredded Cheddar Cheese or Pepper Jack Cheese"
+      },
+      {
+        "S": "Thinly sliced Green Onions"
+      },
+      {
+        "S": "Sour Cream or Plain Greek Yogurt"
+      },
+      {
+        "S": "Sliced Jalapenos"
+      },
+      {
+        "S": "Diced Avocado"
+      },
+      {
+        "S": "Fresh Cilantro"
+      },
+      {
+        "S": "Lime Wedges"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Small, diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Bell Pepper"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Cored, seeded, and small-diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Turkey"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "93% lean recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Freshly ground, to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chili Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2 to 3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Smoked Paprika"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Oregano"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cayenne Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Optional, adjust to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fire-Roasted Diced Tomatoes"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "14.5 ounce cans"
+          },
+          "note": {
+            "S": "With juices"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kidney Beans"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "15 ounce cans"
+          },
+          "note": {
+            "S": "Rinsed and drained"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sweet Potato"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Large, peeled and diced into 1/2-inch cubes (about 2 cups)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lime"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "whole"
+          },
+          "note": {
+            "S": "Juiced, about 1 to 2 tablespoons"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cheddar Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Shredded, or pepper jack, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Green Onions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Thinly sliced, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sour Cream"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Or plain Greek yogurt, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Jalapenos"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Sliced, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Avocado"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Diced, optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lime Wedges"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Optional topping"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Heat 1 tablespoon olive oil in a large 5 to 6 quart Dutch oven or heavy-bottomed pot over medium heat. Add the 1 diced yellow onion and 1 diced red bell pepper and cook, stirring occasionally, until softened and the onion is translucent, about 4 to 5 minutes. Add the 3 minced garlic cloves and cook, stirring, for 30 seconds to 1 minute, just until fragrant. Do not let the garlic brown."
+      },
+      {
+        "S": "Increase the heat to medium-high. Add 1 pound ground turkey and cook, breaking it up into small pieces with a wooden spoon or spatula, until browned and no longer pink, about 5 to 7 minutes. Season with 1/2 teaspoon kosher salt and a few grinds of black pepper. If there is excess liquid in the pot, continue cooking until it evaporates."
+      },
+      {
+        "S": "Push the meat to one side of the pot and add 2 tablespoons tomato paste to the cleared area. Cook the paste, stirring it in the oil, for about 30 seconds until it darkens slightly. Stir in 2 tablespoons chili powder, 1 1/2 teaspoons cumin, 1 teaspoon smoked paprika, 1 teaspoon oregano, and 1/4 teaspoon cayenne if using. Stir everything together and cook for about 1 minute to toast the spices and let them bloom. This step deepens the overall flavor significantly."
+      },
+      {
+        "S": "Add 2 cans fire-roasted diced tomatoes with their juices, 2 cans drained and rinsed kidney beans, the diced sweet potato, and 1 cup chicken broth. Stir well to combine, scraping up any browned bits from the bottom of the pot."
+      },
+      {
+        "S": "Bring the chili to a boil, then reduce the heat to low. Cover and simmer for 25 to 30 minutes, stirring occasionally, until the sweet potatoes are fork-tender and the chili has thickened. If the chili is too thick, add a splash of broth or water. If it is too thin, remove the lid for the last 5 to 10 minutes to reduce."
+      },
+      {
+        "S": "Remove from heat. Stir in 1 to 2 tablespoons fresh lime juice. Taste and adjust seasoning by adding the remaining tablespoon of chili powder for more warmth, additional salt, or more lime juice as needed. The lime should brighten the chili without making it taste sour."
+      },
+      {
+        "S": "Ladle into bowls and serve warm with your favorite toppings such as shredded cheddar or pepper jack cheese, sliced green onions, sour cream or Greek yogurt, sliced jalapenos, diced avocado, fresh cilantro, and lime wedges."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Turkey selection: 93 percent lean ground turkey gives the best balance of flavor and health. 99 percent extra-lean can taste dry. If using it, consider adding an extra tablespoon of olive oil."
+      },
+      {
+        "S": "Sweet potato size matters: Cut uniform 1/2-inch cubes so they cook evenly. Larger pieces will need a longer simmer."
+      },
+      {
+        "S": "Spice level: As written, this is a mild-to-medium chili. For more heat, increase cayenne to 1/2 teaspoon, or stir in 1 to 2 minced chipotle peppers in adobo sauce with the tomatoes for smoky heat."
+      },
+      {
+        "S": "Make ahead and meal prep: This chili keeps beautifully in the refrigerator for up to 4 days and the flavors improve overnight. Reheat gently over medium-low heat, adding a splash of broth if needed to loosen."
+      },
+      {
+        "S": "Freezing: Freeze in airtight containers for up to 3 months. Thaw overnight in the refrigerator and reheat on the stovetop. Add toppings only when serving."
+      },
+      {
+        "S": "Slow cooker method: Complete Steps 1 through 3 on the stovetop, then transfer everything to a slow cooker. Add the tomatoes, beans, sweet potato, and broth. Cook on low for 6 to 8 hours or high for 3 to 4 hours. Stir in lime juice before serving."
+      },
+      {
+        "S": "Vegetarian swap: Replace the turkey with an extra can of beans (black or pinto) and use vegetable broth. Add 1 cup frozen corn for extra body."
+      },
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free. Verify that your chili powder, chicken broth, and fire-roasted tomatoes are certified gluten-free, as some brands may contain trace gluten or wheat-based additives."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "a2a3fa67-04fd-4376-b799-a51097819563"
+      },
+      {
+        "S": "d36a24d9-bbe5-4ab8-abb8-af206fe4528d"
+      },
+      {
+        "S": "c8a28f0e-af95-4b93-ace5-7153134772c2"
+      },
+      {
+        "S": "37e2cac0-7fdb-4659-b5bc-0bef5686aaa0"
+      },
+      {
+        "S": "2d23e3ad-b1ed-41c6-ad1f-76831111b51e"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "3e63f6a0-04f9-4f72-bcb1-28c2598658c6"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "650e3cfd-9c6e-495c-b7b8-eb682de586ae"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

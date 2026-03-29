@@ -1,0 +1,7 @@
+Recipe: French Onion Soup
+URL: https://tastesbetterfromscratch.com/french-onion-soup/
+Time: 507.7s
+
+Images generated! Now the final step — **Step 11: Publish** with all QA fixes applied.
+
+## Step 11: Publish Recipe

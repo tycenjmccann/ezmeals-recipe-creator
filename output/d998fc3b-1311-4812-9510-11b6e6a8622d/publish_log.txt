@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-27 23:43:42):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d998fc3b-1311-4812-9510-11b6e6a8622d/d998fc3b-1311-4812-9510-11b6e6a8622d.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d998fc3b-1311-4812-9510-11b6e6a8622d/d998fc3b-1311-4812-9510-11b6e6a8622d_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/d998fc3b-1311-4812-9510-11b6e6a8622d/d998fc3b-1311-4812-9510-11b6e6a8622d_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Quick_and_Easy_Pho.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Quick_and_Easy_Pho_thumbnail.jpg
+✅ DynamoDB: recipe 'd998fc3b-1311-4812-9510-11b6e6a8622d' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

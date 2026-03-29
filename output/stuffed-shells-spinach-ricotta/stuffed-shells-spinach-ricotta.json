@@ -1,0 +1,557 @@
+{
+  "id": {
+    "S": "stuffed-shells-spinach-ricotta"
+  },
+  "title": {
+    "S": "Stuffed Shells with Spinach and Ricotta"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Stuffed_Shells_with_Spinach_and_Ricotta.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Stuffed_Shells_with_Spinach_and_Ricotta_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Jumbo pasta shells stuffed with a creamy, cheesy spinach filling, topped with rich marinara sauce and mozzarella cheese, baked to bubbly perfection. This delicious dinner can be made in advance and it's freezer friendly too!"
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "35"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6 (approximately 3-4 shells per person)"
+  },
+  "cuisineType": {
+    "S": "Italian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "24-26 Jumbo Pasta Shells (cook extra, some will tear)"
+      },
+      {
+        "S": "2 tablespoons Olive Oil, divided"
+      },
+      {
+        "S": "Kosher Salt, for pasta water"
+      },
+      {
+        "S": "3 cloves Garlic, minced"
+      },
+      {
+        "S": "4 cups packed Fresh Spinach Leaves, roughly chopped (about 5 oz)"
+      },
+      {
+        "S": "15 ounces whole-milk Ricotta Cheese"
+      },
+      {
+        "S": "1 large Egg, lightly beaten"
+      },
+      {
+        "S": "3 cups Organic Shredded Mozzarella Cheese, divided"
+      },
+      {
+        "S": "1/2 cup Freshly Grated Parmesan Cheese, plus extra for serving"
+      },
+      {
+        "S": "1 teaspoon Italian Seasoning"
+      },
+      {
+        "S": "1/4 teaspoon Crushed Red Pepper Flakes"
+      },
+      {
+        "S": "1/2 teaspoon Kosher Salt"
+      },
+      {
+        "S": "1/4 teaspoon Freshly Ground Black Pepper"
+      },
+      {
+        "S": "3 cups Marinara Sauce, divided (homemade or store-bought)"
+      },
+      {
+        "S": "2 tablespoons Fresh Basil Leaves, roughly chopped, for garnish"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Jumbo Pasta Shells"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "24-26"
+          },
+          "unit": {
+            "S": "shells"
+          },
+          "note": {
+            "S": "Cook extra, some will tear"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Divided"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "For pasta water"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Spinach"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Fresh, packed, roughly chopped (about 5 oz)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Whole-Milk Ricotta Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "15"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Egg"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Large, lightly beaten"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Mozzarella Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Shredded, divided"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Parmesan Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Freshly grated, plus extra for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Italian Seasoning"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Red Pepper Flakes"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Freshly ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Marinara Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Divided; homemade or store-bought"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Basil"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Fresh, roughly chopped, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Preheat the oven to 375 degrees F. Lightly spray a 9x13-inch baking dish with nonstick cooking spray and set aside."
+      },
+      {
+        "S": "Bring a large pot of generously salted water to a rolling boil. Cook 24-26 jumbo pasta shells until just shy of al dente, about 1 minute less than package directions. Drain carefully, rinse with cold water to stop cooking and prevent sticking, then spread on a sheet pan and drizzle with 1 tablespoon olive oil, tossing gently. Set aside."
+      },
+      {
+        "S": "Heat 1 tablespoon olive oil in a large skillet over medium heat. Add the 3 cloves of minced garlic and saute for 30 seconds until fragrant, being careful not to brown. Add the 4 cups of chopped spinach and cook, stirring frequently, for 1-2 minutes until fully wilted. Transfer the spinach to a fine-mesh strainer or clean kitchen towel and squeeze out as much excess moisture as possible. Let cool briefly."
+      },
+      {
+        "S": "Combine the 15 ounces of ricotta cheese, 1 lightly beaten egg, 1 cup shredded mozzarella cheese, 1/2 cup grated Parmesan cheese, 1 teaspoon Italian seasoning, 1/4 teaspoon crushed red pepper flakes, 1/2 teaspoon kosher salt, and 1/4 teaspoon black pepper in a large bowl. Stir until well combined. Fold in the squeezed, cooled spinach mixture. Taste and adjust seasoning if needed."
+      },
+      {
+        "S": "Spread 1 and 1/2 cups of marinara sauce evenly across the bottom of the prepared baking dish. Fill each intact cooked shell with approximately 2-3 tablespoons of filling using a spoon or piping bag. Nestle the filled shells open-side up in the dish in a single layer. Spoon the remaining 1 and 1/2 cups of marinara sauce over and between the shells. Sprinkle the remaining 2 cups of shredded mozzarella cheese evenly over the top."
+      },
+      {
+        "S": "Cover the dish tightly with aluminum foil. Bake for 30 minutes until the sauce is bubbling around the edges."
+      },
+      {
+        "S": "Remove the foil and switch the oven to broil on high. Position the rack 6 inches from the heating element. Broil for 2-3 minutes, watching constantly, until the mozzarella is golden brown and bubbly. Do not walk away as cheese can go from golden to burnt in seconds."
+      },
+      {
+        "S": "Remove the dish from the oven and let it rest for 5-10 minutes. This allows the filling to set so the shells hold together when served."
+      },
+      {
+        "S": "Garnish with 2 tablespoons of fresh chopped basil and an extra dusting of grated Parmesan if desired. Serve warm."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Extra shells are insurance. Jumbo shells are fragile and often crack. Cook 4-6 extra so you have 20 perfect ones ready to fill."
+      },
+      {
+        "S": "Whole-milk ricotta makes a significant difference in creaminess. Avoid part-skim if possible."
+      },
+      {
+        "S": "Do not skip squeezing the spinach. Excess moisture is the number one cause of watery, disappointing stuffed shells."
+      },
+      {
+        "S": "Make ahead (refrigerator): Assemble the dish through the assembly step, cover tightly with foil, and refrigerate for up to 24 hours. When ready, bake straight from the fridge and add 5-10 extra minutes of covered baking time."
+      },
+      {
+        "S": "Freezer friendly: Assemble through the assembly step, cover with a layer of plastic wrap pressed directly against the surface, then foil. Freeze for up to 3 months. To serve, thaw overnight in the refrigerator, then let sit at room temperature for 20-30 minutes while the oven preheats. Bake covered for 35-40 minutes, then broil as directed."
+      },
+      {
+        "S": "Food safety: Ensure the internal temperature reaches 160 degrees F due to the raw egg in the filling before serving."
+      },
+      {
+        "S": "For a gluten-free version, substitute the jumbo pasta shells with a gluten-free jumbo shell pasta such as Barilla or Banza brand."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "453b0798-847b-4bb4-9284-96410e29afe1"
+      },
+      {
+        "S": "e094268d-3d62-449b-933b-65b7c819deee"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      },
+      {
+        "S": "2d23e3ad-b1ed-41c6-ad1f-76831111b51e"
+      },
+      {
+        "S": "b9b2cc09-321a-4f26-b610-b8affbf12cbb"
+      },
+      {
+        "S": "615d1420-7027-4699-96a6-705a2d9fe7a3"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "d14e781b-31cb-4196-a83f-29feb9bfdde0"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "ef027721-e2f1-4f35-9fe5-01387e7ff639"
+      },
+      {
+        "S": "ba602838-93f6-4e80-9030-3b58d28e8725"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": true
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

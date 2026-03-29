@@ -20,7 +20,7 @@ from strands import Agent
 from strands.multiagent.graph import GraphBuilder
 from strands_agents_recipe_creator import (
     scrape_recipe_url, validate_recipe_json,
-    get_available_sides, get_available_products,
+    get_available_sides, get_available_products, save_recommendations,
     get_standardized_ingredients, generate_recipe_images,
     publish_recipe,
     CUISINE_TYPES, VALID_CATEGORIES,
@@ -160,104 +160,131 @@ Parsing Examples:
 ENRICHER_PROMPT = """You enrich recipes with side dish and product recommendations.
 
 Step 1 — SIDE DISHES:
-Call get_available_sides to get our complete side dish catalog.
-Analyze the recipe and recommend 3-6 sides that complement it well. Consider:
-- Flavor profiles, cooking methods, preparation times, ingredient compatibility
-- Balance: if main is rich/heavy, consider lighter sides; if spicy, consider cooling sides
-- Cross-cuisine pairings are OK if they make culinary sense
-- Practical cooking: can sides be prepared alongside the main?
-Return side dish IDs as a JSON array.
+Call get_available_sides to get our complete side dish catalog (with IDs).
+Pick 3-6 sides that complement this recipe. Consider flavor balance, texture contrast, and cooking practicality.
 
 Step 2 — AFFILIATE PRODUCTS:
-Call get_available_products to get our complete product catalog.
-Recommend 2-4 products. Focus ONLY on TOOLS, EQUIPMENT, and NON-FOOD items. Consider:
-- Equipment explicitly mentioned or implied in the recipe
-- Tools that improve cooking technique or results
-- Specialized items for this cuisine type or cooking method
-IMPORTANT: DO NOT recommend food items, ingredients, or consumables.
-Return product IDs as a JSON array.
+Call get_available_products to get our complete product catalog (with IDs).
+Pick 2-4 products (TOOLS and EQUIPMENT only, NO food items).
 
-Return both arrays clearly labeled:
-RECOMMENDED_SIDES: [...]
-RECOMMENDED_PRODUCTS: [...]"""
+Step 3 — SAVE RESULTS:
+Call save_recommendations with the selected IDs to persist your choices.
 
-SEARCH_TERMS_PROMPT = """You generate search terms for a recipe to help users find it even when they don't know the exact name.
+Return EXACTLY this format:
 
-Given the recipe data from previous pipeline steps, generate up to 4 SHORT search terms that:
-- Help users find this recipe using words NOT already in the title, description, or ingredients
-- Are NOT cuisine types (already a searchable attribute)
-- Are NOT dietary flags like "gluten-free" or "vegetarian" (already searchable attributes)
-- Are NOT generic words like "dinner", "easy", "quick", "family", "meal", "recipe", "delicious"
-- Would apply to ≤15% of our catalog (very specific only)
+RECOMMENDED_SIDES: ["uuid-1", "uuid-2", "uuid-3"]
+RECOMMENDED_PRODUCTS: ["uuid-1", "uuid-2"]"""
 
-FOCUS ON:
-- Specific dish categories (pasta, soup, salad, stir-fry)
-- Alternative dish names (pancakes → hotcakes, flapjacks)
-- Specific cooking methods NOT already flagged (griddle, wok, dutch oven, plancha)
-- Cultural/regional names (köttbullar for Swedish Meatballs, medianoche)
-- Unique descriptors (crispy, creamy, smoky, tangy)
+SEARCH_TERMS_PROMPT = """Generate search terms for a recipe to help users find it.
 
-Return the search terms as a DynamoDB-formatted list:
-{"L": [{"S": "term1"}, {"S": "term2"}, ...]}
+Generate up to 4 SHORT search terms that help users find this recipe using words NOT already in the title, description, or ingredients. Terms should:
+- NOT be cuisine types, dietary flags, or generic words like "dinner", "easy", "quick"
+- Be specific: dish categories, alternative names, cooking methods, cultural names
+- Apply to ≤15% of our catalog
 
-If no useful terms exist beyond what's already searchable, return {"L": []}."""
+Return as: SEARCH_TERMS: ["term1", "term2", "term3"]"""
 
 QA_REVIEW_PROMPT = """You are a culinary expert and Product Manager for the ezMeals meal planning iOS app.
-Review the provided recipe and determine if it is ready to publish to our users.
+You review the final recipe JSON and determine if it is ready to publish.
 
-You will receive inputs from multiple pipeline nodes:
-- **scraper**: The original recipe text (ground truth)
-- **json_converter**: The structured DynamoDB JSON (the artifact to validate)
-- **ingredient_objects**: The parsed ingredient objects
-- **enricher**: Side dish and product recommendations
-- **search_terms**: Generated search terms
+You receive the COMPLETE recipe JSON (with products, recommendedSides, and searchTerms already populated by earlier pipeline steps) plus the original scraped recipe for comparison.
 
-Compare the ORIGINAL recipe from scraper against the FINAL JSON from json_converter.
+═══════════════════════════════════════════════════════════
+QA VALIDATION CHECKLIST - You MUST check every item below
+═══════════════════════════════════════════════════════════
 
-Provide a CONCISE quality assessment:
+1. INSTRUCTIONS QUALITY
+   □ Every instruction step includes ingredient QUANTITIES and MEASUREMENTS
+     (e.g., "Add 2 teaspoons curry powder" NOT "Add curry powder")
+   □ Every instruction begins with an imperative verb (Add, Stir, Heat, Pour, etc.)
+   □ Complex steps are broken into simpler beginner-friendly steps
+   □ Instructions are in logical cooking order
+   □ No missing steps between prep and serving
 
-**OVERALL QUALITY**: "High - Publish!" or "Review Needed - <reason>"
+2. INGREDIENTS VALIDATION
+   □ All quantities use mixed fractions (1/2 not 0.5)
+   □ No special characters (inches not ", degrees not °)
+   □ Units are standardized (teaspoon not tsp, tablespoon not tbsp, pounds not lbs)
+   □ Every ingredient in the list appears in at least one instruction step
 
-**INGREDIENT CHECK**:
-- Does every instruction reference specific quantities? (not "add sauce" but "add 2 tbsp sauce")
-- Are all ingredients in the ingredients list also in ingredient_objects?
-- Do ingredient_objects have valid categories (Produce, Proteins, Dairy, Grains & Bakery, Pantry Staples, Seasonings, Frozen Foods)?
-- Were any ingredients from the ORIGINAL recipe lost or altered incorrectly?
+3. INGREDIENT OBJECTS VALIDATION
+   □ ingredient_objects is populated (NOT empty)
+   □ Each object has: ingredient_name, category, quantity, unit, note, affiliate_link
+   □ ingredient_name is capitalized (e.g., "Yellow Onion" not "yellow onion")
+   □ category is one of EXACTLY: Produce, Proteins, Dairy, Grains & Bakery, Pantry Staples, Seasonings, Frozen Foods
+   □ Descriptors (large, fresh, chopped) are in note field, not ingredient_name
 
-**METADATA CHECK**:
-- Is cuisineType valid? (American, Asian, Indian, Italian, Latin, Soups & Stews, Global Cuisines)
-- Are time flags correct? (0-30min=isQuick, 31-60=isBalanced, >60=isGourmet, mutually exclusive)
-- Is imageURL format correct? (menu-item-images/Recipe_Name.jpg)
-- Is dishType "main" or "side"?
+4. RECIPE METADATA
+   □ dishType is valid ("main" or "side")
+   □ cuisineType MUST be one of EXACTLY: "Global Cuisines", "American", "Asian", "Indian", "Italian", "Latin", "Soups & Stews"
+   □ Time flags calculated from prepTime + cookTime:
+     - isQuick = true ONLY if total is 0-30 min
+     - isBalanced = true ONLY if total is 31-60 min
+     - isGourmet = true ONLY if total is > 60 min
+     - MUTUALLY EXCLUSIVE — only ONE can be true
+   □ vegetarian matches ingredients (no meat/fish = true)
+   □ slowCook matches if slow cooker is used
+   □ instaPot matches if Instant Pot is used
+   □ glutenFree set correctly with substitution notes
+   □ imageURL format: menu-item-images/Recipe_Name.jpg
+   □ imageThumbURL format: menu-item-images/Recipe_Name_thumbnail.jpg
+   □ flagged is always false
 
-**SIDE DISHES**: Do the recommended sides complement the main well?
+5. SIDE DISHES (if dishType=main)
+   □ recommendedSides is populated (NOT empty) with valid UUID strings
+   □ Sides complement the main dish well
 
-**PRODUCTS**: Would the recommended products be useful for this recipe? No food items?
+6. AFFILIATE PRODUCTS
+   □ products is populated (NOT empty) with valid UUID strings
+   □ Products are NON-FOOD items only (tools, equipment, cookware)
+   □ Products are relevant to cooking this specific recipe
 
-**SEARCH TERMS**: Are the search terms useful and specific? Not duplicating title/cuisine/dietary flags?
+7. NOTES QUALITY
+   □ Includes gluten-free substitution notes where applicable
+   □ No irrelevant notes
 
-**CULINARY IMPROVEMENTS**: Any suggestions to improve the recipe?
+═══════════════════════════════════════════════════════════
+CRITICAL FAIL CONDITIONS (auto-reject if ANY are true):
+═══════════════════════════════════════════════════════════
+- ingredient_objects is empty
+- recommendedSides is empty (for mains)
+- products is empty
+- cuisineType is not in the valid list
+- More than one time flag is true
 
-**GF/DIETARY**: Is glutenFree set correctly? Rule: if the recipe CAN be made GF with reasonable substitutions (tamari for soy sauce, GF flour, etc.), glutenFree should be TRUE with a note explaining the substitutions. Only false if gluten is structurally essential (bread, fresh pasta).
+═══════════════════════════════════════════════════════════
+OUTPUT FORMAT
+═══════════════════════════════════════════════════════════
 
-Keep it brief and practical. Lean towards publishing unless there are red flags.
-If PASS, output the final assembled recipe JSON with recommendedSides, products, and searchTerms populated from the enricher's and search_terms node's recommendations."""
+**OVERALL QUALITY**: "✅ PUBLISH" or "❌ REJECT - [reason]"
+
+**CHECKLIST RESULTS** (mark each ✅ or ❌):
+1. Instructions Quality: [result]
+2. Ingredients Validation: [result]
+3. Ingredient Objects: [result]
+4. Recipe Metadata: [result]
+5. Side Dishes: [result]
+6. Affiliate Products: [result]
+7. Notes Quality: [result]
+
+If ALL checks pass, output the final recipe JSON."""
 
 IMAGE_GEN_PROMPT = """You generate recipe images using the generate_recipe_images tool.
 
-From the QA-approved recipe JSON, extract:
-1. The dish name (title field)
-2. A brief visual description for the image generator (from the description field)
-3. The output prefix from the recipe name (e.g., "Black_Pepper_Chicken")
+You receive input from TWO upstream nodes:
+1. **scraper** — contains "Image saved: /tmp/some-file.jpg" with the EXACT path to the downloaded source photo
+2. **qa_review** — contains the final approved recipe JSON with title and description
 
-The scraper node downloads the original recipe photo to /tmp/. The filename follows the pattern:
-  /tmp/recipe-{slug}.jpg
-where {slug} is the URL slug (e.g., /tmp/recipe-black-pepper-chicken.jpg).
+CRITICAL: Find the EXACT image path from the scraper output. Look for the line starting with "Image saved:" — use that path as input_image_path. Do NOT guess or construct the filename.
+
+If the scraper says "Image: not found or download failed", the source image is unavailable. Report this and do NOT call the tool.
+
+From the QA-approved recipe JSON, extract the dish name (title field) and description.
 
 Call generate_recipe_images with:
 - dish_name: the recipe title
 - dish_description: a SHORT visual description focusing on what the dish LOOKS like (colors, textures, plating)
-- input_image_path: the /tmp/recipe-*.jpg path from the scraper
+- input_image_path: the EXACT path from the scraper's "Image saved:" line
 - output_prefix: "/tmp/{Recipe_Name}" using underscores (e.g., "/tmp/Black_Pepper_Chicken")
 
 Return the paths to the generated hero and thumbnail images."""
@@ -317,7 +344,7 @@ def build_pipeline():
     )
     enricher = Agent(
         model="us.anthropic.claude-sonnet-4-20250514-v1:0",
-        tools=[get_available_sides, get_available_products],
+        tools=[get_available_sides, get_available_products, save_recommendations],
         system_prompt=ENRICHER_PROMPT,
         name="enricher",
     )
@@ -365,16 +392,18 @@ def build_pipeline():
     builder.add_edge("enricher", "search_terms")
     builder.add_edge("search_terms", "qa_review")
     builder.add_edge("qa_review", "image_gen")
+    builder.add_edge("scraper", "image_gen")  # image_gen needs scraper's image path
     builder.add_edge("image_gen", "publish")
 
-    # QA gets multi-edge input for full pipeline visibility
+    # QA gets scraper (original text) + search_terms output (final complete JSON)
     builder.add_edge("scraper", "qa_review")
-    builder.add_edge("json_converter", "qa_review")
-    builder.add_edge("ingredient_objects", "qa_review")
+
+    # Publish needs QA's final JSON + image paths from image_gen
+    builder.add_edge("qa_review", "publish")
 
     builder.set_entry_point("scraper")
-    builder.set_execution_timeout(900)
-    builder.set_node_timeout(300)
+    builder.set_execution_timeout(1200)
+    builder.set_node_timeout(420)
 
     return builder.build()
 

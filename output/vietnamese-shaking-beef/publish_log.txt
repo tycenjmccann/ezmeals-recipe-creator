@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-28 21:09:55):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vietnamese-shaking-beef/vietnamese-shaking-beef.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vietnamese-shaking-beef/vietnamese-shaking-beef_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vietnamese-shaking-beef/vietnamese-shaking-beef_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Vietnamese_Shaking_Beef_Bo_Luc_Lac.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Vietnamese_Shaking_Beef_Bo_Luc_Lac_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Vietnamese_Shaking_Beef_(Bo_Luc_Lac).json (triggers DB import)

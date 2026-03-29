@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 01:36:06):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chairman-maos-red-braised-pork-belly/chairman-maos-red-braised-pork-belly.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chairman-maos-red-braised-pork-belly/chairman-maos-red-braised-pork-belly_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chairman-maos-red-braised-pork-belly/chairman-maos-red-braised-pork-belly_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chairman_Maos_Red_Braised_Pork_Belly.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chairman_Maos_Red_Braised_Pork_Belly_thumbnail.jpg
+✅ DynamoDB: recipe 'chairman-maos-red-braised-pork-belly' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

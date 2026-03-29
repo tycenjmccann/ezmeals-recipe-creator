@@ -1,0 +1,54 @@
+Recipe: Tom Kha Gai (Coconut Chicken Soup)
+URL: https://www.simplysuwanee.com/tom-kha-gai/
+Time: 597.8s
+
+---
+
+# ✅ Recipe Pipeline Complete!
+
+## 🥥 Authentic Thai Tom Kha Gai (Chicken Coconut Soup) — Published Successfully
+
+Here's a complete summary of the entire pipeline:
+
+| Step | Agent | Status | Key Actions |
+|---|---|---|---|
+| **1. Scrape** | 🔗 Scraper | ✅ | Extracted recipe + image from simplysuwanee.com |
+| **2. Chef Review** | 👨‍🍳 Chef | ✅ | **16 major improvements** — inverted coconut/stock ratio, tripled galangal, added palm sugar, restructured cooking method, added aromatic infusion, fixed heat contradiction, added coconut milk handling warnings, added cultural serving context |
+| **3. JSON Convert** | 📄 Converter | ✅ | Full DynamoDB JSON with 18 ingredient entries (incl. headers), 6 instructions, 6 notes |
+| **4. Standardize** | 📏 Standardizer | ✅ | All ingredients mapped — coconut milk→Full-Fat Coconut Milk, cilantro→Fresh Cilantro, 3 items had no DB match (Thai chilies, palm sugar, coconut cream) |
+| **5. Ingredient Objects** | 🧱 Parser | ✅ | 13 structured objects across 3 categories (Proteins 1, Produce 8, Pantry Staples 4) |
+| **6. Side Dishes** | 🥗 Sides | ✅ | **5 sides** — Jasmine Rice 🏆, Thai Cucumber Salad, Asian Rice, Coconut Rice, White Rice |
+| **7. Products** | 🛒 Products | ✅ | **7 products** — Ceramic Sauce Pan, Le Creuset, Lodge Dutch Oven, Meat Thermometer, Veggie Chopper, Walnut Cutting Board, Granite Mortar & Pestle |
+| **8. Assembly** | 🔧 Orchestrator | ✅ | Merged all outputs, shortened image filenames, added section dividers |
+| **9. QA Review** | ✅ QA | ✅ **PASS** (after fix) | 6/7 checklist items passed initially. **1 blocking fix applied:** added GF note for fish sauce brand guidance |
+| **10. Images** | 🖼️ Image Gen | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| **11. Publish** | 🚀 Publisher | ✅ | S3 images uploaded, DynamoDB record written, local files saved |
+
+### 📂 Published Artifacts
+- **DynamoDB:** `tom-kha-gai` → `MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev`
+- **S3 Hero:** `menu-item-images/Tom_Kha_Gai.jpg`
+- **S3 Thumb:** `menu-item-images/Tom_Kha_Gai_thumbnail.jpg`
+- **Local:** `/home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/tom-kha-gai/`
+
+### 🔑 Key Chef Improvements Highlights
+
+| Original | Optimized |
+|---|---|
+| 4 cups stock + 1 can coconut milk (stock-dominant) | **2 cans coconut milk + 1.5 cups stock** (coconut-dominant, authentic) |
+| 3 slices galangal (barely detectable) | **8-10 slices, 1 thumb-sized piece** (galangal IS the dish — "kha" = galangal) |
+| No sugar (missing sweet balance) | **1-2 tsp palm sugar** (essential sweet-sour-salty harmony) |
+| Coconut milk added late, boiled | **Cook IN coconut milk from start, never boil** (prevents curdling) |
+| No aromatic infusion time | **3-5 min infusion step** (extracts essential oils) |
+| "Lower to medium-high" (contradiction) | **Medium-low** (gentle simmer for coconut) |
+| Kaffir lime leaves listed plain | **Torn in half, stems removed** (releases citrus oils) |
+| No warning about inedible aromatics | **Clear note: galangal/lemongrass/lime leaves not eaten** |
+| No serving context | **"Served over jasmine rice as a curry"** (authentic Thai style) |
+| 2 chilies, optional | **3-5 chilies, smashed/sliced** (proper heat level) |
+| 3-4 Tbsp fish sauce (aggressive) | **Start with 2 Tbsp, build up** (prevents over-salting) |
+
+### 🔴 QA Fix Applied
+- **Added GF Note:** "This recipe is naturally gluten-free. However, some fish sauce brands contain wheat-based hydrolyzed protein. Check labels and use a verified gluten-free brand such as Red Boat or Squid Brand."
+
+### 💡 Catalog Gaps Identified
+**New Sides to Create:** Thai Sticky Rice (Khao Niao), Fresh Spring Rolls, Green Papaya Salad (Som Tum), Thai Fried Rice (Khao Pad), Prawn Crackers/Shrimp Chips
+**New Products to Add:** Thai/Asian Soup Bowls, Wooden Soup Ladle, Sharp Chef's Knife, Fine Mesh Strainer/Spider Skimmer, Citrus/Lime Squeezer, Rice Cooker, Microplane/Zester

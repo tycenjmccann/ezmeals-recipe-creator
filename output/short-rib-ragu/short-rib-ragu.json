@@ -1,0 +1,732 @@
+{
+  "id": {
+    "S": "short-rib-ragu"
+  },
+  "title": {
+    "S": "Short Rib Ragu"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Short_Rib_Ragu.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Short_Rib_Ragu_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Restaurant-quality homemade ragu, with fall-off-the-bone braised beef short ribs simmered in a rich, meaty tomato sauce and tossed with wide ribbon pasta."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "25"
+  },
+  "cookTime": {
+    "N": "180"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6"
+  },
+  "cuisineType": {
+    "S": "Italian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "3 pounds bone-in Beef Short Ribs (English-cut, about 5-6 pieces)"
+      },
+      {
+        "S": "1 1/2 teaspoons Kosher Salt, plus more to taste"
+      },
+      {
+        "S": "1 teaspoon Freshly Ground Black Pepper, plus more to taste"
+      },
+      {
+        "S": "2 tablespoons Olive Oil, plus more if needed"
+      },
+      {
+        "S": "1 medium Yellow Onion, finely diced"
+      },
+      {
+        "S": "1 large Carrot, finely diced"
+      },
+      {
+        "S": "1 Celery rib, finely diced"
+      },
+      {
+        "S": "4 cloves Garlic, minced"
+      },
+      {
+        "S": "2 tablespoons Tomato Paste"
+      },
+      {
+        "S": "1/2 cup dry Red Wine (Chianti, Cabernet Sauvignon, or Merlot)"
+      },
+      {
+        "S": "1 3/4 cups Low-Sodium Beef Broth"
+      },
+      {
+        "S": "2 teaspoons Beef Bouillon Paste (such as Better Than Bouillon)"
+      },
+      {
+        "S": "1 (28 oz) can Whole Peeled Tomatoes (San Marzano recommended), crushed by hand"
+      },
+      {
+        "S": "1 Parmesan Cheese Rind (optional, but highly recommended)"
+      },
+      {
+        "S": "3 sprigs fresh Thyme"
+      },
+      {
+        "S": "2 Bay Leaves"
+      },
+      {
+        "S": "1/2 teaspoon Dried Oregano"
+      },
+      {
+        "S": "Pinch of Crushed Red Pepper Flakes (optional)"
+      },
+      {
+        "S": "1 pound Pappardelle or Tagliatelle Pasta"
+      },
+      {
+        "S": "Reserved pasta cooking water (at least 1 1/2 cups)"
+      },
+      {
+        "S": "Freshly grated Parmesan Cheese, for serving"
+      },
+      {
+        "S": "Fresh Italian Parsley or Fresh Basil Leaves, for garnish (optional)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Beef Short Ribs"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Bone-in, English-cut, about 5-6 pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Freshly ground, plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Plus more if needed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "medium"
+          },
+          "note": {
+            "S": "Finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrot"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "large"
+          },
+          "note": {
+            "S": "Finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Celery"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "rib"
+          },
+          "note": {
+            "S": "Finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dry Red Wine"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Chianti, Cabernet Sauvignon, or Merlot"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Beef Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 3/4"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Beef Bouillon Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Such as Better Than Bouillon"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Whole Peeled Tomatoes"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "28 oz can"
+          },
+          "note": {
+            "S": "San Marzano recommended, crushed by hand"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Parmesan Cheese Rind"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "piece"
+          },
+          "note": {
+            "S": "Optional, but highly recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Thyme"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "sprigs"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Bay Leaves"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dried Oregano"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Red Pepper Flakes"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pinch"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Pappardelle Pasta"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Or tagliatelle"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Pasta Cooking Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Reserved"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Parmesan Cheese"
+          },
+          "category": {
+            "S": "Dairy"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Freshly grated, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Italian Parsley"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Or basil, for garnish, optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Preheat oven to 300 degrees F. Pat 3 lbs bone-in beef short ribs dry with paper towels. Season generously on all sides with 1 1/2 teaspoons kosher salt and 1 teaspoon black pepper. Allow them to sit at room temperature while you prep the vegetables."
+      },
+      {
+        "S": "Heat 2 tablespoons olive oil in a large Dutch oven over medium-high heat until the oil just begins to shimmer. Working in batches of 2-3 ribs to avoid crowding the pot, sear short ribs until deeply browned on all sides, about 3-4 minutes per side. Adjust heat if the fond on the bottom starts to blacken. Transfer seared ribs to a plate and set aside. Pour off all but about 1 tablespoon of rendered fat from the pot."
+      },
+      {
+        "S": "Reduce heat to medium. Add 1 finely diced onion, 1 finely diced carrot, and 1 finely diced celery rib to the pot. Cook, stirring occasionally and scraping up the browned bits from the bottom, until the vegetables are softened and translucent, about 5-6 minutes. Add 4 cloves of minced garlic and 2 tablespoons of tomato paste and cook, stirring constantly, until the tomato paste darkens to a rusty brick-red color and becomes fragrant, about 1-2 minutes."
+      },
+      {
+        "S": "Pour in 1/2 cup dry red wine and stir vigorously, scraping up any remaining browned bits from the bottom of the pot. Let the wine simmer and reduce by about half, approximately 2-3 minutes, until the raw alcohol smell cooks off."
+      },
+      {
+        "S": "Add 1 3/4 cups beef broth, 2 teaspoons beef bouillon paste, the 28 oz can of crushed tomatoes with their juices, 1 Parmesan rind, 1/2 teaspoon dried oregano, 2 bay leaves, and a pinch of crushed red pepper flakes. Stir to combine and bring to a boil. Nestle the short ribs into the sauce so they are mostly but not fully submerged. Tuck 3 thyme sprigs around the ribs. Cover the Dutch oven with a tight-fitting lid and transfer to the preheated oven. Braise for 2 1/2 to 3 hours, checking once at the halfway mark and adding a splash of broth or water if the sauce looks too thick. The ribs are done when the meat pulls away from the bone with no resistance and shreds easily with a fork."
+      },
+      {
+        "S": "Remove the Dutch oven from the oven. Transfer the short ribs to a cutting board. Remove and discard the bay leaves, thyme sprigs, and Parmesan rind. Using a large spoon or ladle, skim off as much of the orange-colored fat from the surface of the sauce as possible. Shred the meat using two forks, discarding bones, excess fat, and any gristle. Return the shredded meat to the sauce. Taste and adjust seasoning with salt and pepper."
+      },
+      {
+        "S": "Place the Dutch oven over medium-low heat, uncovered, and simmer the ragu gently for 20-30 minutes. The sauce should reduce and thicken to a rich, glossy consistency that coats the back of a spoon. Stir occasionally to prevent sticking."
+      },
+      {
+        "S": "Bring a large pot of generously salted water to a boil while the sauce reduces. Cook 1 lb of pappardelle or tagliatelle pasta until 2 minutes short of al dente according to package directions. Before draining, reserve at least 1 1/2 cups of the starchy pasta cooking water. Using tongs, transfer the pasta directly from the boiling water into the simmering ragu. Add 1/2 cup of reserved pasta water. Toss vigorously and cook together for 2-3 minutes, allowing the pasta to finish cooking in the sauce. Add more pasta water a splash at a time if the sauce tightens up too much."
+      },
+      {
+        "S": "Divide the ragu and pasta among warmed shallow bowls. Finish with a generous shower of freshly grated Parmigiano-Reggiano and a scattering of fresh parsley or basil if desired."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "English-cut (single bone) short ribs are ideal. Boneless short ribs will also work - reduce braising time by about 30 minutes and use 2 1/2 lbs."
+      },
+      {
+        "S": "This ragu is even better the next day. Braise the meat, shred, degrease, and refrigerate overnight. Reheat gently and proceed with pasta when ready to serve."
+      },
+      {
+        "S": "Use a wine you would enjoy drinking. Avoid cooking wine - the flavor concentrates as it reduces."
+      },
+      {
+        "S": "Ragu (without pasta) keeps refrigerated for 5 days or frozen for up to 3 months."
+      },
+      {
+        "S": "Rigatoni and penne also pair well. Any pasta with texture and grooves will catch the sauce."
+      },
+      {
+        "S": "For a gluten-free version, substitute the pappardelle with a gluten-free pasta such as brown rice pappardelle or serve the ragu over creamy polenta."
+      },
+      {
+        "S": "The Dutch oven and sauce will be extremely hot. Use heavy oven mitts. When removing the lid, tilt it away from you to avoid a steam burn."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "e094268d-3d62-449b-933b-65b7c819deee"
+      },
+      {
+        "S": "453b0798-847b-4bb4-9284-96410e29afe1"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      },
+      {
+        "S": "615d1420-7027-4699-96a6-705a2d9fe7a3"
+      },
+      {
+        "S": "2d23e3ad-b1ed-41c6-ad1f-76831111b51e"
+      },
+      {
+        "S": "b9b2cc09-321a-4f26-b610-b8affbf12cbb"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

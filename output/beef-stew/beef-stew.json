@@ -1,0 +1,813 @@
+{
+  "id": {
+    "S": "beef-stew"
+  },
+  "title": {
+    "S": "Beef Stew"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Beef_Stew.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Beef_Stew_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Restaurant-quality, hearty Beef Stew with slow-cooked tender beef, bacon, carrots, and potatoes in a rich, deeply flavored wine-and-herb gravy."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "30"
+  },
+  "cookTime": {
+    "N": "150"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6-8"
+  },
+  "cuisineType": {
+    "S": "American"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "-- For the Stew --"
+      },
+      {
+        "S": "8 ounces Bacon, chopped into 1/4-inch strips"
+      },
+      {
+        "S": "1/3 cup All-Purpose Flour (for dredging)"
+      },
+      {
+        "S": "2 1/2 pounds boneless Chuck Beef, trimmed of excess fat and cut into 1 1/2-inch cubes"
+      },
+      {
+        "S": "1 1/2 teaspoons Kosher Salt, plus more to taste"
+      },
+      {
+        "S": "1 teaspoon Freshly Ground Black Pepper, plus more to taste"
+      },
+      {
+        "S": "2 tablespoons Olive Oil"
+      },
+      {
+        "S": "1 large Yellow Onion, chopped"
+      },
+      {
+        "S": "2 stalks Celery, cut into 1/2-inch pieces"
+      },
+      {
+        "S": "5 cloves Garlic, minced"
+      },
+      {
+        "S": "2 tablespoons Tomato Paste"
+      },
+      {
+        "S": "1 tablespoon Red Wine Vinegar"
+      },
+      {
+        "S": "2 cups dry Red Wine (such as Cabernet Sauvignon, Merlot, or Cotes du Rhone)"
+      },
+      {
+        "S": "3 cups Low-Sodium Beef Broth"
+      },
+      {
+        "S": "2 teaspoons Better Than Bouillon Beef base"
+      },
+      {
+        "S": "1 teaspoon Worcestershire Sauce"
+      },
+      {
+        "S": "2 Bay Leaves"
+      },
+      {
+        "S": "1 teaspoon chopped fresh Rosemary (or 1/2 teaspoon dried)"
+      },
+      {
+        "S": "1 teaspoon fresh Thyme leaves (or 1/2 teaspoon dried)"
+      },
+      {
+        "S": "4 large Carrots, peeled, sliced diagonally into 1-inch chunks"
+      },
+      {
+        "S": "1 pound small gold, red, or fingerling Potatoes, halved or quartered into bite-sized pieces"
+      },
+      {
+        "S": "8 ounces frozen whole Pearl Onions (optional)"
+      },
+      {
+        "S": "8 ounces white or cremini Mushrooms, quartered (optional but recommended)"
+      },
+      {
+        "S": "Fresh Parsley, chopped, for garnish"
+      },
+      {
+        "S": "-- Optional Thickening --"
+      },
+      {
+        "S": "2 tablespoons All-Purpose Flour (for thickening)"
+      },
+      {
+        "S": "1/4 cup cold Water (for thickening)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Applewood Smoked Bacon"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Chopped into 1/4-inch strips"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "All-Purpose Flour"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1/3"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "For dredging"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Boneless Chuck Beef"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "2 1/2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Trimmed of excess fat, cut into 1 1/2-inch cubes"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kosher Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Freshly ground, plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Large, chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Celery"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "stalks"
+          },
+          "note": {
+            "S": "Cut into 1/2-inch pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Paste"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Wine Vinegar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dry Red Wine"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Such as Cabernet Sauvignon, Merlot, or Cotes du Rhone"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Low-Sodium Beef Stock"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Better Than Bouillon Beef Base"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Worcestershire Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Bay Leaves"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Rosemary"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Chopped, or 1/2 teaspoon dried"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Thyme"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Leaves, or 1/2 teaspoon dried"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Large, peeled, sliced diagonally into 1-inch chunks"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Gold Potatoes"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Small gold, red, or fingerling; halved or quartered into bite-sized pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Frozen Pearl Onions"
+          },
+          "category": {
+            "S": "Frozen Foods"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "White Mushrooms"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "ounces"
+          },
+          "note": {
+            "S": "White or cremini, quartered; optional but recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Parsley"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Chopped, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "All-Purpose Flour"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Optional, for thickening"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cold Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Optional, for thickening"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Cook 8 ounces chopped bacon over medium heat in a large Dutch oven (at least 5.5 quarts) until browned and crispy, about 6 to 8 minutes. Transfer the bacon to a paper towel-lined plate using a slotted spoon, leaving the fat in the pot."
+      },
+      {
+        "S": "Pat the 2 1/2 pounds of beef cubes thoroughly dry with paper towels. Place 1/3 cup flour in a shallow dish and season with 1/2 teaspoon salt and 1/2 teaspoon pepper. Toss the beef cubes in the seasoned flour, shaking off any excess."
+      },
+      {
+        "S": "Add 1 tablespoon olive oil to the bacon fat and heat over medium-high until the oil shimmers. Working in 2 to 3 batches to avoid crowding, brown the beef on all sides until deep golden-brown, about 3 to 4 minutes per side. Adjust heat as needed to prevent burning. Transfer each batch to a clean plate. Add remaining olive oil between batches as needed."
+      },
+      {
+        "S": "Reduce heat to medium. Add the 1 chopped onion and 2 stalks of celery to the pot and cook for 3 to 4 minutes, stirring occasionally, until the onion is translucent and starting to soften. Add 5 cloves minced garlic and cook for 1 minute until fragrant. Stir in the 2 tablespoons tomato paste and cook for 1 minute more, allowing it to caramelize slightly."
+      },
+      {
+        "S": "Add the 1 tablespoon red wine vinegar and 2 cups red wine. Bring to a boil, scraping the bottom of the pot vigorously with a wooden spoon to release all the fond. Let the wine boil for 2 to 3 minutes to cook off the raw alcohol."
+      },
+      {
+        "S": "Add the 3 cups beef stock, 2 teaspoons Better Than Bouillon, 1 teaspoon Worcestershire sauce, 2 bay leaves, 1 teaspoon rosemary, and 1 teaspoon thyme. Stir well to dissolve the bouillon and tomato paste. Return the beef and any accumulated juices to the pot. Return the bacon to the pot. If using mushrooms, add the 8 ounces quartered mushrooms now. Season with 1 teaspoon salt and 1/2 teaspoon pepper. Stir and bring to a boil."
+      },
+      {
+        "S": "Reduce heat to low so the stew maintains a gentle, lazy simmer with just a few bubbles breaking the surface. Cover and cook for 1 hour, stirring occasionally to prevent sticking. Check the beef at this point as it should be becoming tender but not yet falling apart. Taste and adjust seasonings."
+      },
+      {
+        "S": "Add the 1 pound of potatoes, 4 large carrots cut into chunks, and the 8 ounces of pearl onions if using. Make sure the vegetables are submerged in the liquid. Cover and continue to simmer for 30 to 35 minutes, until potatoes and carrots are fork-tender."
+      },
+      {
+        "S": "Remove the lid and increase heat slightly. Simmer uncovered for 15 to 20 minutes to allow the sauce to reduce and thicken naturally. The stew should coat the back of a spoon. If the stew is still thinner than desired, whisk 2 tablespoons of flour into 1/4 cup cold water until smooth and slowly stir the slurry into the simmering stew. Cook for 5 minutes more until thickened."
+      },
+      {
+        "S": "Remove and discard the bay leaves. Taste and adjust salt, pepper, and a small splash of red wine vinegar if the stew needs brightness. Ladle into warm bowls, garnish with fresh chopped parsley, and serve with crusty bread, creamy mashed potatoes, or egg noodles."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Beef Cut and Size: Chuck is ideal due to its marbling. Cut into 1 1/2-inch cubes rather than 1-inch as larger pieces stay juicier and more tender during the long simmer."
+      },
+      {
+        "S": "Wine Matters: Use a wine you would enjoy drinking. Full-bodied reds like Cabernet Sauvignon or Merlot are best. Avoid Pinot Noir as it is too light, and never use cooking wine. If avoiding alcohol, substitute with additional beef broth plus 1 tablespoon balsamic vinegar and 1 teaspoon brown sugar."
+      },
+      {
+        "S": "Oven Alternative: After Step 6, instead of stovetop simmering, cover and bake in a preheated 325 degrees F oven. Bake covered for 1 hour 45 minutes, add vegetables, bake 30 minutes more, then uncover for 15 minutes."
+      },
+      {
+        "S": "Make Ahead: This stew tastes even better the next day as the flavors meld. Cool to room temperature within 2 hours, then refrigerate in an airtight container for up to 4 days or freeze for up to 3 months."
+      },
+      {
+        "S": "Food Safety: When reheating, bring to a full simmer (165 degrees F) before serving. Cool large batches quickly by placing the pot in an ice-water bath."
+      },
+      {
+        "S": "GF Substitution: Replace the all-purpose flour for dredging and thickening with a gluten-free flour blend or cornstarch. Verify that the Worcestershire sauce and Better Than Bouillon are certified gluten-free brands."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "a2a3fa67-04fd-4376-b799-a51097819563"
+      },
+      {
+        "S": "615d1420-7027-4699-96a6-705a2d9fe7a3"
+      },
+      {
+        "S": "453b0798-847b-4bb4-9284-96410e95c921"
+      },
+      {
+        "S": "e094268d-3d62-449b-933b-65b7c819deee"
+      },
+      {
+        "S": "9828f9f0-9be6-4b64-8563-d255234b9db3"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "76cda222-84b6-4a7c-8c89-8df62e963b4e"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

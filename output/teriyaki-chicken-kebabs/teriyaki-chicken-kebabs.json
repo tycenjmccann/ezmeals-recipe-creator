@@ -1,0 +1,89 @@
+{
+  "id": "9916e4a3-3352-49df-adae-7fce7d95f5cb",
+  "title": "Teriyaki Chicken Kebabs",
+  "dishType": "main",
+  "primary": true,
+  "baseMainId": "",
+  "imageURL": "menu-item-images/Teriyaki_Chicken_Kebabs.jpg",
+  "imageThumbURL": "menu-item-images/Teriyaki_Chicken_Kebabs_thumbnail.jpg",
+  "description": "Tender marinated chicken and colorful vegetables grilled to perfection on skewers. This teriyaki-style kebab recipe features a sweet and savory soy-Sprite marinade that creates juicy, flavorful results every time.",
+  "link": "https://tastesbetterfromscratch.com/teriyaki-chicken-kebabs/",
+  "prepTime": "10",
+  "cookTime": "20",
+  "rating": "0",
+  "cuisineType": "Asian",
+  "isQuick": true,
+  "isBalanced": false,
+  "isGourmet": false,
+  "glutenFree": true,
+  "vegetarian": false,
+  "slowCook": false,
+  "instaPot": false,
+  "flagged": false,
+  "createdAt": "2026-03-28T01:45:47Z",
+  "updatedAt": "2026-03-28T01:45:47Z",
+  "ingredients": [
+    "1/2 cup low-sodium soy sauce",
+    "1/2 cup Sprite, not diet",
+    "1/2 cup avocado or canola oil",
+    "1 teaspoon garlic powder",
+    "1 teaspoon horseradish (plain or horseradish sauce)",
+    "2 pounds boneless skinless chicken breasts, cut into 1 inch chunks",
+    "2 bell peppers (any color), sliced into large chunks",
+    "1 sweet onion (or purple onion), sliced into large chunks",
+    "Wooden or bamboo skewers"
+  ],
+  "instructions": [
+    "Soak wooden or bamboo skewers in water for at least 30 minutes before assembling to prevent burning on the grill.",
+    "Make the marinade by combining 1/2 cup soy sauce, 1/2 cup Sprite, 1/2 cup oil, 1 teaspoon garlic powder, and 1 teaspoon horseradish in a large zip-lock bag. Squeeze gently to mix.",
+    "Cut 2 pounds chicken into 1-inch chunks and add to the marinade bag. Seal, removing excess air, and massage marinade around chicken. Refrigerate for 1-3 hours (do not exceed 3 hours).",
+    "Remove chicken from marinade and discard the used marinade completely. Thread marinated chicken with chopped bell peppers and onion alternately onto skewers, leaving small spaces between pieces for even cooking.",
+    "Heat grill to medium-high heat (around 400\u00b0F). Lightly grease grates with oil using paper towel and tongs.",
+    "Grill kebabs for 5-7 minutes per side, turning once or twice, until chicken reaches internal temperature of 165\u00b0F and vegetables have light char marks.",
+    "Remove from grill and let rest for 5 minutes before serving."
+  ],
+  "notes": [
+    "For gluten-free: use tamari instead of soy sauce",
+    "Always discard marinade that has touched raw chicken for food safety",
+    "Use a meat thermometer to ensure chicken reaches 165\u00b0F internal temperature",
+    "Do not substitute diet soda for Sprite as artificial sweeteners won't caramelize properly",
+    "Cut vegetables and chicken to similar sizes for even cooking"
+  ],
+  "searchTerms": [
+    "skewers",
+    "yakitori",
+    "grilled",
+    "glazed",
+    "bbq",
+    "kebab"
+  ],
+  "recommendedSides": [
+    "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79",
+    "80a712b4-7c62-4ddc-b583-3f4cc7d13065",
+    "c9c8182f-95c4-41cd-811d-5dfacc787596",
+    "699126b9-f51d-4c70-985a-6f79d8547734",
+    "2d23e3ad-b1ed-41c6-ad1f-76831111b51e",
+    "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+  ],
+  "includedSides": [],
+  "products": [
+    "650e3cfd-9c6e-495c-b7b8-eb682de555ae",
+    "76cda222-84b6-4a7c-8c89-8df62e963b4e",
+    "217cf6d2-237f-493d-9bd3-02ac21f3d078",
+    "88d20131-5a87-4032-b475-50813f37e0b1"
+  ],
+  "dressing": [],
+  "sauce": [
+    "Teriyaki marinade (soy sauce, Sprite, oil, garlic powder, horseradish)"
+  ],
+  "seasonings": [
+    "Garlic powder",
+    "Horseradish"
+  ],
+  "optionalToppings": [
+    "Sesame seeds",
+    "Sliced green onions"
+  ],
+  "ingredient_objects": "[{\"ingredient_name\": \"Soy Sauce\", \"category\": \"Pantry Staples\", \"quantity\": \"1/2\", \"unit\": \"cup\", \"note\": \"low-sodium\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Sprite\", \"category\": \"Pantry Staples\", \"quantity\": \"1/2\", \"unit\": \"cup\", \"note\": \"not diet\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Avocado Oil\", \"category\": \"Pantry Staples\", \"quantity\": \"1/2\", \"unit\": \"cup\", \"note\": \"or Canola Oil\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Garlic Powder\", \"category\": \"Seasonings\", \"quantity\": \"1\", \"unit\": \"teaspoon\", \"note\": \"\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Horseradish\", \"category\": \"Pantry Staples\", \"quantity\": \"1\", \"unit\": \"teaspoon\", \"note\": \"plain or horseradish sauce\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Chicken Breasts\", \"category\": \"Proteins\", \"quantity\": \"2\", \"unit\": \"pounds\", \"note\": \"boneless skinless, cut into 1 inch chunks\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Bell Peppers\", \"category\": \"Produce\", \"quantity\": \"2\", \"unit\": \"\", \"note\": \"any color, sliced into large chunks\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Sweet Onion\", \"category\": \"Produce\", \"quantity\": \"1\", \"unit\": \"\", \"note\": \"or Purple Onion, sliced into large chunks\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Wooden Skewers\", \"category\": \"Pantry Staples\", \"quantity\": \"\", \"unit\": \"\", \"note\": \"or Bamboo Skewers\", \"affiliate_link\": \"\"}]",
+  "comboIndex": "{}"
+}

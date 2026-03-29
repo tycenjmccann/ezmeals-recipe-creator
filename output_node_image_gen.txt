@@ -1,20 +1,26 @@
-The image generation function requires an existing source image file to work with. Since the original recipe image from the URL hasn't been downloaded and saved locally yet, I cannot complete the image generation step.
+I cannot generate recipe images because the entire pipeline has failed due to an inaccessible source URL.
 
-## Image Generation Status: **Pending Source Image Download**
+**Pipeline Status Summary**:
+- ❌ **Scraper**: 404 error - no recipe data or image downloaded
+- ❌ **QA Review**: REJECTED - no content available to validate  
+- ❌ **Image Generator**: Cannot proceed - no source image available
 
-**Current Status:**
-- ✅ Recipe JSON is complete and meets all EZ Meals quality standards
-- ❌ Image generation requires source image to be available locally first
+**Critical Issue**: The URL `https://tastesbetterfromscratch.com/chicken-tortilla-soup/` is returning a 404 error, which means:
+- No recipe content was scraped
+- No source image was downloaded (I need to see "Image saved: /tmp/filename.jpg" from the scraper)
+- No recipe JSON was created for QA to approve
 
-**Required for Completion:**
-1. Download the original recipe image from the source URL: https://tastesbetterfromscratch.com/black-pepper-chicken/
-2. Save it locally as: `menu-item-images/Black_Pepper_Chicken.jpg`
-3. Re-run the image generation process
+**What I need to generate images**:
+1. ✅ A working recipe URL
+2. ✅ Successful scraper output with "Image saved: [path]" 
+3. ✅ QA-approved recipe JSON with title and description
+4. ✅ Then I can create branded EZ Meals hero (16:9) and thumbnail (1:1) images
 
-**Expected Output Once Source Available:**
-- `Black_Pepper_Chicken_hero.jpg` - 16:9 landscape format with EZ Meals branding
-- `Black_Pepper_Chicken_thumbnail.jpg` - 1:1 square thumbnail format
+**Recommended solutions**:
+- Verify the URL works in a browser first
+- Try the QA team's suggested alternatives:
+  - `https://tastesbetterfromscratch.com/slow-cooker-chicken-tortilla-soup/`
+  - `https://www.simplyrecipes.com/recipes/chicken_tortilla_soup/`
+  - `https://cookieandkate.com/best-chicken-tortilla-soup-recipe/`
 
-**Recipe Publication Status:** Ready for publication once images are generated. The recipe JSON contains all required data with high quality standards applied.
-
-The recipe processing pipeline has successfully converted the source URL into a complete, standardized EZ Meals recipe format with proper categorization, dietary notes, recommended sides, product suggestions, and search terms.
+Once you have a valid URL that successfully completes the scraping and QA steps, I'll be ready to generate your recipe images immediately.

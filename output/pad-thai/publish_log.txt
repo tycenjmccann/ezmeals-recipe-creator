@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-27 23:35:16):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/pad-thai/pad-thai.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/pad-thai/pad-thai_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/pad-thai/pad-thai_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Pad_Thai.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Pad_Thai_thumbnail.jpg
+✅ DynamoDB: recipe 'pad-thai' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

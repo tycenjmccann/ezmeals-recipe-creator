@@ -1,0 +1,86 @@
+Recipe: Slow Cooker Coconut Curry Lentils
+URL: https://www.budgetbytes.com/slow-cooker-coconut-curry-lentils/
+Time: 585.4s
+
+---
+
+# ✅ Pipeline Complete: Slow Cooker Coconut Curry Lentils
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from budgetbytes.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **16 improvements** — filled major seasoning/aromatic/safety gaps |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; cookTime=240 min, slowCook=true, instaPot=true, vegetarian=true |
+| 4 | **Standardize** | ✅ | 23 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 23 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 4 non-food affiliate products matched |
+| 8 | **Assembly** | ✅ | All fixes applied: section headers removed, flags verified, food products removed |
+| 9 | **QA Review** | ⚠️→✅ | 3 fixes applied (Lime object, Rice quantity, Rice ingredient string), then passed |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (16 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Missing Aromatics** | Added 1 Tbsp fresh ginger (foundational coconut curry aromatic, entirely absent!); doubled garlic 2→4 cloves (2 was anemic for 10 servings) |
+| **Spice Depth** | Added 1 tsp ground cumin + 1/2 tsp turmeric (essential curry partners; curry powder alone lacks depth at this scale); added 1/4 tsp cayenne pepper option (separate heat control) |
+| **Critical Seasoning** | Added 1 tsp kosher salt + 1/4 tsp black pepper to ingredients (original had **ZERO salt specified** — critical for newer cooks who follow recipes literally) |
+| **Acid Balance** | Added 1-2 Tbsp lime juice at finish (essential to brighten the rich, heavy coconut-lentil base; prevents flat taste) |
+| **Food Safety** | Added lentil rinsing/sorting step (dried lentils frequently contain small stones and debris) |
+| **Technique** | Added "shake coconut milk" instruction; added slow cooker size rec (5-6 qt); added "don't lift the lid" note; added lentil type warning (red/yellow would disintegrate) |
+| **Completeness** | Reduced prep time 30→15 min (actual work is 15 min); separated rice/garnishes from curry ingredients; added storage/freezer instructions (recipe was marketed as "freezer friendly" but had zero guidance!); added Instant Pot adaptation; added naan & lime wedge serving suggestions |
+
+## 🔴 QA Fixes Applied
+1. **Lime Wedges** → `"1 Lime, cut into wedges"` in ingredients string; quantity `"1"` in object (was empty)
+2. **Basmati Rice** → quantity `"10"`, unit `"cups"` in object (was `"1"` / `"cup per serving"` — non-standard)
+3. **Rice ingredient string** → `"10 cups cooked Basmati Rice or Jasmine Rice (about 1 cup per serving)"` (had no leading quantity)
+4. **Section headers removed** from ingredients ("For the Curry:", "To Finish:", "For Serving:")
+5. **Food product IDs removed** from products array (Basmati Rice, Tandoori Naan, Microwave Covers → kept only non-food affiliates)
+
+## 🏷️ Special Flags
+
+| Flag | Value | Why |
+|------|-------|-----|
+| `vegetarian` | ✅ `true` | 100% plant-based — vegan recipe |
+| `glutenFree` | ✅ `true` | Naturally GF (lentils, vegetables, coconut milk, rice); naan is optional with GF note |
+| `slowCook` | ✅ `true` | Primary cooking method: slow cooker 4 hrs HIGH / 7-8 hrs LOW |
+| `instaPot` | ✅ `true` | Adaptation in notes: 15 min pressure cook + 10 min natural release |
+| `isGourmet` | ✅ `true` | Total time 255 min (>> 60 min threshold) |
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Slow_Cooker_Coconut_Curry_Lentils.jpg` |
+| **S3 Thumb** | `menu-item-images/Slow_Cooker_Coconut_Curry_Lentils_thumbnail.jpg` |
+| **DynamoDB** | `slow-cooker-coconut-curry-lentils` in MenuItemData table |
+| **Local** | `output/slow-cooker-coconut-curry-lentils/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Mango Chutney | 🔴 Critical — #1 universal Indian curry condiment; sweet-tangy contrast. Now flagged across 3 Indian recipes (Tikka Masala, Khao Soi pairings, and this) |
+| **Side** | Papadums / Papad | 🔴 Critical — crispy lentil wafers are THE classic dal accompaniment for crunch/texture |
+| **Side** | Aloo Gobi | 🟡 High — classic dry-style Indian vegetable side; keeps the meal vegan |
+| **Side** | Jeera Rice (Cumin Rice) | 🟡 High — cumin-toasted basmati is the authentic dal pairing |
+| **Side** | Onion Bhaji / Pakora | 🟡 Moderate — crispy fried fritters for texture contrast |
+| **Side** | Indian Pickles (Achar) | 🟡 Moderate — tangy-spicy traditional condiment |
+| **Product** | Fine-Mesh Strainer Set | 🔴 Critical — Step 1 explicitly requires this; lentils fall through regular colanders |
+| **Product** | Handheld Citrus Juicer | 🟡 High — needed for lime juice; useful across many recipes |
+| **Product** | Freezer Meal Prep Containers | 🟡 High — recipe is marketed as "freezer-friendly"; supports batch cooking audience |
+| **Product** | Microplane / Box Grater | 🟡 High — needed for fresh ginger; flagged in multiple recipes now |
+| **Product** | Long-Handled Cooking Spoon Set | 🟡 Moderate — needed for deep slow cooker stirring |
+| **Product** | Programmable Rice Cooker | 🟡 Moderate — 10 cups cooked rice needs proper equipment |
+
+> **💡 Key Insight:** This is our **first vegan main dish** in the catalog! It fills a critical dietary gap. The recipe also pairs perfectly with our existing Indian sides (Raita, Kachumber, Naan, Basmati Rice) and the Slow Cooker product. **Mango Chutney** has now been flagged as a critical gap across 3 separate Indian recipes — it should be prioritized for creation. The **Fine-Mesh Strainer** is also a critical product gap, as it's required by step 1 of this recipe and would serve any recipe involving lentils, quinoa, or rice rinsing.

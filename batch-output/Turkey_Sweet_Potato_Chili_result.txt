@@ -1,0 +1,59 @@
+Recipe: Turkey Sweet Potato Chili
+URL: https://www.twopeasandtheirpod.com/turkey-sweet-potato-chili/
+Time: 642.0s
+
+---
+
+# ✅ Recipe Pipeline Complete!
+
+## 🍠 Turkey Sweet Potato Chili — Published Successfully
+
+Here's a complete summary of the entire pipeline:
+
+| Step | Agent | Status | Key Actions |
+|---|---|---|---|
+| **1. Scrape** | 🔗 Scraper | ✅ | Extracted recipe + image from twopeasandtheirpod.com |
+| **2. Chef Review** | 👨‍🍳 Chef | ✅ | **13 improvements** — added tomato paste (biggest upgrade), lime juice finish, 4x oregano, doubled beans, added cayenne, tomato paste blooming technique, spice blooming detail, pot size, turkey lean % guidance, comprehensive meal prep/storage/slow cooker/vegetarian notes. Compared vs RecipeTin Eats Chilli Con Carne (4.91★/323) & Love and Lemons Sweet Potato Chili. |
+| **3. JSON Convert** | 📄 Converter | ✅ | Full DynamoDB JSON. Converter used non-standard Map format for ingredients — orchestrator converted to standard string format. 8 notes, 7 instructions. |
+| **4. Standardize** | 📏 Standardizer | ✅ | All ingredients mapped and capitalized. 27 lines including 2 section headers and 7 optional toppings. |
+| **5. Ingredient Objects** | 🧱 Parser | ✅ | 25 structured objects across 6 categories. Lime fixed: qty=1/unit=whole for shopping clarity. Optional toppings properly handled. |
+| **6. Side Dishes** | 🥗 Sides | ✅ | **6 sides** — Cornbread 🏆, Cilantro Lime Crema, Tortilla Chips, Homemade Guacamole, Tomato Cucumber Salad, Pickled Red Onions. Smartly excluded Sweet Potato Fries (redundant with chili's sweet potato). |
+| **7. Products** | 🛒 Products | ✅ | **7 products** — Lodge Dutch Oven, Le Creuset Dutch Oven, Meat Chopper, Veggie Chopper, Avocado Slicer, Walnut Cutting Board, Over-The-Sink Colander |
+| **8. Assembly** | 🔧 Orchestrator | ✅ | Converted non-standard ingredient format to standard string format. Integrated all outputs. Added GF note. Fixed Lime object for shopping list clarity. |
+| **9. QA Review** | ✅ QA | ✅ **PASS** | All 7 checklist items passed. Description enhancement kept (intentional chef improvement). cuisineType kept as "American" per convention. |
+| **10. Images** | 🖼️ Image Gen | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| **11. Publish** | 🚀 Publisher | ✅ | S3 images uploaded, DynamoDB record written, local files saved |
+
+### 📂 Published Artifacts
+- **DynamoDB:** `turkey-sweet-potato-chili` → `MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev`
+- **S3 Hero:** `menu-item-images/Turkey_Sweet_Potato_Chili.jpg`
+- **S3 Thumb:** `menu-item-images/Turkey_Sweet_Potato_Chili_thumbnail.jpg`
+- **Local:** `/home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/turkey-sweet-potato-chili/`
+
+### 🔑 Key Chef Improvements Highlights
+
+| Original | Optimized |
+|---|---|
+| No tomato paste (thin, flat flavor) | **2 Tbsp tomato paste** bloomed in oil (umami, body, color) |
+| No acid/brightness (heavy, one-note) | **1-2 Tbsp fresh lime juice** as mandatory finish |
+| 1/4 tsp oregano (virtually undetectable) | **1 tsp dried oregano** (4x increase, herbal backbone) |
+| 1 can kidney beans (lean, not hearty enough) | **2 cans kidney beans** (better protein, meal-prep satiety) |
+| No heat element at all | **1/4 tsp cayenne** (optional, gentle warmth) |
+| No tomato paste technique | **Push-aside blooming technique** (caramelizes, removes tinny taste) |
+| "Cook for 1 minute" (no explanation) | **"Toast and bloom" detail** (explains why for home cooks) |
+| No pot size specified | **5-6 quart Dutch oven** specified |
+| No turkey lean % guidance | **93% lean recommended** with dry-turkey workaround |
+| No storage/prep/freezer guidance | **Full notes:** 4-day fridge, 3-month freeze, slow cooker method, vegetarian swap |
+| No garlic burning warning | **"Do not let the garlic brown"** safety note |
+| 5 toppings (no cilantro/lime) | **7 toppings** — added Fresh Cilantro + Lime Wedges |
+| Servings: 6 | **Servings: 6-8** (adjusted for doubled beans) |
+
+### 🔧 Orchestrator Fixes Applied
+- **Ingredient format conversion**: Converter output non-standard Map format → converted to standard `{"S": "..."}` string format with `--` section headers
+- **Lime ingredient_object**: Changed from `ingredient_name: "Lime Juice"` with `unit: tablespoon` → `ingredient_name: "Lime"` with `qty: 1, unit: whole` for shopping list accuracy
+- **Added GF note** (8th note) for chili powder/broth/tomato brand verification
+- **QA override**: Kept enhanced description (chef intentionally added lime reference to reflect optimized recipe)
+
+### 💡 Catalog Gaps Identified
+**New Sides to Create:** Jalapeño Cheddar Cornbread (#1 chili pairing upgrade), Mexican Street Corn Salad (Esquites), Honey Butter (cornbread companion), Cilantro Lime Rice, Crunchy Southwest Slaw
+**New Products to Add:** Wooden Spoon Set, Citrus/Lime Squeezer, Stainless Steel Ladle, Stoneware Soup Bowls, Topping Caddy/Ramekins Set, Garlic Press, Measuring Spoon & Cup Set

@@ -1,0 +1,601 @@
+{
+  "id": {
+    "S": "2311b128-ee47-4f7d-99f6-b615a35c43aa"
+  },
+  "title": {
+    "S": "Thai Basil Chicken"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Thai_Basil_Chicken.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Thai_Basil_Chicken_thumbnail.jpg"
+  },
+  "description": {
+    "S": "A quick and flavorful Thai-inspired stir-fry featuring ground chicken in a savory-sweet sauce with aromatic basil, garlic, and chili. This Pad Kra Pao style dish delivers authentic Thai flavors in under 30 minutes and pairs perfectly with jasmine rice."
+  },
+  "link": {
+    "S": "https://tastesbetterfromscratch.com/thai-basil-chicken/"
+  },
+  "prepTime": {
+    "N": "10"
+  },
+  "cookTime": {
+    "N": "10"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": true
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "2 tablespoons olive oil (or neutral oil such as vegetable or peanut oil)"
+      },
+      {
+        "S": "2 shallots, thinly sliced"
+      },
+      {
+        "S": "6 cloves garlic, thinly sliced"
+      },
+      {
+        "S": "1 tablespoon fresh ginger, minced"
+      },
+      {
+        "S": "1/2 bell pepper, thinly sliced"
+      },
+      {
+        "S": "1 pound ground chicken (lean ground chicken, diced chicken breast, or ground turkey)"
+      },
+      {
+        "S": "2 teaspoons light brown sugar"
+      },
+      {
+        "S": "1 tablespoon fish sauce (or substitute hoisin sauce)"
+      },
+      {
+        "S": "1/4 cup low-sodium soy sauce"
+      },
+      {
+        "S": "1 tablespoon oyster sauce"
+      },
+      {
+        "S": "2 tablespoons Asian garlic chili sauce (such as Sambal Oelek)"
+      },
+      {
+        "S": "1/2 cup low-sodium chicken broth"
+      },
+      {
+        "S": "1/4 cup water"
+      },
+      {
+        "S": "1 teaspoon cornstarch"
+      },
+      {
+        "S": "2/3 cup fresh Thai basil leaves (or Italian basil)"
+      },
+      {
+        "S": "Cooked jasmine rice, for serving"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Olive Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "or neutral oil such as vegetable or peanut oil"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shallots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "6"
+          },
+          "unit": {
+            "S": "clove"
+          },
+          "note": {
+            "S": "thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "fresh, minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Bell Pepper"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "thinly sliced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Chicken"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "lean ground chicken, diced chicken breast, or ground turkey"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Light Brown Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fish Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "or substitute hoisin sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Oyster Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Asian Garlic Chili Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "such as Sambal Oelek"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cornstarch"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Thai Basil"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2/3"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "fresh leaves, or Italian basil"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Jasmine Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "cooked, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Mix the sauce ahead by whisking together 2 teaspoons brown sugar, 1 tablespoon fish sauce, 1/4 cup soy sauce, 1 tablespoon oyster sauce, 2 tablespoons chili sauce, 1/2 cup chicken broth, 1/4 cup water, and 1 teaspoon cornstarch until the cornstarch is fully dissolved and no lumps remain. Set aside."
+      },
+      {
+        "S": "Heat a wok or large skillet over medium-high heat. Add 2 tablespoons oil. Once hot but not smoking, add the shallots, garlic, ginger, and bell pepper. Stir-fry for 2-3 minutes until fragrant and slightly softened. Watch the garlic carefully as sliced garlic can burn quickly at high heat."
+      },
+      {
+        "S": "Push veggies to the sides of the pan. Turn heat to high and add 1 pound ground chicken. Break into small pieces with a spatula and cook for 3-4 minutes until no longer pink and lightly browned. If using diced chicken breast, cook until internal temperature reaches 165\u00b0F."
+      },
+      {
+        "S": "Give the sauce mixture a quick stir (cornstarch settles), then pour it into the pan. Stir everything together and cook for 2-3 minutes, stirring frequently, until the sauce thickens and coats the chicken."
+      },
+      {
+        "S": "Remove the pan from heat. Add 2/3 cup fresh basil leaves and stir until just wilted, about 30 seconds. Serve immediately over hot cooked jasmine rice."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For gluten-free: use tamari instead of soy sauce and gluten-free oyster sauce"
+      },
+      {
+        "S": "Neutral oil (vegetable, peanut, or avocado oil) works better than olive oil for high-heat stir-frying"
+      },
+      {
+        "S": "Thai basil with purple stems is traditional and holds up better to heat than Italian basil"
+      },
+      {
+        "S": "Fish sauce provides authentic flavor - hoisin is sweeter and should only be used if fish sauce cannot be used"
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "M": {
+          "title": {
+            "S": "Thai Cucumber Salad"
+          },
+          "description": {
+            "S": "A cool, crunchy salad of sliced cucumbers tossed with rice vinegar, a touch of sesame oil, and crushed peanuts \u2014 a refreshing contrast to the rich, spicy basil chicken."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Coconut Rice"
+          },
+          "description": {
+            "S": "Jasmine rice simmered in coconut milk for a subtly sweet, creamy base that pairs beautifully with the bold stir-fry sauce."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Steamed Bok Choy with Garlic"
+          },
+          "description": {
+            "S": "Tender baby bok choy quickly steamed and finished with sesame oil and crispy garlic \u2014 a light, clean green side that rounds out the meal."
+          }
+        }
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Carbon Steel Wok (14-inch)"
+          },
+          "reason": {
+            "S": "A proper wok provides the concentrated high heat needed for authentic stir-fry texture and wok hei flavor that a standard skillet can't match."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Microplane Grater"
+          },
+          "reason": {
+            "S": "Makes quick work of mincing fresh ginger into a fine, even consistency that dissolves seamlessly into the sauce."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Rice Cooker"
+          },
+          "reason": {
+            "S": "Produces perfectly fluffy jasmine rice hands-free every time, letting you focus on the stir-fry."
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "stir-fry"
+      },
+      {
+        "S": "pad krapow"
+      },
+      {
+        "S": "wok"
+      },
+      {
+        "S": "ground chicken"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

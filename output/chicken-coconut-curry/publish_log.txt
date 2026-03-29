@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-28 20:28:25):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chicken-coconut-curry/chicken-coconut-curry.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chicken-coconut-curry/chicken-coconut-curry_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/chicken-coconut-curry/chicken-coconut-curry_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chicken_Curry_with_Coconut_Milk.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Chicken_Curry_with_Coconut_Milk_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Chicken_Curry_with_Coconut_Milk.json (triggers DB import)

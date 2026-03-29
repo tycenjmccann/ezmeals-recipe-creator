@@ -1,0 +1,532 @@
+{
+  "id": {
+    "S": "gai-yang-thai-grilled-chicken"
+  },
+  "title": {
+    "S": "Gai Yang - Thai Grilled Chicken"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Gai_Yang_Thai_Grilled_Chicken.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Gai_Yang_Thai_Grilled_Chicken_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Gai Yang is classic Isaan-style grilled chicken: marinated with garlic, coriander root, lemongrass, fish sauce, and white pepper, then slowly grilled until smoky and juicy. This Thai street food favorite is known for its crisp skin, bold savory flavor, and aromatic marinade that lets the chicken shine."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "20"
+  },
+  "cookTime": {
+    "N": "55"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6-8"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "5 Cilantro roots, or 1/4 cup packed Cilantro Stems"
+      },
+      {
+        "S": "8 large Garlic Cloves, peeled (about 3 tablespoons)"
+      },
+      {
+        "S": "2 stalks Lemongrass, white and pale parts only, sliced thin (about 3 tablespoons)"
+      },
+      {
+        "S": "1-2 teaspoons ground White Pepper"
+      },
+      {
+        "S": "2 teaspoons coriander powder"
+      },
+      {
+        "S": "1/2 teaspoon Turmeric powder (optional)"
+      },
+      {
+        "S": "3 tablespoons Fish Sauce"
+      },
+      {
+        "S": "1 tablespoon Light Soy Sauce"
+      },
+      {
+        "S": "2 teaspoons Dark Soy Sauce"
+      },
+      {
+        "S": "1 tablespoon Oyster Sauce (optional)"
+      },
+      {
+        "S": "2 tablespoons Brown Sugar or palm sugar"
+      },
+      {
+        "S": "2 tablespoons neutral Oil"
+      },
+      {
+        "S": "4 pounds Whole Chicken, cut into pieces (skin-on, bone-in)"
+      },
+      {
+        "S": "1-2 tablespoons Oil for grilling"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro Roots"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "5"
+          },
+          "unit": {
+            "S": "roots"
+          },
+          "note": {
+            "S": "or 1/4 cup packed cilantro stems"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "8"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "large, peeled (about 3 tablespoons)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemongrass"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "stalks"
+          },
+          "note": {
+            "S": "white and pale parts only, sliced thin (about 3 tablespoons)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "White Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1-2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "ground"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coriander Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fish Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Light Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Dark Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Oyster Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Brown Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "or palm sugar"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Neutral Cooking Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Whole Chicken"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "cut into pieces, skin-on, bone-in"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cooking Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1-2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "for grilling"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Combine 5 cilantro roots (or 1/4 cup packed cilantro stems), 8 cloves garlic, 3 tablespoons sliced lemongrass, 1-2 teaspoons ground white peppercorns, 2 teaspoons coriander powder, and 1/2 teaspoon turmeric powder (if using) in a food processor or mortar and pestle. Add 1 tablespoon of the fish sauce to help it blend. Process to a fairly smooth paste, scraping down the sides as needed."
+      },
+      {
+        "S": "Transfer the paste to a bowl. Stir in the remaining 2 tablespoons fish sauce, 1 tablespoon light soy sauce, 2 teaspoons dark soy sauce, 1 tablespoon oyster sauce (if using), 2 tablespoons brown sugar, and 2 tablespoons neutral cooking oil. Mix until the sugar dissolves completely."
+      },
+      {
+        "S": "Pat 4 pounds of chicken pieces dry with paper towels. Score the thickest parts of each piece with 2-3 shallow cuts to help the marinade penetrate to the bone. Place chicken in a large zip-top bag or non-reactive container and pour the marinade over, turning to coat all pieces thoroughly. Refrigerate for at least 4 hours, ideally overnight (up to 24 hours), turning the bag once or twice if possible."
+      },
+      {
+        "S": "Remove chicken from the refrigerator 20-30 minutes before grilling. Set up a two-zone fire on the grill: one side at medium-low direct heat (around 325-350 degrees Fahrenheit) and one side with no heat (indirect zone). Brush the grill grates lightly with 1-2 tablespoons cooking oil using a folded paper towel held with tongs."
+      },
+      {
+        "S": "Place chicken pieces skin-side down on the direct-heat side. Grill for 6-8 minutes until the skin starts to crisp and develop grill marks, then flip. Continue grilling, turning every 8-10 minutes for even cooking. If flare-ups occur or pieces brown too fast, move them to the indirect-heat side immediately."
+      },
+      {
+        "S": "Move all pieces to indirect heat for the last 15-20 minutes, close the lid, and let them finish cooking gently. Wings and drumsticks will finish first (30-35 minutes total); thighs and breasts will take 45-60 minutes. Baste with any remaining marinade during the first 20 minutes only to ensure it cooks through safely."
+      },
+      {
+        "S": "Check doneness with an instant-read thermometer inserted into the thickest part of each piece, not touching bone. Breast pieces should read 165 degrees Fahrenheit (74 degrees Celsius). Thighs and drumsticks should read 175-180 degrees Fahrenheit (79-82 degrees Celsius) for the best tenderness."
+      },
+      {
+        "S": "Transfer chicken to a cutting board and rest for 10 minutes, loosely tented with foil, to allow juices to redistribute. Serve with sticky rice or jasmine rice, alongside Nam Jim Jaew dipping sauce and raw vegetables such as sliced cucumber, cabbage wedges, and Thai basil sprigs."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free Substitution: Replace light soy sauce and dark soy sauce with gluten-free tamari. Use a gluten-free oyster sauce or omit it entirely for a more traditional version."
+      },
+      {
+        "S": "Dairy-Free: This recipe is naturally dairy-free as written."
+      },
+      {
+        "S": "For a more traditional Isaan flavor, omit the oyster sauce and turmeric powder."
+      },
+      {
+        "S": "Palm sugar is more traditional than brown sugar and has a more complex, less molasses-heavy sweetness. Use it if available at an Asian market."
+      },
+      {
+        "S": "Coriander roots, sold at Asian markets often still attached to the cilantro bunch, have an earthy concentrated flavor that cilantro stems cannot fully replicate. If you grow your own cilantro, save and freeze the roots."
+      },
+      {
+        "S": "Charcoal grilling is strongly recommended for the most authentic smoky flavor. If using gas, add a foil pouch of soaked wood chips over the lit burner."
+      },
+      {
+        "S": "Do not rinse raw chicken. Pat dry with paper towels and discard them. Discard all leftover marinade that contacted raw chicken, or baste only during the first 20 minutes of cooking so it reaches a safe temperature."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "b4efe05b-db9e-456c-9619-d7ae393961a1"
+      },
+      {
+        "S": "c9c8182f-95c4-41cd-811d-5dfacc787596"
+      },
+      {
+        "S": "699126b9-f51d-4c70-985a-6f79d8547734"
+      },
+      {
+        "S": "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "0da3bc9c-901b-4774-9bd0-4c106e95c921"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      },
+      {
+        "S": "76cda222-84b6-4a7c-8c89-8df62e963b4e"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "3394059c-775a-43e4-801f-4192b82c2714"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "60de80a1-a040-4677-a5d1-5b968991bf76"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": false
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

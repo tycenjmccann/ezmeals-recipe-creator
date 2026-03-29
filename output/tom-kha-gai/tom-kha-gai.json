@@ -1,0 +1,516 @@
+{
+  "id": {
+    "S": "tom-kha-gai"
+  },
+  "title": {
+    "S": "Authentic Thai Tom Kha Gai (Chicken Coconut Soup)"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Tom_Kha_Gai.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Tom_Kha_Gai_thumbnail.jpg"
+  },
+  "description": {
+    "S": "A rich, aromatic Thai coconut soup featuring tender chicken, earthy mushrooms, and the classic Thai flavor trinity of galangal, lemongrass, and kaffir lime leaves. This recipe balances creamy coconut richness with bright lime, savory fish sauce, and gentle heat for the hallmark sweet-sour-salty-spicy harmony of Thai cuisine."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "25"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4-5"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "-- Soup Base --"
+      },
+      {
+        "S": "2 cans (13.5 oz each) Full-Fat Coconut Milk"
+      },
+      {
+        "S": "1 1/2 cups Low Sodium Chicken Stock"
+      },
+      {
+        "S": "-- Aromatics (for flavoring only, not eaten) --"
+      },
+      {
+        "S": "1 thumb-sized piece Galangal (about 2 to 3 inches), sliced into 8 to 10 thin coins, lightly smashed"
+      },
+      {
+        "S": "3 Lemongrass stalks, trimmed, using the bottom 4 to 5 inches of the pale green section, cut into 1 1/2 inch pieces and lightly smashed"
+      },
+      {
+        "S": "5 to 6 Kaffir Lime Leaves, torn in half with the central stem removed"
+      },
+      {
+        "S": "-- Protein and Vegetables --"
+      },
+      {
+        "S": "1 pound boneless skinless Chicken Thighs or breasts, cut into bite-sized pieces (about 3/4 inch)"
+      },
+      {
+        "S": "2 cups Mushrooms, sliced or torn (oyster, shiitake, button, or a mix)"
+      },
+      {
+        "S": "1 small Shallot or 1/2 small White Onion, cut into thin wedges (optional)"
+      },
+      {
+        "S": "-- Seasoning --"
+      },
+      {
+        "S": "2 to 3 tablespoons Fish Sauce"
+      },
+      {
+        "S": "1 to 2 teaspoons palm sugar or Light Brown Sugar"
+      },
+      {
+        "S": "3 to 4 tablespoons fresh Lime Juice (about 2 to 3 Limes)"
+      },
+      {
+        "S": "3 to 5 fresh Thai bird eye chilies, lightly smashed or sliced diagonally"
+      },
+      {
+        "S": "-- Garnish --"
+      },
+      {
+        "S": "1/4 cup Fresh Cilantro leaves and tender stems, roughly chopped"
+      },
+      {
+        "S": "Optional: drizzle of coconut cream, extra lime wedges, sliced Thai chilies"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cans (13.5 oz each)"
+          },
+          "note": {
+            "S": "Full-fat"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Stock"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Galangal"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "piece"
+          },
+          "note": {
+            "S": "Thumb-sized, about 2 to 3 inches, sliced into 8 to 10 thin coins, lightly smashed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemongrass Stalks"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "stalks"
+          },
+          "note": {
+            "S": "Trimmed, using the bottom 4 to 5 inches of the pale green section, cut into 1 1/2 inch pieces and lightly smashed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Kaffir Lime Leaves"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "5 to 6"
+          },
+          "unit": {
+            "S": "leaves"
+          },
+          "note": {
+            "S": "Torn in half with the central stem removed"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Thighs"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Boneless, skinless; or breasts, cut into bite-sized pieces about 3/4 inch"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Mushrooms"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Sliced or torn; oyster, shiitake, button, or a mix"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Shallot"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "small"
+          },
+          "note": {
+            "S": "Or 1/2 small white onion, cut into thin wedges; optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fish Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2 to 3"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Palm Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 to 2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Or light brown sugar"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Limes"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2 to 3"
+          },
+          "unit": {
+            "S": "limes"
+          },
+          "note": {
+            "S": "About 3 to 4 tablespoons fresh lime juice"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Thai Bird Eye Chilies"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3 to 5"
+          },
+          "unit": {
+            "S": "chilies"
+          },
+          "note": {
+            "S": "Fresh, lightly smashed or sliced diagonally"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Fresh leaves and tender stems, roughly chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Combine 1 1/2 cups chicken stock with 1 can of coconut milk in a large saucepan or Dutch oven over medium heat. Add the galangal slices, lemongrass pieces, and torn kaffir lime leaves. Stir gently and bring to a gentle simmer, not a rolling boil. Let the aromatics infuse for 3 to 5 minutes until fragrant. Do not let the liquid boil hard, as coconut milk will curdle and separate. Maintain a gentle simmer throughout and stir slowly in one direction."
+      },
+      {
+        "S": "Add the 1 pound of chicken pieces, 2 cups of mushrooms, and shallot or onion wedges if using. Reduce heat to medium-low to maintain a gentle simmer. Cook for 8 to 10 minutes, stirring occasionally and gently, until the chicken is cooked through with no pink remaining and reaches an internal temperature of 165 degrees F."
+      },
+      {
+        "S": "Pour in the second can of coconut milk. Add 2 tablespoons fish sauce and 1 to 2 teaspoons palm sugar. Stir gently to combine and let everything warm through for 3 to 4 minutes. Do not let it boil."
+      },
+      {
+        "S": "Taste the broth and adjust the flavors. Add more fish sauce 1/2 tablespoon at a time if it needs more savory depth. Add more lime juice if it needs brightness. Add a touch more sugar if it needs sweetness. The soup should taste creamy, tangy, savory, and slightly sweet in harmony."
+      },
+      {
+        "S": "Remove the pan from heat. Stir in 3 to 4 tablespoons fresh lime juice, the Thai chilies (smashed or sliced), and the cilantro stems. The residual heat will wilt the cilantro perfectly. Adding the lime juice off the heat preserves its bright, fresh flavor."
+      },
+      {
+        "S": "Ladle the soup into bowls. Garnish with fresh cilantro leaves and an optional drizzle of coconut cream. Serve with steamed jasmine rice on the side. Note that in Thailand, Tom Kha Gai is traditionally spooned over rice and eaten as a curry, not sipped like a Western soup."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free. However, some fish sauce brands contain wheat-based hydrolyzed protein. Check labels and use a verified gluten-free brand such as Red Boat or Squid Brand. If substituting soy sauce for fish sauce, use tamari or coconut aminos to keep the dish gluten-free."
+      },
+      {
+        "S": "Aromatic pieces: The galangal, lemongrass, and kaffir lime leaves are for flavoring only. They are fibrous and tough. Leave them in the bowl but do not eat them."
+      },
+      {
+        "S": "Coconut milk: Use full-fat coconut milk for the richest, most authentic result. Shake the cans well before opening."
+      },
+      {
+        "S": "Lighter version: For a more brothy, soup-like result, use 1 can coconut milk and increase stock to 3 cups. This is less traditional but still delicious."
+      },
+      {
+        "S": "Chicken thighs vs breasts: Thighs stay more tender and forgiving, making them ideal for this gentle simmer. Breasts work fine but can overcook quickly."
+      },
+      {
+        "S": "Galangal substitution: There is no true substitute for galangal. If needed, use half the amount of fresh ginger, but the flavor profile will shift significantly."
+      },
+      {
+        "S": "Storage: Refrigerate leftovers for up to 3 days. Reheat gently over low heat and do not boil."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "b4efe05b-db9e-456c-9619-d7ae393961a1"
+      },
+      {
+        "S": "c9c8182f-95c4-41cd-811d-5dfacc787596"
+      },
+      {
+        "S": "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79"
+      },
+      {
+        "S": "699126b9-f51d-4c70-985a-6f79d8547734"
+      },
+      {
+        "S": "374b2cc1-f060-4cfe-bdf5-b1e62a6846fb"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "4fd06a65-5fd3-436b-a7c8-480ad311ba36"
+      },
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

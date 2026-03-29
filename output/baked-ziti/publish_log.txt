@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 03:13:25):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/baked-ziti/baked-ziti.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/baked-ziti/baked-ziti_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/baked-ziti/baked-ziti_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Baked_Ziti.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Baked_Ziti_thumbnail.jpg
+✅ DynamoDB: recipe 'baked-ziti' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

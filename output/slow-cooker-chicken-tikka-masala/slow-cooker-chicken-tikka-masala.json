@@ -1,0 +1,801 @@
+{
+  "id": {
+    "S": "slow-cooker-chicken-tikka-masala"
+  },
+  "title": {
+    "S": "Slow Cooker Chicken Tikka Masala"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Slow_Cooker_Chicken_Tikka_Masala.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Slow_Cooker_Chicken_Tikka_Masala_thumbnail.jpg"
+  },
+  "description": {
+    "S": "This easy Slow Cooker Chicken Tikka Masala is packed with warm, aromatic flavor from a blend of Indian spices, fresh ginger, and garlic - all coming together in a rich, creamy tomato sauce with tender chicken thighs. Simple to prepare, deeply satisfying."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "15"
+  },
+  "cookTime": {
+    "N": "330"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "5-6"
+  },
+  "cuisineType": {
+    "S": "Indian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": true
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "2 teaspoons Garam Masala"
+      },
+      {
+        "S": "1 1/2 teaspoons Ground Cumin"
+      },
+      {
+        "S": "1 1/2 teaspoons Smoked Paprika (or Kashmiri chili powder)"
+      },
+      {
+        "S": "1 teaspoon Ground Coriander"
+      },
+      {
+        "S": "1/2 teaspoon Turmeric"
+      },
+      {
+        "S": "1/4 teaspoon Ground Cinnamon"
+      },
+      {
+        "S": "1/4 teaspoon Cayenne Pepper (adjust to taste)"
+      },
+      {
+        "S": "1/8 teaspoon Ground Cardamom"
+      },
+      {
+        "S": "1 teaspoon Salt"
+      },
+      {
+        "S": "1/2 teaspoon Black Pepper"
+      },
+      {
+        "S": "2 pounds boneless, skinless Chicken Thighs (about 8 thighs), cut into 1 1/2-inch pieces"
+      },
+      {
+        "S": "1 medium Yellow Onion, finely diced (about 1 cup)"
+      },
+      {
+        "S": "4 cloves Garlic, minced"
+      },
+      {
+        "S": "1 tablespoon Fresh Ginger, peeled and finely grated"
+      },
+      {
+        "S": "2 (8 ounce) cans Tomato Sauce"
+      },
+      {
+        "S": "1 (15 ounce) can Diced Tomatoes, undrained"
+      },
+      {
+        "S": "1/4 fresh Jalapeno Pepper, seeds removed, finely chopped (optional)"
+      },
+      {
+        "S": "1/2 teaspoon Sugar"
+      },
+      {
+        "S": "1 cup canned unsweetened full-fat Coconut Milk, well shaken"
+      },
+      {
+        "S": "2 teaspoons Cornstarch or tapioca starch"
+      },
+      {
+        "S": "1 tablespoon dried Fenugreek Leaves (kasuri methi), crushed (optional but recommended)"
+      },
+      {
+        "S": "1/4 cup fresh Cilantro, chopped"
+      },
+      {
+        "S": "4 to 5 cups hot cooked Basmati Rice"
+      },
+      {
+        "S": "Naan Bread (optional)"
+      },
+      {
+        "S": "1 Lemon, cut into wedges (optional)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garam Masala"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Smoked Paprika"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Or Kashmiri chili powder"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Coriander"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cinnamon"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cayenne Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Adjust to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cardamom"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/8"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Thighs"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "Boneless, skinless, about 8 thighs, cut into 1 1/2-inch pieces"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "medium"
+          },
+          "note": {
+            "S": "Finely diced, about 1 cup"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Fresh, peeled and finely grated"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Tomato Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "8 ounce cans"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Diced Tomatoes"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "15 ounce can"
+          },
+          "note": {
+            "S": "Undrained"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Jalapeno Pepper"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "pepper"
+          },
+          "note": {
+            "S": "Fresh, seeds removed, finely chopped, optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Canned, unsweetened, full-fat, well shaken"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cornstarch"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoons"
+          },
+          "note": {
+            "S": "Or tapioca starch"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fenugreek Leaves"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Dried, crushed (kasuri methi), optional but recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "Fresh, chopped"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Basmati Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "4 to 5"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Hot cooked"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Naan Bread"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "package"
+          },
+          "note": {
+            "S": "Optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemon"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Cut into wedges, optional"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "In a small bowl, whisk together 2 teaspoons garam masala, 1 1/2 teaspoons ground cumin, 1 1/2 teaspoons smoked paprika, 1 teaspoon ground coriander, 1/2 teaspoon turmeric, 1/4 teaspoon ground cinnamon, 1/4 teaspoon cayenne pepper, 1/8 teaspoon ground cardamom, 1 teaspoon salt, and 1/2 teaspoon black pepper. Set aside."
+      },
+      {
+        "S": "Place the 2 pounds chicken thigh pieces in a 5 to 7 quart slow cooker. Add 1 medium diced yellow onion, 4 cloves minced garlic, and 1 tablespoon grated fresh ginger. Sprinkle the spice blend evenly over the chicken and toss to coat."
+      },
+      {
+        "S": "Pour the 2 cans tomato sauce and 1 can diced tomatoes with their juices over the chicken. Add 1/2 teaspoon sugar and the chopped jalapeno if using. Stir gently to combine, ensuring the chicken is mostly submerged in sauce."
+      },
+      {
+        "S": "Cover and cook on LOW for 5 to 6 hours or HIGH for 3 to 4 hours, until the chicken is tender and cooked through to an internal temperature of 165 degrees Fahrenheit (74 degrees Celsius). The chicken should be very tender and easy to break apart."
+      },
+      {
+        "S": "If desired, use two forks to shred the chicken into large chunks directly in the slow cooker, or leave as bite-sized pieces if you cut them small enough."
+      },
+      {
+        "S": "In a small bowl, whisk 2 teaspoons cornstarch into 1 cup coconut milk until smooth. Pour the mixture into the slow cooker along with 1 tablespoon crushed fenugreek leaves if using. Stir gently to combine. Replace the lid and cook for an additional 15 to 20 minutes on HIGH to allow the sauce to thicken slightly and the coconut milk to heat through."
+      },
+      {
+        "S": "Taste the sauce and adjust salt, cayenne, or sugar as needed. The sauce should be rich, creamy, and well-balanced between tomato tanginess and coconut richness."
+      },
+      {
+        "S": "Ladle generously over 4 to 5 cups hot cooked basmati rice. Garnish with 1/4 cup fresh chopped cilantro. Serve with naan bread and lemon wedges on the side if desired."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free as written (the curry and rice). If serving with naan, use gluten-free naan. Verify canned tomato products and coconut milk are certified gluten-free."
+      },
+      {
+        "S": "Dairy-Free: This recipe is naturally dairy-free as written. For a more traditional British tikka masala character, substitute 2/3 cup heavy cream for the coconut milk."
+      },
+      {
+        "S": "Food Safety: Chicken must reach an internal temperature of 165 degrees Fahrenheit (74 degrees Celsius). Use an instant-read thermometer if unsure."
+      },
+      {
+        "S": "Storage: Refrigerate leftovers in an airtight container for up to 4 days. Freeze for up to 3 months. Thaw overnight in the refrigerator before reheating."
+      },
+      {
+        "S": "Reheating: Warm gently on the stovetop over medium-low heat, adding a splash of broth or water to thin as needed. The sauce will thicken considerably when cold."
+      },
+      {
+        "S": "Do not lift the slow cooker lid during cooking. Each time you remove the lid, you lose 15 to 20 minutes of cooking time."
+      },
+      {
+        "S": "Fenugreek leaves (kasuri methi) are the signature flavor that makes tikka masala taste authentic. They are available at Indian grocery stores or online. Highly recommended."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "3e5a8245-bff7-463f-8295-60ad4bad1601"
+      },
+      {
+        "S": "572cbdc3-03f0-425e-91ec-115daccd12d4"
+      },
+      {
+        "S": "9a02ba4a-0dce-43f5-90c9-125a1cb4988a"
+      },
+      {
+        "S": "fff9f91e-3fb1-4368-99db-abfa0da7cf03"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "cf638481-5d13-4692-8cb3-3cb21b8b42fd"
+      },
+      {
+        "S": "81cf6862-8f59-48ab-a7f5-2b545fc904cf"
+      },
+      {
+        "S": "88d20131-5a87-4032-b475-50813f37e0b1"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": true
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

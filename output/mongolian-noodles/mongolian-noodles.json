@@ -1,0 +1,628 @@
+{
+  "id": {
+    "S": "c7885f16-7d9a-46ea-8c49-84082c14cc62"
+  },
+  "title": {
+    "S": "Mongolian Noodles"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Mongolian_Noodles.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Mongolian_Noodles_thumbnail.jpg"
+  },
+  "description": {
+    "S": "This easy Asian-inspired Mongolian Noodles recipe brings bold flavors to your table in just 30 minutes. Tender ramen noodles are tossed with perfectly browned ground beef and crisp vegetables in a savory-sweet sauce made with soy sauce, hoisin, and fresh ginger. It's a satisfying, restaurant-quality meal that's perfect for busy weeknights."
+  },
+  "link": {
+    "S": "https://tastesbetterfromscratch.com/mongolian-noodles/"
+  },
+  "prepTime": {
+    "N": "10"
+  },
+  "cookTime": {
+    "N": "15"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "6"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": true
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "16 oz ramen noodles"
+      },
+      {
+        "S": "2 lb ground beef, turkey, or chicken"
+      },
+      {
+        "S": "Salt and pepper"
+      },
+      {
+        "S": "1 medium carrot, grated"
+      },
+      {
+        "S": "1 medium red bell pepper, diced"
+      },
+      {
+        "S": "1 1/2 cups snap peas, halved"
+      },
+      {
+        "S": "6 cloves garlic, minced"
+      },
+      {
+        "S": "4 green onions, chopped, white and green parts separated"
+      },
+      {
+        "S": "1/2 cup low sodium soy sauce"
+      },
+      {
+        "S": "1/2 cup hoisin sauce"
+      },
+      {
+        "S": "1/4 cup water"
+      },
+      {
+        "S": "2 teaspoons cornstarch"
+      },
+      {
+        "S": "2 teaspoons fresh minced ginger"
+      },
+      {
+        "S": "1 Tablespoon honey"
+      },
+      {
+        "S": "2 teaspoons sesame oil"
+      },
+      {
+        "S": "1/4 teaspoon crushed red pepper flakes, or more to taste"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ramen Noodles"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "16"
+          },
+          "unit": {
+            "S": "ounce"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Beef"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "Turkey, or Chicken options"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Black Pepper"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Carrot"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "medium, grated"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Bell Pepper"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "medium, diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Snap Peas"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "halved"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "6"
+          },
+          "unit": {
+            "S": "clove"
+          },
+          "note": {
+            "S": "minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Green Onions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "chopped, white and green parts separated"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "low sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Hoisin Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Water"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cornstarch"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "fresh, minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Honey"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sesame Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Red Pepper Flakes"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "or more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Cook 16 oz ramen noodles according to package instructions. Drain, toss with a small drizzle of sesame oil or neutral oil to prevent sticking, and set aside."
+      },
+      {
+        "S": "Whisk together 1/2 cup soy sauce, 1/2 cup hoisin sauce, 1/4 cup water, 2 teaspoons cornstarch, 2 teaspoons ginger, 1 Tablespoon honey, 2 teaspoons sesame oil, and 1/4 teaspoon red pepper flakes in a small bowl. Whisk well to dissolve cornstarch and re-stir just before adding to the pan, as cornstarch settles."
+      },
+      {
+        "S": "Season 2 lb ground meat generously with salt and pepper. Heat a large wok or deep skillet over medium-high heat. Cook the meat, breaking into small pieces, until well browned, about 5-7 minutes. Push meat to the side of the pan and tilt to drain, spooning off excess grease if needed."
+      },
+      {
+        "S": "Add 1 medium grated carrot, 1 medium diced red bell pepper, 1 1/2 cups halved snap peas, and the white parts of 4 green onions to the pan. Saut\u00e9 for 2-3 minutes until just tender-crisp. Add 6 cloves minced garlic and cook for 30 seconds until fragrant, being careful not to let it burn."
+      },
+      {
+        "S": "Stir the vegetables and meat together. Add the drained noodles and give the sauce one final stir to re-incorporate the cornstarch, then pour over everything. Toss well over heat for 1-2 minutes until the sauce thickens and evenly coats the noodles with a glossy finish."
+      },
+      {
+        "S": "Garnish with the green parts of the green onions and serve immediately."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For gluten-free: use tamari instead of soy sauce, gluten-free hoisin sauce, and gluten-free ramen noodles or substitute with rice noodles"
+      },
+      {
+        "S": "Use fresh or dried ramen-style wheat noodles. If using instant ramen, discard the seasoning packets. Lo mein or udon noodles also work"
+      },
+      {
+        "S": "Always whisk the sauce again right before adding it to the pan as cornstarch settles quickly"
+      },
+      {
+        "S": "Use the largest wok or skillet you have. If your pan is too small, consider working in batches for proper browning"
+      },
+      {
+        "S": "For ground turkey or chicken, add 1 Tablespoon neutral oil to the pan before cooking to prevent sticking"
+      },
+      {
+        "S": "Hoisin sauce brands vary in sweetness. Taste the sauce before adding and adjust honey accordingly"
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "M": {
+          "title": {
+            "S": "Steamed Edamame"
+          },
+          "description": {
+            "S": "Lightly salted steamed edamame adds a fresh, protein-rich bite that pairs naturally with the bold Mongolian flavors."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Asian Cucumber Salad"
+          },
+          "description": {
+            "S": "A cool, tangy cucumber salad with rice vinegar and sesame seeds provides refreshing contrast to the rich, savory noodles."
+          }
+        }
+      },
+      {
+        "M": {
+          "title": {
+            "S": "Egg Drop Soup"
+          },
+          "description": {
+            "S": "A light, silky egg drop soup rounds out the meal with comforting warmth without competing with the main dish."
+          }
+        }
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Carbon Steel Wok"
+          },
+          "description": {
+            "S": "A well-seasoned carbon steel wok delivers the high heat and large cooking surface essential for proper stir-frying and even browning."
+          },
+          "url": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Microplane Zester/Grater"
+          },
+          "description": {
+            "S": "Makes quick work of fresh ginger and perfectly grates carrots, ensuring fine, even texture throughout the dish."
+          },
+          "url": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "stir-fry"
+      },
+      {
+        "S": "ramen"
+      },
+      {
+        "S": "hoisin"
+      },
+      {
+        "S": "savory-sweet"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

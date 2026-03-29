@@ -1,0 +1,595 @@
+{
+  "id": {
+    "S": "3407e619-4739-4348-b940-1be2e2f9575b"
+  },
+  "title": {
+    "S": "Orange Peel Chicken"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Orange_Peel_Chicken.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Orange_Peel_Chicken_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Better than takeout! This crispy homemade Orange Peel Chicken features tender bite-sized chicken pieces coated in cornstarch and tossed in a glossy, sweet-tangy orange sauce with hints of garlic and sriracha heat. A delicious Asian-inspired dish that's surprisingly easy to make from scratch."
+  },
+  "link": {
+    "S": "https://tastesbetterfromscratch.com/orange-peel-chicken/"
+  },
+  "prepTime": {
+    "N": "20"
+  },
+  "cookTime": {
+    "N": "15"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "5"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "1 pound boneless skinless chicken breasts, cut into bite-sized pieces (about 1-inch)"
+      },
+      {
+        "S": "1/2 cup cornstarch"
+      },
+      {
+        "S": "2 tablespoons vegetable or canola oil (plus more as needed for batches)"
+      },
+      {
+        "S": "1/2 cup orange juice"
+      },
+      {
+        "S": "1 teaspoon orange zest"
+      },
+      {
+        "S": "3 cloves garlic, minced"
+      },
+      {
+        "S": "2-4 teaspoons Sriracha hot sauce (to taste)"
+      },
+      {
+        "S": "1/3 cup low-sodium chicken broth"
+      },
+      {
+        "S": "2 tablespoons low-sodium soy sauce"
+      },
+      {
+        "S": "2 tablespoons granulated sugar"
+      },
+      {
+        "S": "2 teaspoons apple cider vinegar"
+      },
+      {
+        "S": "1 tablespoon rice wine vinegar"
+      },
+      {
+        "S": "2 1/2 teaspoons cornstarch"
+      },
+      {
+        "S": "Hot cooked brown rice"
+      },
+      {
+        "S": "4 green onions, chopped (divided - most for the stir-fry, some reserved for garnish)"
+      },
+      {
+        "S": "Sesame seeds (optional garnish)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Breasts"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pound"
+          },
+          "note": {
+            "S": "cut into bite-sized pieces (about 1-inch)"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cornstarch"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "for coating chicken"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "plus more as needed for batches"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Orange Juice"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Orange Zest"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "3"
+          },
+          "unit": {
+            "S": "clove"
+          },
+          "note": {
+            "S": "minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sriracha Hot Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2-4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/3"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "low-sodium"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "granulated"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Apple Cider Vinegar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Rice Wine Vinegar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cornstarch"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2 1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "for sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Brown Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "hot cooked, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Green Onions"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "chopped, divided"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sesame Seeds"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "optional garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Coat the chicken: Add 1/2 cup cornstarch and 1 pound chicken pieces to a ziplock bag. Shake to evenly coat. Shake off excess cornstarch before cooking."
+      },
+      {
+        "S": "Mix the sauce in advance: In a small bowl, whisk together 1/2 cup orange juice, 1 teaspoon orange zest, 3 minced garlic cloves, 2-4 teaspoons Sriracha, 1/3 cup chicken broth, 2 tablespoons soy sauce, 2 tablespoons sugar, 2 teaspoons apple cider vinegar, 1 tablespoon rice wine vinegar, and 2 1/2 teaspoons cornstarch until the cornstarch is fully dissolved. Set aside."
+      },
+      {
+        "S": "Cook the chicken: Heat 2 tablespoons oil in a large skillet over medium-high heat. Cook chicken in 2-3 batches (don't overcrowd the pan or it will steam instead of crisp), about 3-4 minutes per side, until golden brown and cooked through (internal temp 165\u00b0F). Add an extra splash of oil between batches if the pan looks dry. Remove chicken to a plate lined with paper towels."
+      },
+      {
+        "S": "Make the sauce: Reduce heat to medium. Give your sauce mixture a quick re-whisk (cornstarch settles), then pour it into the same skillet. Whisk continuously and cook for 1-2 minutes until the sauce thickens and turns glossy."
+      },
+      {
+        "S": "Combine: Add the cooked chicken and most of the chopped green onions to the skillet. Toss to coat everything evenly in the sauce. Cook for 30 seconds more just to heat through."
+      },
+      {
+        "S": "Serve: Plate over hot cooked brown rice. Garnish with reserved green onions and sesame seeds."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For gluten-free: use tamari instead of soy sauce and ensure cornstarch is certified gluten-free."
+      },
+      {
+        "S": "Don't skip shaking off excess cornstarch - clumps of loose starch will burn in the oil and make the sauce gritty."
+      },
+      {
+        "S": "Batch cooking is critical - overcrowding drops the pan temperature and gives you rubbery, steamed chicken instead of crispy pieces."
+      },
+      {
+        "S": "Re-whisk the sauce right before adding to the pan; cornstarch sinks to the bottom within seconds."
+      },
+      {
+        "S": "Boneless skinless chicken thighs can be substituted for juicier results."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "Steamed Broccoli with Garlic"
+      },
+      {
+        "S": "Asian Cucumber Salad"
+      },
+      {
+        "S": "Egg Drop Soup"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Microplane Zester/Grater"
+          },
+          "asin": {
+            "S": "B00004S7V8"
+          },
+          "reason": {
+            "S": "Perfect for zesting the orange needed for the sauce"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Instant Read Meat Thermometer"
+          },
+          "asin": {
+            "S": "B01IHHLB3W"
+          },
+          "reason": {
+            "S": "Ensures chicken reaches safe 165\u00b0F without overcooking"
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "T-fal 12-Inch Non-Stick Skillet"
+          },
+          "asin": {
+            "S": "B000GWG0T2"
+          },
+          "reason": {
+            "S": "Large skillet essential for batch-frying without overcrowding"
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "sweet and sour"
+      },
+      {
+        "S": "citrus chicken"
+      },
+      {
+        "S": "takeout style"
+      },
+      {
+        "S": "crispy coating"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

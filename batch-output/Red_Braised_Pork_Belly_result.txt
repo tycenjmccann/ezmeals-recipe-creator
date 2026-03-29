@@ -1,0 +1,65 @@
+Recipe: Red Braised Pork Belly
+URL: https://thewoksoflife.com/red-braised-pork-belly-mao/
+Time: 646.6s
+
+---
+
+# ✅ Pipeline Complete: Chairman Mao's Red Braised Pork Belly
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from thewoksoflife.com + downloaded image |
+| 2 | **Chef Review** | ✅ | 17 improvements made (see below) |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON, cookTime=105 min |
+| 4 | **Standardize** | ✅ | 15 ingredients matched to DB names |
+| 5 | **Ingredient Objects** | ✅ | 15 → 13 structured objects (after QA consolidation) |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 7 affiliate products matched |
+| 8 | **Assembly** | ✅ | All data merged into single JSON |
+| 9 | **QA Review** | ✅ | 3 blocking fixes + 2 non-blocking fixes applied |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (17 total)
+| Category | Changes |
+|----------|---------|
+| **Safety** | Added pork-drying step (prevents splattering in hot sugar), expanded caramelization technique with visual cues and warnings |
+| **Technique** | Blanching 1→3-5 min, added Shaoxing wine to blanching water, deglazing step, "lid ajar" braising, hot water (not cold), chopstick doneness test |
+| **Ratios** | Water reduced 4→2-2.5 cups (was far too dilute), bay leaves 4→2 (was medicinal), added garlic (3 cloves), increased chilies to 2-4 for authentic Hunan heat |
+| **Timing** | Simmer extended to 1-1.5 hrs (was insufficient), cut size increased ¾"→1" (prevents falling apart) |
+| **Completeness** | Added serving suggestions, storage/reheating (5 days fridge, 1 month freezer), safety notes, addition ideas (eggs, tofu puffs) |
+
+## 🔴 QA Fixes Applied
+1. **`glutenFree`** → `false` (contains Shaoxing wine + soy sauces, all wheat-based)
+2. **Scallions consolidated** → Merged 2 duplicate entries into single `"5 Scallions, divided"` in both ingredients list and objects
+3. **Star Anise unit** → Moved "whole" from `unit` to `note` for consistency
+4. **Hot Water** → Removed from ingredient_objects (non-shoppable item)
+
+## 📦 Published Assets
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Chairman_Maos_Red_Braised_Pork_Belly.jpg` |
+| **S3 Thumb** | `menu-item-images/Chairman_Maos_Red_Braised_Pork_Belly_thumbnail.jpg` |
+| **DynamoDB** | `chairman-maos-red-braised-pork-belly` in MenuItemData table |
+| **Local** | `output/chairman-maos-red-braised-pork-belly/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Smashed Cucumber Salad (拍黄瓜) | 🔴 Critical — #1 Chinese cold side dish |
+| **Side** | Stir-Fried Chinese Greens (Bok Choy / Gai Lan) | 🔴 Critical — universal Chinese meal staple |
+| **Side** | Steamed Mantou Buns | 🟡 High — iconic Hunan pairing for this dish |
+| **Side** | Hot & Sour Soup | 🟡 Moderate |
+| **Product** | Fine-Mesh Skimmer / Spider Strainer | 🔴 Critical — explicitly required for blanching |
+| **Product** | Long Cooking Chopsticks | 🟡 Moderate — authentic Chinese kitchen tool |
+| **Product** | Rice Cooker | 🟡 Moderate — essential for Chinese cuisine |
+| **Product** | Wok Spatula | 🟡 Moderate — for deglazing and stirring |

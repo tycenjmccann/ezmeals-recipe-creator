@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 03:04:04):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vegan-red-lentil-curry/vegan-red-lentil-curry.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vegan-red-lentil-curry/vegan-red-lentil-curry_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/vegan-red-lentil-curry/vegan-red-lentil-curry_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Red_Lentil_Curry_Vegan.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Red_Lentil_Curry_Vegan_thumbnail.jpg
+✅ DynamoDB: recipe 'vegan-red-lentil-curry' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

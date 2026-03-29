@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 05:44:52):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/stuffed-shells-spinach-ricotta/stuffed-shells-spinach-ricotta.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/stuffed-shells-spinach-ricotta/stuffed-shells-spinach-ricotta_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/stuffed-shells-spinach-ricotta/stuffed-shells-spinach-ricotta_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Stuffed_Shells_with_Spinach_and_Ricotta.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Stuffed_Shells_with_Spinach_and_Ricotta_thumbnail.jpg
+✅ DynamoDB: recipe 'stuffed-shells-spinach-ricotta' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

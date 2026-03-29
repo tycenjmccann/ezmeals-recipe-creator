@@ -1,0 +1,10 @@
+
+📦 PUBLISH RESULTS (2026-03-29 00:09:37):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/lemon-chicken-orzo-soup/lemon-chicken-orzo-soup.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/lemon-chicken-orzo-soup/lemon-chicken-orzo-soup_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/lemon-chicken-orzo-soup/lemon-chicken-orzo-soup_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Creamy_Lemon_Chicken_Orzo_Soup.jpg
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Creamy_Lemon_Chicken_Orzo_Soup_thumbnail.jpg
+✅ S3 JSON: s3://menu-items-json/Creamy_Lemon_Chicken_Orzo_Soup.json (triggers DB import)

@@ -1,0 +1,99 @@
+Recipe: Red Lentil Curry
+URL: https://rainbowplantlife.com/vegan-red-lentil-curry/
+Time: 664.0s
+
+---
+
+# ✅ Pipeline Complete: Red Lentil Curry (Vegan)
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from rainbowplantlife.com + downloaded image |
+| 2 | **Chef Review** | ✅ | **18 improvements** — critical turmeric addition, spice increase, garam masala timing, optional tadka |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON; prepTime=10, cookTime=35, isBalanced=true |
+| 4 | **Standardize** | ✅ | 26 ingredients matched/standardized to DB names |
+| 5 | **Ingredient Objects** | ✅ | 26 structured objects with proper categories |
+| 6 | **Side Dishes** | ✅ | 6 sides recommended from catalog |
+| 7 | **Products** | ✅ | 8 non-food affiliate products matched |
+| 8 | **Assembly** | ✅ | All fixes applied: categories corrected, quantities added, standardized names |
+| 9 | **QA Review** | ⚠️→✅ | Description time fixed ("under 50 minutes" → "in 45 minutes"); catalog gaps noted but non-blocking |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (18 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Missing Spice** | **Added 1/2 tsp ground turmeric** — near-universal in dal/lentil curries for earthy backbone and golden color. Its absence was the recipe's single biggest gap. |
+| **Under-Spicing Fixed** | Increased cumin 1/2→1 tsp; increased curry powder 1/2→1 tsp (original was conservative for the volume — most comparable recipes use 1-1.5 tsp of primary spices) |
+| **Garam Masala Timing** | **Moved from spice bloom (Step 3) to finishing (Step 6) off heat** — garam masala is a finishing spice blend with volatile aromatics (cardamom, clove, cinnamon) that 20+ minutes of simmering destroys. This is the correct technique per all reference recipes. |
+| **Seasoning & Balance** | Increased salt 1/2→3/4 tsp; increased lemon juice 1→1 1/2 Tbsp (rich curry needs more acid); added optional sugar/maple syrup to balance tomato acidity |
+| **Technique** | Added "partially cover" during lentil simmer (prevents evaporation/scorching); added "skim foam" instruction (red lentils produce significant foam); added deglaze tip for spice blooming; added "shake coconut milk can" instruction; increased oil 1→1 1/2 Tbsp for proper blooming |
+| **Authentic Elevation** | **Added optional tadka (tempering) step** — cumin seeds + sliced garlic + red pepper flakes sizzled in oil and poured over the finished curry. Bridges "weeknight easy" to "restaurant quality" with minimal effort. |
+| **Completeness** | Added spinach/kale suggestion; added reheating guidance (curry thickens dramatically when cold); organized ingredients by cooking phase; added gluten-free notation with broth/curry powder caveat; added lemon wedges for serving |
+
+## 🔴 QA Fixes Applied
+1. **Description** → changed "under 50 minutes" to "in 45 minutes" (matches actual 10+35=45 min total)
+2. **Red Lentils category** → `"Grains & Bakery"` corrected to `"Pantry Staples"` (dried legumes)
+3. **Yellow Onion object** → unit `"small"` moved to `""` with `"Small, finely diced"` in note
+4. **Lemon Wedges** → changed to `"1 Lemon, cut into wedges"` with quantity `"1"` in object
+5. **Naan Bread** → added quantity `"1"` / unit `"package"` in object
+6. **Cilantro** → added `"1 handful"` for leading quantity in string
+7. **Mustard Seed** → standardized to singular per DB
+
+## 🏷️ Special Flags
+
+| Flag | Value | Why |
+|------|-------|-----|
+| `vegetarian` | ✅ `true` | 100% plant-based — vegan recipe |
+| `glutenFree` | ✅ `true` | Naturally GF (lentils, spices, coconut milk); broth/curry powder caveat in notes |
+| `isBalanced` | ✅ `true` | Total time 45 min (31-60 range) — **this is our first `isBalanced` Indian curry!** |
+| `slowCook` | `false` | Stovetop recipe |
+| `instaPot` | `false` | No IP adaptation |
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Red_Lentil_Curry_Vegan.jpg` |
+| **S3 Thumb** | `menu-item-images/Red_Lentil_Curry_Vegan_thumbnail.jpg` |
+| **DynamoDB** | `vegan-red-lentil-curry` in MenuItemData table |
+| **Local** | `output/vegan-red-lentil-curry/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Mango Chutney | 🔴 **CRITICAL** — now flagged across **6 Indian recipes**. This is the single most-requested catalog addition. Sweet-tangy mango is the universal Indian curry condiment. **Must create.** |
+| **Side** | Papadum / Papad | 🔴 **CRITICAL** — flagged across 5+ recipes. Thin crispy lentil wafers are *the* classic dal accompaniment. 30-second prep. |
+| **Side** | Vegan Raita (Coconut Yogurt) | 🟡 High — current raita uses Greek yogurt; a coconut yogurt version would serve our growing vegan recipe catalog without substitution notes |
+| **Side** | Aloo Gobi | 🟡 High — classic Indian vegetable side, flagged across 6 recipes |
+| **Side** | Jeera Rice (Cumin Rice) | 🟡 High — cumin-toasted basmati is the most traditional dal pairing |
+| **Side** | Indian Pickle (Achar) | 🟡 Moderate — tangy-spicy traditional condiment |
+| **Product** | Fine-Mesh Sieve / Strainer Set | 🔴 **CRITICAL** — **Step 1 of this recipe explicitly says "fine-mesh sieve."** Also needed for Slow Cooker Coconut Curry Lentils and any rice/quinoa recipe. #1 product gap. |
+| **Product** | Citrus Juicer / Lemon Squeezer | 🔴 Critical — needed for lemon juice in Step 6; flagged across 5+ recipes now |
+| **Product** | Tadka Pan (Indian Tempering Pan) | 🟡 High — Step 7 uses a "small skillet" for tadka; a dedicated tadka pan is purpose-built for this |
+| **Product** | Microplane / Grater | 🟡 High — needed for ginger grating; flagged across 5+ recipes |
+| **Product** | Immersion Blender | 🟡 High — useful for dal texture adjustment; explicitly referenced in Chicken Tikka Masala |
+| **Product** | Wooden Spoon / Silicone Spatula Set | 🟡 Moderate — every step of this recipe involves stirring |
+| **Product** | Indian Spice Box (Masala Dabba) | 🟡 Moderate — this recipe uses 7+ spices; flagged across all Indian recipes |
+
+> **💡 Key Insights:**
+> 
+> 1. **This is our third vegan main dish** (alongside Slow Cooker Coconut Curry Lentils and Chickpea Curry), and our **first `isBalanced` Indian curry** — filling a critical gap where all previous Indian mains were >60 min (Gourmet). Users filtering by "Balanced" meals now have an Indian option.
+>
+> 2. **The optional tadka step is a differentiator** — it introduces an authentic technique that no other recipe in our catalog currently uses. This could be highlighted in marketing as a "restaurant secret."
+>
+> 3. **Almond butter as a thickener** is a creative, non-traditional touch that sets this apart from our Slow Cooker Coconut Curry Lentils (which uses standard coconut milk only). The nut allergy note is thorough.
+>
+> 4. **Catalog gap urgency is at critical mass:** Mango Chutney has been flagged in **6 consecutive Indian recipes**. Papadum has been flagged in **5**. Fine-Mesh Sieve has been flagged in **3**. These items should be the immediate next priority for catalog creation.
+>
+> 5. **Lentil recipe comparison:** We now have TWO lentil curries — Slow Cooker Coconut Curry Lentils (brown lentils, slow cooker, 4+ hours, Gourmet) and this Red Lentil Curry (red lentils, stovetop, 45 min, Balanced). They use different lentil types with completely different textures and cooking methods, making them genuinely distinct offerings. Consider linking them via `baseMainId` if the app supports recipe family grouping.

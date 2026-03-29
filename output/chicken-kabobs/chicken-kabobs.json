@@ -1,0 +1,444 @@
+{
+  "id": {
+    "S": "14fd9c52-189b-4b1c-8897-e30ce3582380"
+  },
+  "title": {
+    "S": "Chicken Kabobs (Teriyaki-Style)"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Chicken_Kabobs_Teriyaki-Style.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Chicken_Kabobs_Teriyaki-Style_thumbnail.jpg"
+  },
+  "description": {
+    "S": "Juicy marinated chicken and colorful vegetables grilled to perfection on skewers. This teriyaki-style chicken kebab recipe features tender chunks of chicken breast marinated in a flavorful blend of soy sauce, Sprite, and spices, then grilled alongside bell peppers and onions for a complete and satisfying meal."
+  },
+  "link": {
+    "S": "https://tastesbetterfromscratch.com/teriyaki-chicken-kebabs/"
+  },
+  "prepTime": {
+    "N": "10"
+  },
+  "cookTime": {
+    "N": "20"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "7"
+  },
+  "cuisineType": {
+    "S": "Asian"
+  },
+  "isQuick": {
+    "BOOL": true
+  },
+  "isBalanced": {
+    "BOOL": false
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "1/2 cup low-sodium soy sauce"
+      },
+      {
+        "S": "1/2 cup Sprite, not diet"
+      },
+      {
+        "S": "1/2 cup avocado or canola oil"
+      },
+      {
+        "S": "1 teaspoon garlic powder"
+      },
+      {
+        "S": "1 teaspoon horseradish (plain or horseradish sauce)"
+      },
+      {
+        "S": "2 pounds boneless skinless chicken breasts, cut into 1-inch chunks"
+      },
+      {
+        "S": "2 bell peppers, any color, cut into large chunks"
+      },
+      {
+        "S": "1 sweet onion (or purple onion), cut into large chunks"
+      },
+      {
+        "S": "Wooden or bamboo skewers"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Low-Sodium Soy Sauce"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "use tamari for gluten-free"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sprite"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "not diet"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Avocado Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": "or canola oil"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Horseradish"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "plain or horseradish sauce"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chicken Breasts"
+          },
+          "category": {
+            "S": "Proteins"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "pounds"
+          },
+          "note": {
+            "S": "boneless skinless, cut into 1-inch chunks"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Bell Peppers"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "any color, cut into large chunks"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sweet Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "or purple onion, cut into large chunks"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Wooden Skewers"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": ""
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "or bamboo skewers"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Combine 1/2 cup soy sauce, 1/2 cup Sprite, 1/2 cup oil, 1 teaspoon garlic powder, and 1 teaspoon horseradish in a large zip-lock bag. Squeeze the bag gently to mix the marinade."
+      },
+      {
+        "S": "Cut 2 pounds chicken breasts into 1-inch chunks and add to the marinade bag. Press out excess air, seal, and refrigerate for 1-3 hours. Do not marinate longer than 3 hours or the soy sauce will make the chicken overly salty and the texture mushy."
+      },
+      {
+        "S": "Soak bamboo skewers in water for at least 30 minutes before grilling. Cut 2 bell peppers and 1 onion into chunks roughly the same size as the chicken (about 1-1.5 inches) so everything cooks evenly."
+      },
+      {
+        "S": "Remove chicken from marinade and discard the used marinade. Thread chicken and vegetables alternately onto skewers, leaving a small gap (about 1/4 inch) between pieces to allow heat circulation."
+      },
+      {
+        "S": "Heat grill to medium-high (around 400\u00b0F). Lightly grease grates with oil using a folded paper towel held with tongs. Place kebabs on the grill and cook for 12-15 minutes total, turning every 3-4 minutes (about 3 turns), until chicken reaches an internal temperature of 165\u00b0F."
+      },
+      {
+        "S": "Remove kebabs from grill and let rest for 5 minutes before serving. Serve over rice or with a side salad."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "For gluten-free: use tamari instead of soy sauce."
+      },
+      {
+        "S": "Food safety: Always discard used marinade - do not baste with it. If you want a sauce for serving, reserve a portion before adding raw chicken."
+      },
+      {
+        "S": "Use long tongs and keep a spray bottle of water nearby for flare-ups - the oil in the marinade can cause them."
+      },
+      {
+        "S": "Oven alternative: Bake on a sheet pan at 425\u00b0F for 18-22 minutes, turning once halfway, until chicken reaches 165\u00b0F."
+      },
+      {
+        "S": "Marinating time of 1-3 hours is not included in the prep/cook time estimates."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "Coconut Rice"
+          },
+          "reason": {
+            "S": "Creamy coconut rice complements the savory-sweet teriyaki marinade and soaks up extra juices."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Asian Cucumber Salad"
+          },
+          "reason": {
+            "S": "Cool, tangy cucumbers provide a refreshing contrast to the charred, smoky kebabs."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Grilled Zucchini"
+          },
+          "reason": {
+            "S": "Throw it on the grill alongside the kabobs for a simple, smoky veggie side."
+          }
+        }
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "M": {
+          "name": {
+            "S": "12-Inch Bamboo Skewer Set"
+          },
+          "reason": {
+            "S": "Long bamboo skewers make assembly easy and keep hands safely away from grill heat."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "Instant-Read Meat Thermometer"
+          },
+          "reason": {
+            "S": "Ensures chicken reaches a safe 165\u00b0F without overcooking and drying out."
+          }
+        }
+      },
+      {
+        "M": {
+          "name": {
+            "S": "16-Inch Stainless Steel Grill Tongs"
+          },
+          "reason": {
+            "S": "Long-handled tongs for easy skewer turning and safe grill grate greasing."
+          }
+        }
+      }
+    ]
+  },
+  "searchTerms": {
+    "L": [
+      {
+        "S": "kebabs"
+      },
+      {
+        "S": "skewers"
+      },
+      {
+        "S": "grilled"
+      },
+      {
+        "S": "marinated"
+      },
+      {
+        "S": "summer grilling"
+      },
+      {
+        "S": "teriyaki marinade"
+      },
+      {
+        "S": "sprite marinade"
+      },
+      {
+        "S": "cookout"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": false
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}

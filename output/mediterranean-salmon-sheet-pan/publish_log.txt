@@ -1,0 +1,9 @@
+
+📦 PUBLISH RESULTS (2026-03-28 20:55:13):
+✅ Converted to plain JSON schema format
+✅ Schema validation passed (0 warnings)
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/mediterranean-salmon-sheet-pan/mediterranean-salmon-sheet-pan.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/mediterranean-salmon-sheet-pan/mediterranean-salmon-sheet-pan_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/mediterranean-salmon-sheet-pan/mediterranean-salmon-sheet-pan_thumbnail.png
+✅ S3 image: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Sheet_Pan_Mediterranean_Salmon.jpg
+✅ S3 JSON: s3://menu-items-json/Sheet_Pan_Mediterranean_Salmon.json (triggers DB import)

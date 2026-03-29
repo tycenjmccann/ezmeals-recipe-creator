@@ -1,0 +1,69 @@
+Recipe: Chinese Braised Beef Shank
+URL: https://thewoksoflife.com/chinese-braised-beef-shank/
+Time: 589.7s
+
+---
+
+# ✅ Pipeline Complete: Chinese Braised Beef Shank
+
+The recipe has been fully processed and published! Here's a comprehensive summary:
+
+---
+
+## 📊 Pipeline Summary
+
+| Step | Agent | Status | Key Actions |
+|------|-------|--------|-------------|
+| 1 | **Scrape** | ✅ | Extracted recipe from thewoksoflife.com + downloaded image |
+| 2 | **Chef Review** | ✅ | 17 improvements made (see below) |
+| 3 | **JSON Convert** | ✅ | DynamoDB-format JSON, cookTime=150 min |
+| 4 | **Standardize** | ✅ | 17 ingredients matched to DB names |
+| 5 | **Ingredient Objects** | ✅ | 17 structured objects with categories |
+| 6 | **Side Dishes** | ✅ | 5 sides recommended from catalog |
+| 7 | **Products** | ✅ | 6 affiliate products matched |
+| 8 | **Assembly** | ✅ | All data merged; section headers removed; ingredients consolidated |
+| 9 | **QA Review** | ✅ | Fixes applied (range formatting, garnish quantities, chilies) |
+| 10 | **Images** | ✅ | Hero (16:9) + Thumbnail (1:1) generated |
+| 11 | **Publish** | ✅ | S3 images + DynamoDB record + local backup |
+
+---
+
+## 🔑 Key Chef Review Changes (17 total)
+
+| Category | Changes |
+|----------|---------|
+| **Critical Fixes** | Fixed typo "2-2/12" → "2 to 2 1/2" lbs; reduced star anise 7→3 (was medicinal/cloying); reduced dark soy 3→1.5 tbsp (was over-darkening and bitter) |
+| **Missing Aromatics** | Added fresh ginger (blanching + braising) — a foundational ingredient that was entirely absent; added green onions to blanching and braising (was garnish only) |
+| **Spice Depth** | Added bay leaves (3), fennel seeds (1 tsp), whole cloves (3) for proper 卤料 braising spice profile |
+| **Technique** | Cold water blanching start + foam skimming; warm water rinse after blanching; hot water for braising liquid; "slice against the grain" instruction; doneness check; liquid level monitoring |
+| **Safety & Completeness** | Food safety cooling note (2-hour limit); added ½ tsp salt; prep time 10→15 min; master sauce reuse tips; Instant Pot shortcut; substitute cuts |
+
+## 🔴 QA Fixes Applied
+1. **Range formatting** — `"1-2"` → `"1 to 2"` for dried red chilies (consistency with "2 to 2 1/2")
+2. **Garnish quantities added** — "Toasted Sesame Seeds" → "1 tablespoon"; "Scallions" → "2" (shopping clarity)
+3. **`glutenFree`** — Confirmed `false` (contains soy sauce + Shaoxing wine)
+4. **Section headers removed** — Cleaned "For Blanching:", "For Braising:", "For Serving:" from ingredients list
+5. **`instaPot: true`** — Confirmed correct (Instant Pot shortcut in notes)
+
+## 📦 Published Assets
+
+| Asset | Location |
+|-------|----------|
+| **S3 Hero** | `menu-item-images/Chinese_Braised_Beef_Shank.jpg` |
+| **S3 Thumb** | `menu-item-images/Chinese_Braised_Beef_Shank_thumbnail.jpg` |
+| **DynamoDB** | `chinese-braised-beef-shank` in MenuItemData table |
+| **Local** | `output/chinese-braised-beef-shank/` |
+
+## 📝 Catalog Gaps Identified
+
+| Type | Item | Priority |
+|------|------|----------|
+| **Side** | Smashed Cucumber Salad (拍黄瓜) | 🔴 Critical — #1 banquet pairing for cold-sliced meats |
+| **Side** | Chinese Egg Fried Rice (蛋炒饭) | 🟡 High — more flavorful rice option for braised meats |
+| **Side** | Stir-Fried Bok Choy with Garlic | 🟡 High — universal Chinese dinner table green |
+| **Side** | Chinese Pickled Vegetables | 🟡 Moderate — palate cleanser for rich dishes |
+| **Side** | Simple Chinese Noodles (拌面) | 🟡 Moderate — enables noodle soup serving option |
+| **Product** | Sharp Carving/Slicing Knife (10-12") | 🔴 Critical — essential for paper-thin cold slicing |
+| **Product** | Fine Mesh Skimmer / Spider Strainer | 🔴 Critical — needed for blanching foam removal |
+| **Product** | Spice Sachet Bags | 🟡 Moderate — easy spice removal from braise |
+| **Product** | Airtight Glass Storage Container | 🟡 Moderate — overnight braise storage without staining |

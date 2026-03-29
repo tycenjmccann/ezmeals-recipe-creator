@@ -1,27 +1,2 @@
-Based on the Black Pepper Chicken recipe ingredients and cooking methods, I'll recommend complementary side dishes and useful products.
-
-## Analysis:
-This is a Chinese-American stir-fry dish with:
-- **Flavor Profile**: Savory, umami-rich with prominent black pepper heat, oyster sauce depth
-- **Cooking Method**: Wok stir-frying with crispy chicken and vegetables 
-- **Texture**: Crispy coated chicken with tender-crisp vegetables in glossy sauce
-- **Components**: Already includes white rice as the base
-
-## RECOMMENDED_SIDES: 
-["c9c8182f-95c4-41cd-811d-5dfacc787596", "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79", "0da3bc9c-901b-4774-9bd0-4c106e95c921", "8f6c70ef-25f5-455c-86d4-fe8294c049ce", "fff9f91e-3fb1-4368-99db-abfa0da7cf03"]
-
-**Rationale:**
-- **Thai Cucumber Salad** - Perfect cooling contrast to the peppery heat, adds fresh crunch
-- **Asian Rice** - Alternative rice option with proper stickiness for Asian dishes  
-- **Roasted Broccolini** - Simple green vegetable that won't compete with complex flavors
-- **Teriyaki Pasta Salad** - Asian-inspired side that complements the cuisine style
-- **Kachumber Salad** - Fresh, crunchy salad that provides cooling relief from black pepper
-
-## RECOMMENDED_PRODUCTS:
-["650e3cfd-9c6e-495c-b7b8-eb682de444ae", "3bf04a1f-34e2-4ebd-b93d-9a0505271768", "be9ca3ed-f95a-40af-806d-bf110a25a761", "ea214b85-69dd-49b7-867e-17409204194e"]
-
-**Rationale:**
-- **Traditional Carbon Steel Wok** - Essential for authentic stir-fry technique with proper heat distribution
-- **Medium Grain Rice** - Specifically matches the rice type called for in the recipe
-- **Vegetable Chopper** - Time-saving tool for uniformly chopping onions, celery, and bell peppers
-- **Oil Spray Dispenser** - Clean, controlled oil application for stir-frying without waste
+RECOMMENDED_SIDES: ["bfb7d782-4421-4bd4-9e8a-fa3059ba6a0b", "d36a24d9-bbe5-4ab8-abb8-af206fe4528d", "9828f9f0-9be6-4b64-8563-d255234b9db3", "453b0798-847b-4bb4-9284-96410e29afe1"]
+RECOMMENDED_PRODUCTS: ["77024055-0755-4cab-89d8-3bfc2bcc9869", "650e3cfd-9c6e-495c-b7b8-eb682de586ae", "4fd06a65-5fd3-436b-a7c8-480ad311ba36"]

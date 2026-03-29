@@ -1,422 +1,55 @@
 
 
-## Quality Assessment
-
-**OVERALL QUALITY**: **High - Publish!** (with fixes applied below)
+**OVERALL QUALITY**: ❌ REJECT - No recipe data available to process
 
 ---
 
-**INGREDIENT CHECK**:
-- ✅ All 19 original ingredients present in `ingredients` list — nothing lost or altered
-- ✅ All 19 ingredients have corresponding `ingredient_objects` with valid categories (Proteins, Produce, Pantry Staples, Seasonings, Grains & Bakery)
-- ✅ Step 1 references specific quantities (2 Tbsp soy sauce, 2 tsp oyster sauce, 1½ tsp pepper, 1 tsp salt)
-- ⚠️ **Fix needed**: Step 2 says "minced garlic" and "grated ginger" without quantities — should be "3-4 minced garlic cloves" and "1 1/2 tablespoons freshly grated ginger"
-- ⚠️ **Fix needed**: Step 6 says "Add onion, celery, and bell pepper" without quantities — should specify "1 medium white onion, 2 ribs celery, and 1 large red bell pepper"
-- ❌ `ingredient_objects` in json_converter is **empty** — must populate from ingredient_objects node
+**REASON FOR REJECTION**:
 
-**METADATA CHECK**:
-- ✅ cuisineType: "Asian" (correct mapping from Chinese)
-- ✅ isQuick: true (30 min), isBalanced: false, isGourmet: false — correct, mutually exclusive
-- ✅ imageURL: "menu-item-images/Black_Pepper_Chicken.jpg" — correct format
-- ✅ dishType: "main"
+The recipe scraper returned a **404 error** for the provided URL (`https://tastesbetterfromscratch.com/chicken-tortilla-soup/`), meaning no recipe content was retrieved. While the `search_terms` node did produce output (`["caldo de pollo", "brothy soup", "one-pot meal", "southwest bowl"]`), search terms alone are insufficient to build a valid recipe JSON. Every other pipeline input is missing:
 
-**GF/DIETARY**:
-- ✅ glutenFree: true with note about tamari + GF oyster sauce — correct. Soy sauce and oyster sauce are the only gluten sources with easy swaps. Cornstarch and rice naturally GF.
-- ✅ vegetarian: false
+- ❌ No ingredients list
+- ❌ No instructions
+- ❌ No prep/cook times
+- ❌ No servings count
+- ❌ No ingredient_objects
+- ❌ No products (affiliate)
+- ❌ No recommendedSides
+- ❌ No recipe metadata (cuisineType, dishType, etc.)
 
-**SEARCH TERMS**:
-- ✅ "stir-fry", "wok", "crispy" — all useful and specific
-- ⚠️ "peppercorn" — slightly misleading; the recipe uses ground cracked pepper, not whole peppercorns. Replacing with "copycat" (Panda Express association is strong for this dish)
-
-**SIDE DISHES**: Empty — populating with complementary options
-**PRODUCTS**: Empty — populating with relevant non-food tools
-
-**CULINARY NOTES**:
-- json_converter added helpful tips (165°F internal temp, "cornstarch settles" reminder, don't overcrowd) — excellent additions
-- Added "at least 10 minutes" marination not in original — acceptable culinary guidance, doesn't change total time
-- Original Step 2 was vague ("Mix sauce ingredients"); json_converter version is a major improvement
+**CRITICAL FAIL CONDITIONS triggered:**
+- `ingredient_objects` is empty
+- `recommendedSides` is empty (this would be a main dish)
+- `products` is empty
 
 ---
 
-Final assembled JSON with all fixes:
+**CHECKLIST RESULTS**:
+1. Instructions Quality: ❌ — No data
+2. Ingredients Validation: ❌ — No data
+3. Ingredient Objects: ❌ — **CRITICAL FAIL** (empty)
+4. Recipe Metadata: ❌ — No data
+5. Side Dishes: ❌ — **CRITICAL FAIL** (empty for main)
+6. Affiliate Products: ❌ — **CRITICAL FAIL** (empty)
+7. Notes Quality: ❌ — No data
 
-```json
-{
-  "id": {
-    "S": "9f2b5bc3-c1bb-4576-acca-b5af2534c6f6"
-  },
-  "title": {
-    "S": "Black Pepper Chicken"
-  },
-  "dishType": {
-    "S": "main"
-  },
-  "primary": {
-    "BOOL": true
-  },
-  "baseMainId": {
-    "S": ""
-  },
-  "imageURL": {
-    "S": "menu-item-images/Black_Pepper_Chicken.jpg"
-  },
-  "imageThumbURL": {
-    "S": "menu-item-images/Black_Pepper_Chicken_thumbnail.jpg"
-  },
-  "description": {
-    "S": "Crispy chicken tossed in a homemade black pepper sauce with sautéed bell pepper, celery, and onion, served on a bed of rice. This flavorful Chinese-inspired dish delivers the perfect balance of savory and peppery flavors in just 30 minutes."
-  },
-  "link": {
-    "S": "https://tastesbetterfromscratch.com/black-pepper-chicken/"
-  },
-  "prepTime": {
-    "N": "15"
-  },
-  "cookTime": {
-    "N": "15"
-  },
-  "rating": {
-    "N": "5"
-  },
-  "servings": {
-    "S": "6"
-  },
-  "cuisineType": {
-    "S": "Asian"
-  },
-  "isQuick": {
-    "BOOL": true
-  },
-  "isBalanced": {
-    "BOOL": false
-  },
-  "isGourmet": {
-    "BOOL": false
-  },
-  "ingredients": {
-    "L": [
-      { "S": "1 1/2 lbs boneless skinless chicken breasts, cut into bite-size pieces" },
-      { "S": "2 tablespoons low-sodium soy sauce" },
-      { "S": "2 teaspoons oyster sauce" },
-      { "S": "1 1/2 teaspoons fresh cracked black pepper" },
-      { "S": "1 teaspoon salt" },
-      { "S": "1/2 cup cornstarch, for coating" },
-      { "S": "1 1/2 tablespoons oyster sauce" },
-      { "S": "3 tablespoons low-sodium soy sauce" },
-      { "S": "1 1/2 cups low-sodium chicken stock" },
-      { "S": "3-4 garlic cloves, minced" },
-      { "S": "1 1/2 tablespoons freshly grated ginger" },
-      { "S": "1 1/2 teaspoons fresh cracked black pepper" },
-      { "S": "3 tablespoons granulated sugar" },
-      { "S": "1 1/2 teaspoons cornstarch" },
-      { "S": "1/3 cup vegetable oil, plus more if needed" },
-      { "S": "1 medium white onion, chopped into bite-size pieces" },
-      { "S": "2 ribs celery, chopped" },
-      { "S": "1 large red bell pepper, chopped into bite-size pieces" },
-      { "S": "5-6 cups hot cooked white rice" }
-    ]
-  },
-  "ingredient_objects": {
-    "L": [
-      {
-        "M": {
-          "ingredient_name": { "S": "Boneless Skinless Chicken Breasts" },
-          "category": { "S": "Proteins" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "pounds" },
-          "note": { "S": "cut into bite-size pieces" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Low-Sodium Soy Sauce" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "2" },
-          "unit": { "S": "tablespoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Oyster Sauce" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "2" },
-          "unit": { "S": "teaspoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Fresh Cracked Black Pepper" },
-          "category": { "S": "Seasonings" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "teaspoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Salt" },
-          "category": { "S": "Seasonings" },
-          "quantity": { "S": "1" },
-          "unit": { "S": "teaspoon" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Cornstarch" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "1/2" },
-          "unit": { "S": "cup" },
-          "note": { "S": "for coating" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Oyster Sauce" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "tablespoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Low-Sodium Soy Sauce" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "3" },
-          "unit": { "S": "tablespoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Low-Sodium Chicken Stock" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "cups" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Garlic Cloves" },
-          "category": { "S": "Produce" },
-          "quantity": { "S": "3-4" },
-          "unit": { "S": "" },
-          "note": { "S": "minced" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Fresh Ginger" },
-          "category": { "S": "Produce" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "tablespoons" },
-          "note": { "S": "freshly grated" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Fresh Cracked Black Pepper" },
-          "category": { "S": "Seasonings" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "teaspoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Granulated Sugar" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "3" },
-          "unit": { "S": "tablespoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Cornstarch" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "1 1/2" },
-          "unit": { "S": "teaspoons" },
-          "note": { "S": "" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Vegetable Oil" },
-          "category": { "S": "Pantry Staples" },
-          "quantity": { "S": "1/3" },
-          "unit": { "S": "cup" },
-          "note": { "S": "plus more if needed" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "White Onion" },
-          "category": { "S": "Produce" },
-          "quantity": { "S": "1" },
-          "unit": { "S": "" },
-          "note": { "S": "medium, chopped into bite-size pieces" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Celery" },
-          "category": { "S": "Produce" },
-          "quantity": { "S": "2" },
-          "unit": { "S": "ribs" },
-          "note": { "S": "chopped" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "Red Bell Pepper" },
-          "category": { "S": "Produce" },
-          "quantity": { "S": "1" },
-          "unit": { "S": "" },
-          "note": { "S": "large, chopped into bite-size pieces" },
-          "affiliate_link": { "S": "" }
-        }
-      },
-      {
-        "M": {
-          "ingredient_name": { "S": "White Rice" },
-          "category": { "S": "Grains & Bakery" },
-          "quantity": { "S": "5-6" },
-          "unit": { "S": "cups" },
-          "note": { "S": "hot cooked" },
-          "affiliate_link": { "S": "" }
-        }
-      }
-    ]
-  },
-  "instructions": {
-    "L": [
-      { "S": "Marinate the chicken by adding 1 1/2 lbs chicken pieces to a bowl with 2 tablespoons soy sauce, 2 teaspoons oyster sauce, 1 1/2 teaspoons black pepper, and 1 teaspoon salt. Toss to coat and set aside. Place 1/2 cup cornstarch in a separate large bowl or resealable plastic bag." },
-      { "S": "Make the sauce by whisking together 1 1/2 tablespoons oyster sauce, 3 tablespoons soy sauce, 1 1/2 cups chicken stock, 3-4 minced garlic cloves, 1 1/2 tablespoons freshly grated ginger, 1 1/2 teaspoons black pepper, 3 tablespoons sugar, and 1 1/2 teaspoons cornstarch in a medium bowl until the cornstarch is fully dissolved. Set aside." },
-      { "S": "Coat the chicken by removing chicken pieces from the marinade and adding to the bowl or bag with 1/2 cup cornstarch. Toss well to coat evenly. Shake off excess cornstarch before frying." },
-      { "S": "Heat 1/3 cup vegetable oil in a large skillet or wok over medium-high heat. Once the oil is shimmering, add half the chicken pieces, spacing them out so they aren't crowded. Cook without moving for 2-3 minutes until golden on the bottom, then flip and cook another 2-3 minutes until golden, crisp, and cooked through (internal temp 165°F). Remove to a plate lined with paper towels." },
-      { "S": "Repeat with remaining chicken, adding a splash more oil if the pan looks dry. Don't overcrowd the pan — this is the key to crispy (not steamed) chicken." },
-      { "S": "Sauté the vegetables by pouring out most excess oil, leaving about 1 tablespoon in the pan. Add 1 medium chopped white onion, 2 ribs chopped celery, and 1 large chopped red bell pepper. Cook over medium-high heat, tossing occasionally, for 2-3 minutes until tender-crisp." },
-      { "S": "Finish by giving the sauce a quick re-stir (cornstarch settles), then pour it into the pan with the vegetables. Bring to a simmer and cook for 1-2 minutes until the sauce thickens slightly and turns glossy." },
-      { "S": "Return all the chicken to the pan and toss to coat evenly. Cook 30 seconds more to heat through." },
-      { "S": "Serve immediately over 5-6 cups hot cooked white rice." }
-    ]
-  },
-  "notes": {
-    "L": [
-      { "S": "For gluten-free: use tamari instead of soy sauce and verify oyster sauce is gluten-free." }
-    ]
-  },
-  "recommendedSides": {
-    "L": [
-      {
-        "M": {
-          "name": { "S": "Asian Cucumber Salad" },
-          "description": { "S": "A cool, tangy cucumber salad with rice vinegar and sesame oil provides a refreshing contrast to the bold peppery chicken." }
-        }
-      },
-      {
-        "M": {
-          "name": { "S": "Steamed Broccoli with Garlic" },
-          "description": { "S": "Simple steamed broccoli with a touch of garlic complements the stir-fry and soaks up the delicious black pepper sauce." }
-        }
-      },
-      {
-        "M": {
-          "name": { "S": "Egg Drop Soup" },
-          "description": { "S": "A classic light Chinese soup that rounds out the meal with silky eggs in a warm savory broth." }
-        }
-      }
-    ]
-  },
-  "includedSides": {
-    "L": []
-  },
-  "comboIndex": {
-    "M": {}
-  },
-  "products": {
-    "L": [
-      {
-        "M": {
-          "name": { "S": "Carbon Steel Wok" },
-          "description": { "S": "A proper wok delivers the high heat essential for getting chicken golden and crispy while keeping vegetables tender-crisp." },
-          "url": { "S": "" },
-          "category": { "S": "Cookware" }
-        }
-      },
-      {
-        "M": {
-          "name": { "S": "Microplane Zester/Grater" },
-          "description": { "S": "Makes quick work of grating fresh ginger — a key aromatic in this black pepper sauce." },
-          "url": { "S": "" },
-          "category": { "S": "Kitchen Tools" }
-        }
-      },
-      {
-        "M": {
-          "name": { "S": "Adjustable Pepper Mill" },
-          "description": { "S": "Fresh cracked black pepper is the star of this dish — a quality mill with a coarse-grind setting makes all the difference." },
-          "url": { "S": "" },
-          "category": { "S": "Kitchen Tools" }
-        }
-      }
-    ]
-  },
-  "searchTerms": {
-    "L": [
-      { "S": "stir-fry" },
-      { "S": "wok" },
-      { "S": "crispy" },
-      { "S": "copycat" }
-    ]
-  },
-  "glutenFree": {
-    "BOOL": true
-  },
-  "vegetarian": {
-    "BOOL": false
-  },
-  "slowCook": {
-    "BOOL": false
-  },
-  "instaPot": {
-    "BOOL": false
-  },
-  "flagged": {
-    "BOOL": false
-  }
-}
-```
+---
 
-**Fixes applied:**
-1. **Populated `ingredient_objects`** from ingredient_objects node (was empty in json_converter)
-2. **Fixed Step 2** — added explicit quantities: "3-4 minced garlic cloves" and "1 1/2 tablespoons freshly grated ginger"
-3. **Fixed Step 6** — added specific vegetable quantities: "1 medium chopped white onion, 2 ribs chopped celery, and 1 large chopped red bell pepper"
-4. **Populated `recommendedSides`** with three complementary Asian sides
-5. **Populated `products`** with three relevant non-food kitchen tools
-6. **Refined `searchTerms`** — replaced "peppercorn" with "copycat" (recipe uses cracked pepper, not peppercorns; Panda Express copycat is a strong search association)
-7. Removed fabricated marination time ("at least 10 minutes") from Step 1 — original simply says "set aside"
+**RECOMMENDED NEXT STEPS**:
 
-**OVERALL QUALITY: High - Publish!** ✅
+1. **Re-verify the URL** — Visit in a browser to confirm accessibility. The site may be blocking automated scrapers or the page may have been relocated.
+
+2. **Try alternative URLs from the same site:**
+   - `https://tastesbetterfromscratch.com/slow-cooker-chicken-tortilla-soup/`
+   - `https://tastesbetterfromscratch.com/instant-pot-chicken-tortilla-soup/`
+   - Search directly on site: `https://tastesbetterfromscratch.com/?s=chicken+tortilla+soup`
+
+3. **Try a cached version:**
+   - Google: `cache:https://tastesbetterfromscratch.com/chicken-tortilla-soup/`
+   - Wayback Machine: `https://web.archive.org/web/*/https://tastesbetterfromscratch.com/chicken-tortilla-soup/`
+
+4. **Substitute with an alternative Chicken Tortilla Soup source** and re-run the full pipeline:
+   - `https://www.simplyrecipes.com/recipes/chicken_tortilla_soup/`
+   - `https://cookieandkate.com/best-chicken-tortilla-soup-recipe/`
+
+**The pipeline must be restarted from the scraper step with a valid, accessible URL. No JSON can be produced or published.**

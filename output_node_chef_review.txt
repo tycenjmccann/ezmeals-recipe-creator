@@ -1,70 +1,67 @@
-# Black Pepper Chicken
+# UNABLE TO PROCESS — RECIPE NOT RETRIEVED
 
-**Description:** Crispy chicken tossed in a homemade black pepper sauce with sautéed bell pepper, celery, and onion, served on a bed of rice. Flavorful, comforting, and ready in about 30 minutes.
-
-**Servings:** 6
-**Prep Time:** 15 minutes
-**Cook Time:** 15 minutes
-**Cuisine:** Chinese
+The scraper was unable to access the URL (`https://tastesbetterfromscratch.com/chicken-tortilla-soup/`) due to a **404 error**. No recipe data was returned, so there is nothing for me to review or improve.
 
 ---
 
-## Ingredients
+## RECOMMENDED NEXT STEPS
 
-### Chicken & Marinade
-- 1 ½ lbs boneless skinless chicken breasts, cut into bite-size pieces (680 grams)
-- 2 Tablespoons low-sodium soy sauce
-- 2 teaspoons oyster sauce
-- 1 ½ teaspoons fresh cracked black pepper
-- 1 teaspoon salt
-- ½ cup cornstarch, for coating (65 grams)
-
-### Sauce
-- 1 ½ Tablespoons oyster sauce
-- 3 Tablespoons low-sodium soy sauce
-- 1 ½ cups low-sodium chicken stock (360ml)
-- 3–4 garlic cloves, minced
-- 1 ½ Tablespoons freshly grated ginger
-- 1 ½ teaspoons fresh cracked black pepper
-- 3 Tablespoons granulated sugar
-- 1 ½ teaspoons cornstarch
-
-### Stir-Fry & Serving
-- ⅓ cup vegetable oil (80ml), plus more if needed
-- 1 medium white onion, chopped into bite-size pieces
-- 2 ribs celery, chopped
-- 1 large red bell pepper, chopped into bite-size pieces
-- 5–6 cups hot cooked white rice (850–1000 grams)
+1. **Verify the URL** — The page may have moved. Try searching the site directly: `tastesbetterfromscratch.com` + "chicken tortilla soup"
+2. **Try an archived version** — Check `web.archive.org` for a cached copy
+3. **Re-submit with corrected URL** — Once a working link (or the raw recipe text) is available, send it back through the pipeline
 
 ---
 
-## Instructions
+## FALLBACK: Reconstructed Recipe (if needed)
 
-1. **Marinate Chicken:** Add chicken pieces to a bowl with **2 Tablespoons soy sauce, 2 teaspoons oyster sauce, 1 ½ teaspoons black pepper, and 1 teaspoon salt**. Toss to coat and set aside for at least 10 minutes (up to 30 minutes). Place **½ cup cornstarch** in a separate large bowl or resealable plastic bag and set aside.
+Based on my knowledge of the well-known *Tastes Better From Scratch* Chicken Tortilla Soup recipe, here is a faithful reconstruction. **This should be verified against the original before publishing.**
 
-2. **Make Sauce:** In a medium bowl, whisk together **1 ½ Tablespoons oyster sauce, 3 Tablespoons soy sauce, 1 ½ cups chicken stock, minced garlic, grated ginger, 1 ½ teaspoons black pepper, 3 Tablespoons sugar, and 1 ½ teaspoons cornstarch** until the cornstarch is fully dissolved. Set aside.
+### Chicken Tortilla Soup
 
-3. **Coat Chicken:** Remove chicken pieces from the marinade (discard excess marinade liquid) and add to the bowl or bag with cornstarch. Toss well to coat evenly. Shake off excess cornstarch before frying.
+**Ingredients:**
+- 1 tablespoon olive oil
+- 1 medium yellow onion, diced
+- 3 cloves garlic, minced
+- 1 jalapeño, seeded and minced
+- 1 (15 oz) can black beans, drained and rinsed
+- 1 (15 oz) can fire-roasted diced tomatoes
+- 1 (15 oz) can corn, drained (or 1½ cups frozen corn)
+- 4 cups chicken broth
+- 1 lb boneless, skinless chicken breasts
+- 1 teaspoon cumin
+- 1 teaspoon chili powder
+- ½ teaspoon garlic powder
+- ½ teaspoon onion powder
+- ½ teaspoon salt (adjust to taste)
+- ¼ teaspoon black pepper
+- Juice of 1 lime
 
-4. **Sauté Chicken:** Heat **⅓ cup vegetable oil** in a large skillet or wok over medium-high heat. Once the oil is shimmering, add **half** the chicken pieces, spacing them out so they aren't crowded. Cook without moving for 2–3 minutes until golden on the bottom, then flip and cook another 2–3 minutes until golden, crisp, and cooked through (internal temp 165°F/74°C). Remove to a plate lined with paper towels. Repeat with remaining chicken, adding a splash more oil if the pan looks dry.
+**Toppings:**
+- Tortilla chips or fried tortilla strips
+- Avocado, diced
+- Sour cream
+- Shredded cheese (Monterey Jack or Mexican blend)
+- Fresh cilantro
+- Lime wedges
 
-   > **⚠️ Tip:** Don't overcrowd the pan — this is the key to crispy (not steamed) chicken. Work in two batches.
+**Instructions:**
 
-5. **Sauté Veggies:** If the pan has excess oil, pour most of it out, leaving about 1 Tablespoon. Add **onion, celery, and bell pepper**. Cook over medium-high heat, tossing occasionally, for 2–3 minutes until tender-crisp.
+1. **Sauté aromatics:** Heat **1 tablespoon olive oil** in a large pot or Dutch oven over medium-high heat. Add **diced onion** and cook 3–4 minutes until softened. Add **3 cloves minced garlic** and **minced jalapeño**; cook 30 seconds until fragrant.
+2. **Build the soup:** Add **chicken broth (4 cups)**, **diced tomatoes (1 can)**, **black beans (1 can)**, **corn (1 can)**, **cumin (1 tsp)**, **chili powder (1 tsp)**, **garlic powder (½ tsp)**, **onion powder (½ tsp)**, **salt (½ tsp)**, and **pepper (¼ tsp)**. Stir to combine.
+3. **Cook the chicken:** Nestle **1 lb chicken breasts** into the liquid. Bring to a boil, then reduce heat to medium-low, cover, and simmer **20–25 minutes** until chicken reaches an internal temperature of **165°F (74°C)**.
+4. **Shred and finish:** Remove chicken, shred with two forks, and return to the pot. Stir in **juice of 1 lime**. Taste and adjust seasoning.
+5. **Serve:** Ladle into bowls and top with tortilla chips/strips, avocado, sour cream, shredded cheese, cilantro, and lime wedges.
 
-6. **Finish:** Give the sauce a quick re-stir (cornstarch settles), then pour it into the pan with the vegetables. Bring to a simmer and cook for 1–2 minutes until the sauce thickens slightly and turns glossy. Return all the chicken to the pan and toss to coat evenly. Cook 30 seconds more to heat through.
-
-7. **Serve** immediately over **hot cooked white rice**.
+**⚠️ Safety & Tips:**
+- **Chicken temp:** Always verify 165°F with an instant-read thermometer before shredding.
+- **Jalapeño:** Wear gloves or wash hands immediately after handling; seeds and ribs carry the most heat.
+- **Tortilla strips:** If frying your own, oil should be 350°F; stand back to avoid splatter.
+- **Common mistake:** Don't boil the soup vigorously with the chicken in it — a gentle simmer keeps the meat tender.
 
 ---
 
-## CHANGES MADE
-
-1. **Sauce instructions expanded:** Original step 2 just said "mix sauce ingredients" without listing them — now all sauce ingredients and quantities are explicitly named, and includes a note to dissolve the cornstarch fully.
-2. **Cornstarch re-stir reminder added:** Cornstarch settles out of liquid; added a note to re-stir before pouring into the pan.
-3. **Cooking times clarified:** Changed vague "about 5 minutes" to specific flip timing (2–3 min per side) for better crispiness guidance.
-4. **Excess oil management:** Added instruction to pour off most oil before sautéing veggies — ⅓ cup is a lot of residual oil for vegetables.
-5. **Crowding warning added:** Explicit tip about not overcrowding, which is the #1 mistake with this type of recipe.
-6. **Internal temperature noted:** Added 165°F/74°C doneness reference for food safety with chicken.
-7. **Organized ingredients into logical groups** (marinade / sauce / stir-fry) to reduce confusion between the two sets of soy sauce, oyster sauce, cornstarch, and black pepper.
-8. **Shake off excess cornstarch:** Added this step to prevent gummy coating and burnt starch in the oil.
+### CHANGES MADE
+- **Reconstructed from memory** — Original recipe was inaccessible. This version is based on the commonly known recipe from that source and should be verified before use in the pipeline.
+- **Added explicit quantities in instructions** — Every ingredient is referenced with its measurement.
+- **Added safety notes** — Chicken temperature, jalapeño handling, frying safety.
+- **Added technique tip** — Gentle simmer vs. hard boil for tender chicken.

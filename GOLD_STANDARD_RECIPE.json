@@ -1,0 +1,76 @@
+{
+  "instructions": [
+    "Heat a large skillet over medium-high heat. Season the 1 pound of lean ground beef with a little black pepper (optional), and add it to the skillet. Cook, breaking it up into small pieces, until browned (about 5 minutes). Drain excess grease if needed.",
+    "Add 1 tablespoon sesame oil, 5 cloves minced garlic, and 1 tablespoon grated ginger to the skillet and cook for 1 minute until fragrant. Stir in 2/3 cup light brown sugar, 1 cup low-sodium soy sauce, and 2 teaspoons Sriracha (or crushed red pepper/chili garlic sauce). Let the sauce simmer and absorb into the meat for 2-3 minutes. Mix in half of the chopped green onions (reserving the rest for garnish). Remove from heat and keep warm.",
+    "Prepare the rice (2 cups cooked) according to package instructions while the beef is cooking. Slice 1 cucumber and set aside for serving.",
+    "To assemble, divide the cooked rice into individual bowls. Top each portion with the prepared Korean ground beef and garnish with the reserved green onions. Serve with the sliced cucumber on the side."
+  ],
+  "slowCook": false,
+  "imageURL": "menu-item-images/Korean_Beef_Bowls.jpg",
+  "cookTime": "10",
+  "products": [
+    "b4efe05b-db9e-456c-9619-d7ae393961a1",
+    "ba602838-93f6-4e80-9030-3b58d28e8725",
+    "650e3cfd-9c6e-495c-b7b8-eb682de777ae"
+  ],
+  "flagged": false,
+  "notes": [
+    "For Gluten Free, substitute tamari or coconut aminos for soy sauce."
+  ],
+  "id": "C403CCB3-5D23-405B-914F-84D60F15D98C",
+  "optionalToppings": [
+    "Sesame seeds",
+    "Kimchi",
+    "Sliced avocado"
+  ],
+  "sauce": [
+    "Korean-style sauce (soy sauce, brown sugar, ginger, garlic, Sriracha)"
+  ],
+  "isGourmet": false,
+  "imageThumbURL": "menu-item-images/Korean_Beef_Bowls_thumbnail.jpg",
+  "instaPot": false,
+  "prepTime": "5",
+  "rating": "0",
+  "dressing": [],
+  "createdAt": "2025-05-30T21:56:01Z",
+  "includedSides": [],
+  "ingredients": [
+    "1 pound lean ground beef",
+    "5 cloves garlic, minced",
+    "1 tablespoon sesame oil",
+    "1 tablespoon freshly grated ginger (or 1/4 teaspoon ground ginger)",
+    "2/3 cup light brown sugar",
+    "1 cup low-sodium soy sauce",
+    "2 teaspoons Sriracha, crushed red pepper flakes, or chili garlic sauce",
+    "1 bunch green onions, chopped (reserve half for garnish)",
+    "Organic Jasmine Rice",
+    "1 cucumber, sliced (for serving)"
+  ],
+  "glutenFree": true,
+  "dishType": "main",
+  "isBalanced": false,
+  "vegetarian": false,
+  "searchTerms": [
+    "bulgogi",
+    "bibimbap",
+    "gochujang"
+  ],
+  "updatedAt": "2025-07-08T16:59:57.970Z",
+  "comboIndex": "{\"954b4e17-1f18-4bbb-9947-76102807b06a\":[\"bd66acc6-3d36-40ab-b559-f8dc0a8c9f79\",\"d52741b0-689f-4e1f-a6fc-3aa24322a04d\"],\"db0415bb-a0ae-48c2-9978-92ab6fabbe3f\":[\"bd66acc6-3d36-40ab-b559-f8dc0a8c9f79\",\"d52741b0-689f-4e1f-a6fc-3aa24322a04d\",\"e931ab8d-112e-4126-b3d8-ac0b435abd64\"]}",
+  "recommendedSides": [
+    "bd66acc6-3d36-40ab-b559-f8dc0a8c9f79",
+    "d52741b0-689f-4e1f-a6fc-3aa24322a04d",
+    "e931ab8d-112e-4126-b3d8-ac0b435abd64"
+  ],
+  "ingredient_objects": "[{\"ingredient_name\": \"lean ground beef\", \"category\": \"Proteins\", \"quantity\": \"1\", \"unit\": \"pound\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"minced garlic\", \"category\": \"Produce\", \"quantity\": \"5\", \"unit\": \"clove\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"sesame oil\", \"category\": \"Pantry Staples\", \"quantity\": \"1\", \"unit\": \"tablespoon\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"freshly grated ginger\", \"category\": \"Produce\", \"quantity\": \"1\", \"unit\": \"tablespoon\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"light brown sugar\", \"category\": \"Pantry Staples\", \"quantity\": \"2/3\", \"unit\": \"cup\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"low-sodium soy sauce\", \"category\": \"Pantry Staples\", \"quantity\": \"1\", \"unit\": \"cup\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Sriracha, crushed red pepper flakes, or chili garlic sauce\", \"category\": \"Seasonings\", \"quantity\": \"2\", \"unit\": \"teaspoon\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"green onions\", \"category\": \"Produce\", \"quantity\": \"1\", \"unit\": \"bunch\", \"affiliate_link\": \"\"}, {\"ingredient_name\": \"Organic Jasmine Rice\", \"category\": \"Frozen Foods\", \"quantity\": \"1\", \"unit\": \"package\", \"affiliate_link\": \"https://amzn.to/3Psfufp\"}, {\"ingredient_name\": \"cucumber\", \"category\": \"Produce\", \"quantity\": \"1\", \"unit\": \"\", \"affiliate_link\": \"\"}]",
+  "isQuick": true,
+  "cuisineType": "Asian",
+  "link": "",
+  "baseMainId": "",
+  "description": "A delicious and quick Korean-style ground beef dish served over rice. Sweet, savory, and slightly spicy, this flavorful meal comes together in just minutes for a satisfying weeknight dinner.",
+  "primary": false,
+  "seasonings": [
+    "Black pepper (optional)"
+  ],
+  "title": "Korean Beef Bowls"
+}

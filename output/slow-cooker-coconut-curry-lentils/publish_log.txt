@@ -1,0 +1,8 @@
+
+📦 PUBLISH RESULTS (2026-03-25 02:30:52):
+✅ Local JSON saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-coconut-curry-lentils/slow-cooker-coconut-curry-lentils.json
+✅ Local hero saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-coconut-curry-lentils/slow-cooker-coconut-curry-lentils_hero.png
+✅ Local thumbnail saved: /home/ssm-user/.openclaw/workspace/ezmeals-recipe-creator/output/slow-cooker-coconut-curry-lentils/slow-cooker-coconut-curry-lentils_thumbnail.png
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Slow_Cooker_Coconut_Curry_Lentils.jpg
+✅ S3 uploaded: s3://amplify-ezmealsnew-menu-item-imageseb66c-dev/public/menu-item-images/Slow_Cooker_Coconut_Curry_Lentils_thumbnail.jpg
+✅ DynamoDB: recipe 'slow-cooker-coconut-curry-lentils' written to MenuItemData-ryvykzwfevawxbpf5nmynhgtea-dev

@@ -1,0 +1,838 @@
+{
+  "id": {
+    "S": "vegan-red-lentil-curry"
+  },
+  "title": {
+    "S": "Red Lentil Curry (Vegan)"
+  },
+  "dishType": {
+    "S": "main"
+  },
+  "primary": {
+    "BOOL": true
+  },
+  "baseMainId": {
+    "S": ""
+  },
+  "imageURL": {
+    "S": "menu-item-images/Red_Lentil_Curry_Vegan.jpg"
+  },
+  "imageThumbURL": {
+    "S": "menu-item-images/Red_Lentil_Curry_Vegan_thumbnail.jpg"
+  },
+  "description": {
+    "S": "An ultra-creamy, Indian-inspired red lentil curry made in one pot with pantry staples in 45 minutes. Warmly spiced, nourishing, and deeply satisfying."
+  },
+  "link": {
+    "S": ""
+  },
+  "prepTime": {
+    "N": "10"
+  },
+  "cookTime": {
+    "N": "35"
+  },
+  "rating": {
+    "N": "5"
+  },
+  "servings": {
+    "S": "4"
+  },
+  "cuisineType": {
+    "S": "Indian"
+  },
+  "isQuick": {
+    "BOOL": false
+  },
+  "isBalanced": {
+    "BOOL": true
+  },
+  "isGourmet": {
+    "BOOL": false
+  },
+  "ingredients": {
+    "L": [
+      {
+        "S": "1 cup Red Lentils"
+      },
+      {
+        "S": "1 1/2 tablespoons Coconut Oil or neutral oil"
+      },
+      {
+        "S": "1 small Yellow Onion, finely diced"
+      },
+      {
+        "S": "4 cloves Garlic, minced"
+      },
+      {
+        "S": "1 tablespoon Fresh Ginger, minced or grated"
+      },
+      {
+        "S": "3/4 teaspoon Sea Salt, plus more to taste"
+      },
+      {
+        "S": "1 teaspoon Ground Cumin"
+      },
+      {
+        "S": "1 teaspoon Curry Powder"
+      },
+      {
+        "S": "1/2 teaspoon Ground Coriander"
+      },
+      {
+        "S": "1/2 teaspoon Turmeric"
+      },
+      {
+        "S": "1/4 to 1/2 teaspoon Chili Powder or Cayenne Pepper (to taste)"
+      },
+      {
+        "S": "1 (14 ounce) can Crushed Tomatoes (or fire-roasted crushed tomatoes)"
+      },
+      {
+        "S": "2 cups Vegetable Broth (low-sodium recommended)"
+      },
+      {
+        "S": "1 (14 ounce) can full-fat Coconut Milk, shaken well before opening"
+      },
+      {
+        "S": "1 teaspoon Garam Masala"
+      },
+      {
+        "S": "2 tablespoons Almond Butter (or cashew butter, peanut butter, or tahini)"
+      },
+      {
+        "S": "1 1/2 tablespoons fresh Lemon Juice (about half a lemon), plus more to taste"
+      },
+      {
+        "S": "Pinch of Sugar or maple syrup (optional, to balance acidity)"
+      },
+      {
+        "S": "1 tablespoon Coconut Oil or neutral oil (for optional tadka)"
+      },
+      {
+        "S": "1 teaspoon Cumin Seeds or Mustard Seed (for optional tadka)"
+      },
+      {
+        "S": "2 cloves Garlic, thinly sliced (for optional tadka)"
+      },
+      {
+        "S": "Pinch of Crushed Red Pepper Flakes (for optional tadka)"
+      },
+      {
+        "S": "1 handful Fresh Cilantro, roughly chopped (for garnish)"
+      },
+      {
+        "S": "4 cups hot cooked Basmati Rice (about 1 cup per serving)"
+      },
+      {
+        "S": "Naan Bread or flatbread (for serving)"
+      },
+      {
+        "S": "1 Lemon, cut into wedges (for serving)"
+      }
+    ]
+  },
+  "ingredient_objects": {
+    "L": [
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Red Lentils"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "cup"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or neutral oil"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Yellow Onion"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Small, finely diced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Minced"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Fresh Ginger"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Minced or grated"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sea Salt"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "3/4"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Cumin"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Curry Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Ground Coriander"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Turmeric"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Chili Powder"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1/4 to 1/2"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Or cayenne pepper, to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Tomatoes"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "14 ounce can"
+          },
+          "note": {
+            "S": "Or fire-roasted crushed tomatoes"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Vegetable Broth"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Low-sodium recommended"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Milk"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "14 ounce can"
+          },
+          "note": {
+            "S": "Full-fat, shaken well before opening"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garam Masala"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": ""
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Almond Butter"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Or cashew butter, peanut butter, or tahini"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemon Juice"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1 1/2"
+          },
+          "unit": {
+            "S": "tablespoons"
+          },
+          "note": {
+            "S": "Fresh, about half a lemon, plus more to taste"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Sugar"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pinch"
+          },
+          "note": {
+            "S": "Or maple syrup, optional, to balance acidity"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Coconut Oil"
+          },
+          "category": {
+            "S": "Pantry Staples"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "tablespoon"
+          },
+          "note": {
+            "S": "Or neutral oil, for optional tadka"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cumin Seeds"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "teaspoon"
+          },
+          "note": {
+            "S": "Or mustard seeds, for optional tadka"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Garlic"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "2"
+          },
+          "unit": {
+            "S": "cloves"
+          },
+          "note": {
+            "S": "Thinly sliced, for optional tadka"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Crushed Red Pepper Flakes"
+          },
+          "category": {
+            "S": "Seasonings"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "pinch"
+          },
+          "note": {
+            "S": "For optional tadka"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Cilantro"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "handful"
+          },
+          "note": {
+            "S": "Fresh, roughly chopped, for garnish"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Basmati Rice"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "4"
+          },
+          "unit": {
+            "S": "cups"
+          },
+          "note": {
+            "S": "Hot cooked, about 1 cup per serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Naan Bread"
+          },
+          "category": {
+            "S": "Grains & Bakery"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": "package"
+          },
+          "note": {
+            "S": "Or flatbread, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      },
+      {
+        "M": {
+          "ingredient_name": {
+            "S": "Lemon"
+          },
+          "category": {
+            "S": "Produce"
+          },
+          "quantity": {
+            "S": "1"
+          },
+          "unit": {
+            "S": ""
+          },
+          "note": {
+            "S": "Cut into wedges, for serving"
+          },
+          "affiliate_link": {
+            "S": ""
+          }
+        }
+      }
+    ]
+  },
+  "instructions": {
+    "L": [
+      {
+        "S": "Rinse 1 cup red lentils in a fine-mesh sieve under cold running water until the water runs clear to remove surface starch and prevent excessive foaming. Drain and set aside."
+      },
+      {
+        "S": "Heat 1 1/2 tablespoons coconut oil in a large pot or Dutch oven over medium heat. Add 1 finely diced small yellow onion and a pinch of salt once the oil is shimmering. Cook for 4 to 5 minutes, stirring occasionally, until the onion is translucent and beginning to turn golden. Add 4 cloves minced garlic and 1 tablespoon minced fresh ginger and cook for 1 minute, stirring constantly to prevent burning."
+      },
+      {
+        "S": "Add 3/4 teaspoon sea salt, 1 teaspoon ground cumin, 1 teaspoon curry powder, 1/2 teaspoon ground coriander, 1/2 teaspoon ground turmeric, and 1/4 to 1/2 teaspoon chili powder. Stir well and cook for 30 to 60 seconds until very fragrant and the spices darken slightly. Add a splash of broth to deglaze if the spices begin to stick."
+      },
+      {
+        "S": "Add 1 (14 ounce) can crushed tomatoes and stir well. Cook for 2 to 3 minutes, allowing the tomatoes to darken in color and concentrate. Add the rinsed lentils and 2 cups vegetable broth. Stir well, increase heat to high, and bring to a boil. Skim any foam that rises to the surface. Reduce heat to medium-low, partially cover the pot, and simmer for 18 to 22 minutes, stirring occasionally to prevent sticking, until the lentils are completely cooked through and have mostly broken down into a thick, creamy consistency."
+      },
+      {
+        "S": "Shake the can well, then pour in 1 (14 ounce) can full-fat coconut milk and stir to combine. Add up to 1 cup of water if you prefer a thinner consistency. Simmer uncovered for 5 more minutes, stirring occasionally."
+      },
+      {
+        "S": "Remove the pot from heat. Stir in 1 teaspoon garam masala, 2 tablespoons almond butter, and 1 1/2 tablespoons fresh lemon juice until fully incorporated. Taste and adjust seasoning with more salt, additional lemon juice for brightness, a pinch of sugar to balance acidity, or more chili for heat. Note that the curry will thicken as it sits."
+      },
+      {
+        "S": "Heat 1 tablespoon coconut oil in a small skillet over medium-high heat for an optional tadka. Add 1 teaspoon cumin seeds or mustard seeds and cook until they begin to sputter and pop, about 30 seconds. Add 2 cloves thinly sliced garlic and a pinch of crushed red pepper flakes and cook for 15 to 20 seconds until garlic is just golden. Pour the sizzling tadka immediately over the curry and stir gently."
+      },
+      {
+        "S": "Ladle the curry into bowls over 4 cups hot cooked basmati rice, about 1 cup per serving, or alongside warm naan bread or flatbread. Garnish generously with fresh cilantro and serve with lemon wedges on the side."
+      }
+    ]
+  },
+  "notes": {
+    "L": [
+      {
+        "S": "Gluten-Free: This recipe is naturally gluten-free as written. Verify that vegetable broth and curry powder are certified gluten-free. If serving with naan, use gluten-free naan."
+      },
+      {
+        "S": "Nut Allergy: The almond butter adds creaminess and body. For nut-free versions, substitute with sunflower seed butter, tahini, or simply omit."
+      },
+      {
+        "S": "Dairy-Free and Vegan: This recipe is naturally vegan and dairy-free as written."
+      },
+      {
+        "S": "Lentil Type: Red lentils or split red lentils (masoor dal) work best as they break down into a creamy consistency. Do not substitute brown, green, or French lentils."
+      },
+      {
+        "S": "Coconut Milk: Full-fat coconut milk is essential for the ultra-creamy texture. Shake the can vigorously before opening. Light coconut milk will work but yields a thinner result."
+      },
+      {
+        "S": "Make it Heartier: Stir in 2 to 3 handfuls of baby spinach or chopped kale during step 5 for added nutrition and color."
+      },
+      {
+        "S": "Scaling: This recipe doubles beautifully. Increase simmer time by 5 minutes for a double batch."
+      },
+      {
+        "S": "Storage: Refrigerate leftovers in an airtight container for up to 5 days, or freeze for up to 3 months. Thin with water or broth when reheating as the curry thickens when cold. Reheat gently over medium-low heat, stirring frequently."
+      }
+    ]
+  },
+  "recommendedSides": {
+    "L": [
+      {
+        "S": "3e5a8245-bff7-463f-8295-60ad4bad1601"
+      },
+      {
+        "S": "572cbdc3-03f0-425e-91ec-115daccd12d4"
+      },
+      {
+        "S": "fff9f91e-3fb1-4368-99db-abfa0da7cf03"
+      },
+      {
+        "S": "9a02ba4a-0dce-43f5-90c9-125a1cb4988a"
+      },
+      {
+        "S": "06f1cb43-9b17-4794-b054-1a646095551c"
+      },
+      {
+        "S": "699126b9-f51d-4c70-985a-6f79d8547734"
+      }
+    ]
+  },
+  "includedSides": {
+    "L": []
+  },
+  "comboIndex": {
+    "M": {}
+  },
+  "products": {
+    "L": [
+      {
+        "S": "65f66c65-9e6b-448a-b079-3ef8fea506b1"
+      },
+      {
+        "S": "60eaf0c2-831b-4df3-adb5-cb5f43777bbe"
+      },
+      {
+        "S": "be9ca3ed-f95a-40af-806d-bf110a25a761"
+      },
+      {
+        "S": "d6e52aaf-79d6-4621-a05e-474e970c9808"
+      },
+      {
+        "S": "4fd06a65-5fd3-436b-a7c8-480ad311ba36"
+      },
+      {
+        "S": "c65f1e9e-c6b8-4d97-a449-5a10c7e63639"
+      },
+      {
+        "S": "ea214b85-69dd-49b7-867e-17409204194e"
+      },
+      {
+        "S": "217cf6d2-237f-493d-9bd3-02ac21f3d078"
+      }
+    ]
+  },
+  "glutenFree": {
+    "BOOL": true
+  },
+  "vegetarian": {
+    "BOOL": true
+  },
+  "slowCook": {
+    "BOOL": false
+  },
+  "instaPot": {
+    "BOOL": false
+  },
+  "flagged": {
+    "BOOL": false
+  }
+}
