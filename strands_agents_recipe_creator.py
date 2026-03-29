@@ -1317,6 +1317,20 @@ def publish_recipe(recipe_json_str: str, hero_image_path: str, thumbnail_image_p
         # Convert plain JSON → DynamoDB-typed format for S3 Lambda import
         dynamo_recipe = _plain_to_s3_dynamo_json(recipe)
 
+        # HARD GATE: Validate DynamoDB format before uploading.
+        # This is deterministic — no semantic judgment. Pass/fail only.
+        from validate_s3_format import validate_s3_recipe
+        is_valid, val_errors, val_warnings = validate_s3_recipe(dynamo_recipe)
+        if not is_valid:
+            error_report = "\n".join(f"    ❌ {e}" for e in val_errors)
+            return (
+                f"❌ S3 FORMAT VALIDATION FAILED — upload blocked.\n"
+                f"  The DynamoDB-typed JSON does not match the gold standard.\n"
+                f"  Errors:\n{error_report}\n"
+                f"  Fix _plain_to_s3_dynamo_json() and retry."
+            )
+        results.append(f"✅ S3 format validation passed ({len(val_warnings)} warnings)")
+
         s3.put_object(
             Bucket=JSON_BUCKET,
             Key=json_filename,
